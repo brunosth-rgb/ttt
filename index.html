@@ -229,8 +229,9 @@
     <div class="header-actions">
       <div class="update">
         <div>Report: <strong id="reportName">Nenhum arquivo carregado</strong></div>
-        <div>Referência: <strong id="updatedAt">-</strong><br>Última atualização: <strong id="lastUpdateLabel">-</strong></div>
-        <div id="status" class="status stale"><span class="dot"></span> Aguardando report</div>
+        <div>Referência: <strong id="updatedAt">-</strong></div>
+        <div>Última atualização: <strong id="lastUpdateAt">-</strong></div>
+        <div id="status" class="status stale"><span class="dot"></span> Aguardando dados</div>
       </div>
       <button id="themeToggle" class="btn theme-btn" type="button" aria-label="Alternar tema">
         <svg id="themeIcon" viewBox="0 0 24 24">
@@ -239,7 +240,7 @@
         </svg>
         <span id="themeLabel">Modo claro</span>
       </button>
-      <button id="autoRefreshButton" class="btn" type="button" title="Verificar os dados mais recentes no GitHub">
+      <button id="autoRefreshButton" class="btn" type="button" title="Verificar os dados mais recentes publicados no GitHub">
         Atualizar agora
       </button>
       <label class="btn primary" for="fileInput">Importar report</label>
@@ -297,7 +298,7 @@
     </article>
 
     <article class="card">
-      <div class="section-title"><h2>Caminhões dentro do terminal</h2><span>snapshot ao final de cada hora</span></div>
+      <div class="section-title"><h2>Caminhões recebidos por hora</h2><span>entradas registradas em cada hora</span></div>
       <svg id="insideChart" class="chart" viewBox="0 0 700 220"></svg>
     </article>
 
@@ -375,6 +376,7 @@
 const TARGET_TTT = 32;
 const DATA_JSON_URL = './data/latest.json';
 const AUTO_REFRESH_MINUTES = 5;
+const LOCAL_CACHE_KEY = 'jbs-ttt-dashboard-latest-json';
 
 let lastLoadedReportSignature = null;
 let autoRefreshTimer = null;
@@ -575,32 +577,28 @@ function lineChart(svg, points, opts={}){
 
 function renderStayBars(buckets,total){
   let defs;
-
-  // Schema consolidado publicado pelo Apps Script.
   if(Object.prototype.hasOwnProperty.call(buckets,'upTo15')){
     defs=[
-      ['0-15 min',buckets.upTo15 || 0,'f-green'],
-      ['16-32 min',buckets.from16To32 || 0,'f-green'],
-      ['33-60 min',buckets.from33To60 || 0,'f-orange'],
-      ['> 60 min',buckets.above60 || 0,'f-red']
+      ['0-15 min',Number(buckets.upTo15||0),'f-green'],
+      ['16-32 min',Number(buckets.from16To32||0),'f-green'],
+      ['33-60 min',Number(buckets.from33To60||0),'f-orange'],
+      ['> 60 min',Number(buckets.above60||0),'f-red']
     ];
-  } else {
-    // Contingência manual XLSX: mantém o agrupamento original validado.
+  }else{
     defs=[
-      ['0-15 min',buckets.a || 0,'f-green'],
-      ['15-30 min',buckets.b || 0,'f-green'],
-      ['30-45 min',buckets.c || 0,'f-yellow'],
-      ['45-60 min',buckets.d || 0,'f-orange'],
-      ['> 60 min',buckets.e || 0,'f-red']
+      ['0-15 min',buckets.a,'f-green'],
+      ['15-30 min',buckets.b,'f-green'],
+      ['30-45 min',buckets.c,'f-yellow'],
+      ['45-60 min',buckets.d,'f-orange'],
+      ['> 60 min',buckets.e,'f-red']
     ];
   }
-
-  const max=Math.max(1,...defs.map(x=>x[1]));
+  const max=Math.max(1,...defs.map(x=>Number(x[1]||0)));
   $('stayBars').innerHTML=defs.map(([label,count,cls])=>`
     <div class="bar-row">
       <div class="bar-label">${label}</div>
-      <div class="track"><div class="fill ${cls}" style="width:${(count/max)*100}%"></div></div>
-      <div class="bar-value">${count}</div>
+      <div class="track"><div class="fill ${cls}" style="width:${(Number(count||0)/max)*100}%"></div></div>
+      <div class="bar-value">${Number(count||0)}</div>
     </div>`).join('');
   $('currentVehiclesLabel').textContent=`${total} veículos atuais`;
 }
@@ -822,60 +820,59 @@ function setDashboardStatus(kind,text){
   $('status').innerHTML='<span class="dot"></span> ' + text;
 }
 
-function parseIsoDate(value){
+function safeDate(value){
   if(!value) return null;
   const d=new Date(value);
   return Number.isNaN(d.getTime()) ? null : d;
 }
 
-function cloudVehicle(v){
-  return {
-    license:String(v?.truck || 'Sem identificação'),
-    trailer:String(v?.trailer || ''),
-    type:String(v?.type || 'SEM TIPO'),
-    entered:parseIsoDate(v?.enteredYard),
-    stay:Number(v?.minutes || 0)
-  };
-}
-
-function adaptCloudPayload(payload){
+function cloudPayloadToDashboard(payload){
   const metrics=payload.metrics || {};
   const flow=payload.flow || {};
   const dwell=payload.dwell || {};
-  const buckets=dwell.buckets || {};
-  const typeCounts=payload.typeBreakdown || {};
-  const aboveVehicles=Array.isArray(payload.aboveTargetVehicles)
-    ? payload.aboveTargetVehicles.map(cloudVehicle)
-    : [];
+  const bucketSource=dwell.buckets || {};
+  const reportDate=safeDate(payload.reportDate) || safeDate(payload.updatedAt) || new Date();
 
-  const eligibleCount=Number(dwell.eligibleVehicles || 0);
+  const aboveVehicles=(Array.isArray(payload.aboveTargetVehicles) ? payload.aboveTargetVehicles : [])
+    .map(v=>({
+      license:String(v.truck || ''),
+      trailer:String(v.trailer || ''),
+      type:String(v.type || ''),
+      entered:safeDate(v.enteredYard),
+      stay:Number(v.minutes || 0)
+    }))
+    .sort((a,b)=>b.stay-a.stay);
 
-  // renderAlerts() only needs the real >32-minute vehicles for dwell alerts.
-  // Placeholder eligible vehicles preserve the denominator used by the KPI card.
+  const eligibleCount=Math.max(Number(dwell.eligibleVehicles || 0),aboveVehicles.length);
   const operationalInside=[...aboveVehicles];
   while(operationalInside.length<eligibleCount){
-    operationalInside.push({license:'',trailer:'',type:'',entered:null,stay:0,_placeholder:true});
+    operationalInside.push({license:'',trailer:'',type:'',entered:reportDate,stay:0,_summaryOnly:true});
   }
 
-  const insideCount=Number(metrics.insideTerminal || 0);
-  const inside=Array.from({length:insideCount},()=>({}));
+  const oldestSource=metrics.oldestTruck || null;
+  const oldest=oldestSource ? {
+    license:String(oldestSource.truck || ''),
+    trailer:String(oldestSource.trailer || ''),
+    type:String(oldestSource.type || ''),
+    entered:safeDate(oldestSource.enteredYard),
+    stay:Number(oldestSource.minutes || 0)
+  } : null;
 
-  const oldest=metrics.oldestTruck ? cloudVehicle(metrics.oldestTruck) : null;
+  const insideCount=Math.max(0,Number(metrics.insideTerminal || 0));
+  const inside=Array.from({length:insideCount},()=>({_summaryOnly:true}));
 
-  const tttHourly=Array.isArray(payload.hourlyTTT)
-    ? payload.hourlyTTT
-        .filter(x=>x && x.value!==null && x.value!==undefined)
-        .map(x=>({label:`${String(x.hour).padStart(2,'0')}h`,value:Number(x.value)}))
-    : [];
+  const tttHourly=(Array.isArray(payload.hourlyTTT) ? payload.hourlyTTT : [])
+    .filter(x=>x && x.value!==null && x.value!==undefined && Number.isFinite(Number(x.value)))
+    .map(x=>({label:`${String(x.hour).replace(/h$/i,'')}h`,value:Number(x.value)}));
 
-  const insideHourly=Array.isArray(payload.hourlyOccupancy)
-    ? payload.hourlyOccupancy
-        .filter(x=>x && x.value!==null && x.value!==undefined)
-        .map(x=>({label:`${String(x.hour).padStart(2,'0')}h`,value:Number(x.value)}))
-    : [];
+  const insideHourly=(Array.isArray(payload.hourlyReceived)
+      ? payload.hourlyReceived
+      : (Array.isArray(payload.hourlyOccupancy) ? payload.hourlyOccupancy : []))
+    .filter(x=>x && x.value!==null && x.value!==undefined && Number.isFinite(Number(x.value)))
+    .map(x=>({label:`${String(x.hour).replace(/h$/i,'')}h`,value:Number(x.value)}));
 
   return {
-    parsed:[{source:'cloud'}],
+    parsed:[{_cloud:true}],
     validVisits:[],
     inside,
     operationalInside,
@@ -888,67 +885,94 @@ function adaptCloudPayload(payload){
     balanceLastHour:Number(flow.balanceLastHour || 0),
     aboveTarget:Number(metrics.aboveTarget || aboveVehicles.length || 0),
     oldest,
-    buckets,
+    buckets:{
+      upTo15:Number(bucketSource.upTo15 || 0),
+      from16To32:Number(bucketSource.from16To32 || 0),
+      from33To60:Number(bucketSource.from33To60 || 0),
+      above60:Number(bucketSource.above60 || 0)
+    },
     tttHourly,
     insideHourly,
-    typeCounts
+    typeCounts:payload.typeBreakdown || {},
+    _sourceFile:payload.sourceFile || 'data/latest.json',
+    _reportDate:reportDate,
+    _updatedAt:safeDate(payload.updatedAt)
   };
 }
 
-function renderCloudPayload(payload){
-  if(!payload || typeof payload!=='object') throw new Error('JSON inválido.');
-  if(!payload.updatedAt) throw new Error('JSON sem campo updatedAt.');
-
-  const data=adaptCloudPayload(payload);
-  const reportDate=parseIsoDate(payload.reportDate) || parseIsoDate(payload.updatedAt) || new Date();
-  const sourceFile=payload.sourceFile || 'data/latest.json';
-
-  render(data,sourceFile,reportDate);
-  $('lastUpdateLabel').textContent=fmtDateTime(parseIsoDate(payload.updatedAt) || reportDate);
+function renderCloudPayload(payload,{fromCache=false}={}){
+  const data=cloudPayloadToDashboard(payload);
+  render(data,data._sourceFile,data._reportDate);
+  $('lastUpdateAt').textContent=data._updatedAt ? fmtDateTime(data._updatedAt) : '-';
   hasRenderedData=true;
+  setDashboardStatus(fromCache ? 'stale' : '',fromCache ? 'Últimos dados salvos' : 'Dados atualizados');
+}
+
+function readCachedCloudPayload(){
+  try{
+    const raw=localStorage.getItem(LOCAL_CACHE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  }catch(e){ return null; }
+}
+
+function writeCachedCloudPayload(payload){
+  try{ localStorage.setItem(LOCAL_CACHE_KEY,JSON.stringify(payload)); }catch(e){}
 }
 
 async function loadLatestJson(){
   $('errorBox').style.display='none';
-  setDashboardStatus('stale','Verificando atualização...');
-
   try{
-    const response=await fetch(`${DATA_JSON_URL}?t=${Date.now()}`,{cache:'no-store'});
+    setDashboardStatus('stale','Verificando atualização...');
+    const response=await fetch(DATA_JSON_URL + '?t=' + Date.now(),{
+      cache:'no-store',
+      headers:{'Accept':'application/json'}
+    });
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
-
     const payload=await response.json();
-    const signature=[payload.sourceFile || '',payload.updatedAt || '',payload.reportDate || ''].join('|');
+    if(!payload || !payload.updatedAt || !payload.metrics){
+      throw new Error('Estrutura de data/latest.json inválida.');
+    }
 
+    const signature=[payload.sourceFile || '',payload.reportDate || '',payload.updatedAt || ''].join('|');
     if(signature!==lastLoadedReportSignature){
       renderCloudPayload(payload);
+      writeCachedCloudPayload(payload);
       lastLoadedReportSignature=signature;
+    }else{
+      setDashboardStatus('','Dados atualizados');
     }
-
-    setDashboardStatus('','Dados atualizados');
     return payload;
   }catch(err){
-    console.error(err);
+    console.error('Falha ao consultar data/latest.json:',err);
 
-    if(hasRenderedData){
-      setDashboardStatus('stale','Últimos dados válidos');
-      $('errorBox').textContent='Não foi possível verificar uma nova atualização. Os últimos dados válidos permanecem exibidos.';
-    }else{
-      setDashboardStatus('error','Falha na atualização');
-      $('errorBox').textContent='Não foi possível carregar data/latest.json. Use "Importar report" como contingência.';
+    if(!hasRenderedData){
+      const cached=readCachedCloudPayload();
+      if(cached){
+        renderCloudPayload(cached,{fromCache:true});
+        lastLoadedReportSignature=[cached.sourceFile || '',cached.reportDate || '',cached.updatedAt || ''].join('|');
+        $('errorBox').textContent='Não foi possível verificar uma nova atualização. Exibindo os últimos dados válidos salvos neste navegador.';
+        $('errorBox').style.display='block';
+        return cached;
+      }
     }
 
-    $('errorBox').style.display='block';
+    if(hasRenderedData){
+      setDashboardStatus('stale','Não foi possível verificar nova atualização');
+      $('errorBox').textContent='Não foi possível consultar a versão mais recente. Os últimos dados válidos continuam exibidos.';
+      $('errorBox').style.display='block';
+    }else{
+      setDashboardStatus('error','Dados indisponíveis');
+      $('errorBox').textContent='Não foi possível carregar data/latest.json. A importação manual do XLSX continua disponível como contingência.';
+      $('errorBox').style.display='block';
+    }
     throw err;
   }
 }
 
 function startAutoRefresh(){
   if(autoRefreshTimer) clearInterval(autoRefreshTimer);
-
   loadLatestJson().catch(()=>{});
-  autoRefreshTimer=setInterval(()=>{
-    loadLatestJson().catch(()=>{});
-  },AUTO_REFRESH_MINUTES*60*1000);
+  autoRefreshTimer=setInterval(()=>{ loadLatestJson().catch(()=>{}); },AUTO_REFRESH_MINUTES*60*1000);
 }
 
 async function handleFile(file){
@@ -959,7 +983,7 @@ async function handleFile(file){
     loadWorkbookBuffer(buffer,file.name,fallbackDate);
     lastLoadedReportSignature='manual|' + file.name + '|' + file.lastModified;
     hasRenderedData=true;
-    $('lastUpdateLabel').textContent='Importação manual';
+    $('lastUpdateAt').textContent='Importação manual';
     setDashboardStatus('','Dados carregados');
   }catch(err){
     console.error(err);
