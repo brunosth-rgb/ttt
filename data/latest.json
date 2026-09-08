@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-08T23:50:10.772Z",
-  "reportDate": "2026-09-08T23:45:00.000Z",
-  "sourceFile": "REP_TTTReport_424564373.xlsx",
+  "updatedAt": "2026-09-08T23:55:11.159Z",
+  "reportDate": "2026-09-08T23:50:00.000Z",
+  "sourceFile": "REP_TTTReport_838074782.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 2,
+    "insideTerminal": 5,
     "averageTTT": 17,
     "aboveTarget": 0,
     "oldestTruck": {
@@ -13,24 +13,25 @@
       "trailer": "JYC7F14",
       "type": "DTC",
       "enteredYard": "2026-09-08T23:30:04.920Z",
-      "minutes": 15
+      "minutes": 20
     }
   },
   "typeBreakdown": {
-    "DTC": 2
+    "DTC": 2,
+    "NORMAL": 3
   },
   "flow": {
-    "entriesToday": 188,
+    "entriesToday": 191,
     "exitsToday": 186,
-    "movementsLastHour": 36,
-    "balanceLastHour": 0
+    "movementsLastHour": 37,
+    "balanceLastHour": 5
   },
   "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 2,
+    "eligibleVehicles": 5,
     "buckets": {
-      "upTo15": 2,
-      "from16To32": 0,
+      "upTo15": 3,
+      "from16To32": 2,
       "from33To60": 0,
       "above60": 0
     }
@@ -216,7 +217,7 @@
     },
     {
       "hour": "20",
-      "value": 9
+      "value": 12
     },
     {
       "hour": "21",
