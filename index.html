@@ -229,7 +229,7 @@
     <div class="header-actions">
       <div class="update">
         <div>Report: <strong id="reportName">Nenhum arquivo carregado</strong></div>
-        <div>Referência: <strong id="updatedAt">-</strong></div>
+        <div>Referência: <strong id="updatedAt">-</strong><br>Última atualização: <strong id="lastUpdateLabel">-</strong></div>
         <div id="status" class="status stale"><span class="dot"></span> Aguardando report</div>
       </div>
       <button id="themeToggle" class="btn theme-btn" type="button" aria-label="Alternar tema">
@@ -239,7 +239,7 @@
         </svg>
         <span id="themeLabel">Modo claro</span>
       </button>
-      <button id="autoRefreshButton" class="btn" type="button" title="Buscar o report mais recente no Gmail">
+      <button id="autoRefreshButton" class="btn" type="button" title="Verificar os dados mais recentes no GitHub">
         Atualizar agora
       </button>
       <label class="btn primary" for="fileInput">Importar report</label>
@@ -373,17 +373,12 @@
 
 <script>
 const TARGET_TTT = 32;
-
-/*
- * Cole abaixo a URL /exec da implantação do Google Apps Script.
- * Exemplo:
- * https://script.google.com/macros/s/AKfycb.../exec
- */
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwAd1NA2pJYq2BKScj40w7-Rf2fdz2oughU5Q-xdxTB8rau0sIPgerJajaFh44o4wXf/exec';
+const DATA_JSON_URL = './data/latest.json';
 const AUTO_REFRESH_MINUTES = 5;
 
 let lastLoadedReportSignature = null;
 let autoRefreshTimer = null;
+let hasRenderedData = false;
 
 const $ = (id) => document.getElementById(id);
 
@@ -579,10 +574,27 @@ function lineChart(svg, points, opts={}){
 }
 
 function renderStayBars(buckets,total){
-  const defs=[
-    ['0-15 min',buckets.a,'f-green'],['15-30 min',buckets.b,'f-green'],['30-45 min',buckets.c,'f-yellow'],
-    ['45-60 min',buckets.d,'f-orange'],['> 60 min',buckets.e,'f-red']
-  ];
+  let defs;
+
+  // Schema consolidado publicado pelo Apps Script.
+  if(Object.prototype.hasOwnProperty.call(buckets,'upTo15')){
+    defs=[
+      ['0-15 min',buckets.upTo15 || 0,'f-green'],
+      ['16-32 min',buckets.from16To32 || 0,'f-green'],
+      ['33-60 min',buckets.from33To60 || 0,'f-orange'],
+      ['> 60 min',buckets.above60 || 0,'f-red']
+    ];
+  } else {
+    // Contingência manual XLSX: mantém o agrupamento original validado.
+    defs=[
+      ['0-15 min',buckets.a || 0,'f-green'],
+      ['15-30 min',buckets.b || 0,'f-green'],
+      ['30-45 min',buckets.c || 0,'f-yellow'],
+      ['45-60 min',buckets.d || 0,'f-orange'],
+      ['> 60 min',buckets.e || 0,'f-red']
+    ];
+  }
+
   const max=Math.max(1,...defs.map(x=>x[1]));
   $('stayBars').innerHTML=defs.map(([label,count,cls])=>`
     <div class="bar-row">
@@ -805,126 +817,138 @@ function render(data, fileName, reportDate){
 }
 
 
-function base64ToArrayBuffer(base64){
-  const binary=atob(base64);
-  const bytes=new Uint8Array(binary.length);
-  for(let i=0;i<binary.length;i++) bytes[i]=binary.charCodeAt(i);
-  return bytes.buffer;
-}
-
 function setDashboardStatus(kind,text){
   $('status').className='status' + (kind ? ' ' + kind : '');
   $('status').innerHTML='<span class="dot"></span> ' + text;
 }
 
-function loadWorkbookBuffer(buffer,fileName,referenceDate){
-  if(!window.XLSX){
-    throw new Error('A biblioteca para leitura de Excel não foi carregada.');
-  }
-
-  const wb=XLSX.read(buffer,{type:'array',cellDates:false});
-  const sheet=wb.Sheets[wb.SheetNames[0]];
-  if(!sheet) throw new Error('Nenhuma planilha encontrada no arquivo.');
-
-  const rows=normalizeRows(sheet);
-  const reportDate=referenceDate || reportDateFromFilename(fileName,rows);
-  const data=calculate(rows,reportDate);
-
-  if(!data.parsed.length){
-    throw new Error('Nenhuma visita válida com Entered Yard foi encontrada.');
-  }
-
-  render(data,fileName,reportDate);
+function parseIsoDate(value){
+  if(!value) return null;
+  const d=new Date(value);
+  return Number.isNaN(d.getTime()) ? null : d;
 }
 
-function loadLatestReportFromGmail(){
-  return new Promise((resolve,reject)=>{
-    if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('COLE_AQUI')){
-      reject(new Error('Configure APPS_SCRIPT_URL no HTML antes de usar a atualização automática.'));
-      return;
+function cloudVehicle(v){
+  return {
+    license:String(v?.truck || 'Sem identificação'),
+    trailer:String(v?.trailer || ''),
+    type:String(v?.type || 'SEM TIPO'),
+    entered:parseIsoDate(v?.enteredYard),
+    stay:Number(v?.minutes || 0)
+  };
+}
+
+function adaptCloudPayload(payload){
+  const metrics=payload.metrics || {};
+  const flow=payload.flow || {};
+  const dwell=payload.dwell || {};
+  const buckets=dwell.buckets || {};
+  const typeCounts=payload.typeBreakdown || {};
+  const aboveVehicles=Array.isArray(payload.aboveTargetVehicles)
+    ? payload.aboveTargetVehicles.map(cloudVehicle)
+    : [];
+
+  const eligibleCount=Number(dwell.eligibleVehicles || 0);
+
+  // renderAlerts() only needs the real >32-minute vehicles for dwell alerts.
+  // Placeholder eligible vehicles preserve the denominator used by the KPI card.
+  const operationalInside=[...aboveVehicles];
+  while(operationalInside.length<eligibleCount){
+    operationalInside.push({license:'',trailer:'',type:'',entered:null,stay:0,_placeholder:true});
+  }
+
+  const insideCount=Number(metrics.insideTerminal || 0);
+  const inside=Array.from({length:insideCount},()=>({}));
+
+  const oldest=metrics.oldestTruck ? cloudVehicle(metrics.oldestTruck) : null;
+
+  const tttHourly=Array.isArray(payload.hourlyTTT)
+    ? payload.hourlyTTT
+        .filter(x=>x && x.value!==null && x.value!==undefined)
+        .map(x=>({label:`${String(x.hour).padStart(2,'0')}h`,value:Number(x.value)}))
+    : [];
+
+  const insideHourly=Array.isArray(payload.hourlyOccupancy)
+    ? payload.hourlyOccupancy
+        .filter(x=>x && x.value!==null && x.value!==undefined)
+        .map(x=>({label:`${String(x.hour).padStart(2,'0')}h`,value:Number(x.value)}))
+    : [];
+
+  return {
+    parsed:[{source:'cloud'}],
+    validVisits:[],
+    inside,
+    operationalInside,
+    avgTTT:Number(metrics.averageTTT || 0),
+    entriesToday:Number(flow.entriesToday || 0),
+    exitsToday:Number(flow.exitsToday || 0),
+    entriesLastHour:0,
+    exitsLastHour:0,
+    movesLastHour:Number(flow.movementsLastHour || 0),
+    balanceLastHour:Number(flow.balanceLastHour || 0),
+    aboveTarget:Number(metrics.aboveTarget || aboveVehicles.length || 0),
+    oldest,
+    buckets,
+    tttHourly,
+    insideHourly,
+    typeCounts
+  };
+}
+
+function renderCloudPayload(payload){
+  if(!payload || typeof payload!=='object') throw new Error('JSON inválido.');
+  if(!payload.updatedAt) throw new Error('JSON sem campo updatedAt.');
+
+  const data=adaptCloudPayload(payload);
+  const reportDate=parseIsoDate(payload.reportDate) || parseIsoDate(payload.updatedAt) || new Date();
+  const sourceFile=payload.sourceFile || 'data/latest.json';
+
+  render(data,sourceFile,reportDate);
+  $('lastUpdateLabel').textContent=fmtDateTime(parseIsoDate(payload.updatedAt) || reportDate);
+  hasRenderedData=true;
+}
+
+async function loadLatestJson(){
+  $('errorBox').style.display='none';
+  setDashboardStatus('stale','Verificando atualização...');
+
+  try{
+    const response=await fetch(`${DATA_JSON_URL}?t=${Date.now()}`,{cache:'no-store'});
+    if(!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const payload=await response.json();
+    const signature=[payload.sourceFile || '',payload.updatedAt || '',payload.reportDate || ''].join('|');
+
+    if(signature!==lastLoadedReportSignature){
+      renderCloudPayload(payload);
+      lastLoadedReportSignature=signature;
     }
 
-    setDashboardStatus('stale','Buscando último report...');
-
-    const callbackName='__jbsReportCallback_' + Date.now();
-    const script=document.createElement('script');
-
-    const cleanup=()=>{
-      try{ delete window[callbackName]; }catch(e){ window[callbackName]=undefined; }
-      if(script.parentNode) script.parentNode.removeChild(script);
-    };
-
-    const timeout=setTimeout(()=>{
-      cleanup();
-      reject(new Error('Tempo limite ao consultar o Apps Script.'));
-    },30000);
-
-    window[callbackName]=(payload)=>{
-      clearTimeout(timeout);
-      cleanup();
-
-      try{
-        if(!payload || payload.ok!==true){
-          throw new Error(payload && payload.error ? payload.error : 'Resposta inválida do Apps Script.');
-        }
-
-        const signature=payload.fileName + '|' + payload.messageDate;
-
-        if(signature===lastLoadedReportSignature){
-          setDashboardStatus('','Dados atualizados');
-          resolve({unchanged:true,payload});
-          return;
-        }
-
-        const buffer=base64ToArrayBuffer(payload.dataBase64);
-
-        // Para permanência de visitas abertas, usamos o momento em que o e-mail
-        // com o report chegou ao Gmail como referência da fotografia operacional.
-        const referenceDate=payload.messageDate
-          ? new Date(payload.messageDate)
-          : null;
-
-        loadWorkbookBuffer(buffer,payload.fileName,referenceDate);
-
-        lastLoadedReportSignature=signature;
-        setDashboardStatus('','Dados atualizados');
-
-        resolve({unchanged:false,payload});
-      }catch(err){
-        reject(err);
-      }
-    };
-
-    script.onerror=()=>{
-      clearTimeout(timeout);
-      cleanup();
-      reject(new Error('Não foi possível acessar o Apps Script. Verifique a URL e as permissões da implantação.'));
-    };
-
-    const sep=APPS_SCRIPT_URL.includes('?') ? '&' : '?';
-    script.src=APPS_SCRIPT_URL + sep +
-      'callback=' + encodeURIComponent(callbackName) +
-      '&_=' + Date.now();
-
-    document.head.appendChild(script);
-  }).catch(err=>{
+    setDashboardStatus('','Dados atualizados');
+    return payload;
+  }catch(err){
     console.error(err);
-    $('errorBox').textContent='Atualização automática: ' + (err.message || err);
+
+    if(hasRenderedData){
+      setDashboardStatus('stale','Últimos dados válidos');
+      $('errorBox').textContent='Não foi possível verificar uma nova atualização. Os últimos dados válidos permanecem exibidos.';
+    }else{
+      setDashboardStatus('error','Falha na atualização');
+      $('errorBox').textContent='Não foi possível carregar data/latest.json. Use "Importar report" como contingência.';
+    }
+
     $('errorBox').style.display='block';
-    setDashboardStatus('error','Falha na atualização');
     throw err;
-  });
+  }
 }
 
 function startAutoRefresh(){
   if(autoRefreshTimer) clearInterval(autoRefreshTimer);
 
-  if(APPS_SCRIPT_URL && !APPS_SCRIPT_URL.includes('COLE_AQUI')){
-    loadLatestReportFromGmail().catch(()=>{});
-    autoRefreshTimer=setInterval(()=>{
-      loadLatestReportFromGmail().catch(()=>{});
-    },AUTO_REFRESH_MINUTES*60*1000);
-  }
+  loadLatestJson().catch(()=>{});
+  autoRefreshTimer=setInterval(()=>{
+    loadLatestJson().catch(()=>{});
+  },AUTO_REFRESH_MINUTES*60*1000);
 }
 
 async function handleFile(file){
@@ -934,6 +958,8 @@ async function handleFile(file){
     const fallbackDate=file.lastModified ? new Date(file.lastModified) : null;
     loadWorkbookBuffer(buffer,file.name,fallbackDate);
     lastLoadedReportSignature='manual|' + file.name + '|' + file.lastModified;
+    hasRenderedData=true;
+    $('lastUpdateLabel').textContent='Importação manual';
     setDashboardStatus('','Dados carregados');
   }catch(err){
     console.error(err);
@@ -973,7 +999,7 @@ initTheme();
 
 $('autoRefreshButton').addEventListener('click',()=>{
   $('errorBox').style.display='none';
-  loadLatestReportFromGmail().catch(()=>{});
+  loadLatestJson().catch(()=>{});
 });
 
 startAutoRefresh();
