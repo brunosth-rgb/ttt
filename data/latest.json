@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T15:08:15.061Z",
-  "reportDate": "2026-09-09T15:00:00.000Z",
-  "sourceFile": "REP_TTTReport_-34720577.xlsx",
+  "updatedAt": "2026-09-09T15:10:05.173Z",
+  "reportDate": "2026-09-09T15:05:01.000Z",
+  "sourceFile": "REP_TTTReport_-56163150.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 13,
     "averageTTT": 17,
     "aboveTarget": 1,
     "oldestTruck": {
@@ -13,18 +13,18 @@
       "trailer": "SXT5E62",
       "type": "DTC",
       "enteredYard": "2026-09-09T13:48:35.637Z",
-      "minutes": 71
+      "minutes": 76
     }
   },
   "typeBreakdown": {
     "DTC": 5,
-    "NORMAL": 6
+    "NORMAL": 8
   },
   "flow": {
-    "entriesToday": 208,
-    "exitsToday": 197,
-    "movementsLastHour": 38,
-    "balanceLastHour": 6
+    "entriesToday": 212,
+    "exitsToday": 199,
+    "movementsLastHour": 43,
+    "balanceLastHour": 9
   },
   "aboveTargetVehicles": [
     {
@@ -32,14 +32,14 @@
       "trailer": "SXT5E62",
       "type": "DTC",
       "enteredYard": "2026-09-09T13:48:35.637Z",
-      "minutes": 71
+      "minutes": 76
     }
   ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 13,
     "buckets": {
-      "upTo15": 8,
-      "from16To32": 2,
+      "upTo15": 12,
+      "from16To32": 0,
       "from33To60": 0,
       "above60": 1
     }
@@ -95,7 +95,7 @@
     },
     {
       "hour": "12",
-      "value": null
+      "value": 24
     },
     {
       "hour": "13",
@@ -193,7 +193,7 @@
     },
     {
       "hour": "12",
-      "value": 0
+      "value": 4
     },
     {
       "hour": "13",
