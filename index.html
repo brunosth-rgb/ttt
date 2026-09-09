@@ -209,13 +209,31 @@
     body.light-theme .modal-panel{box-shadow:0 20px 60px rgba(20,20,60,.18)}
     body.light-theme .wait-table th{background:#f8faff}
 
-    @media(max-width:1100px){
+    /* Em TVs/navegadores embutidos a largura CSS pode ser baixa mesmo em Full HD.
+       Por isso, em orientação paisagem mantemos sempre o layout desktop. */
+    @media (orientation: landscape){
+      .top{grid-template-columns:repeat(4,minmax(0,1fr)) !important}
+      .middle{grid-template-columns:1.35fr 1.35fr .9fr !important}
+      .bottom{grid-template-columns:1.2fr .8fr !important}
+      .header{flex-direction:row !important}
+      .header-actions{justify-content:flex-end !important}
+      .update{text-align:right !important}
+      .mini-grid{grid-template-columns:repeat(2,1fr) !important}
+    }
+
+    /* Só quebra o layout em telas realmente móveis e em modo retrato. */
+    @media(max-width:1100px) and (orientation:portrait){
       .top{grid-template-columns:repeat(2,minmax(0,1fr))}
       .middle,.bottom{grid-template-columns:1fr}
     }
-    @media(max-width:650px){
-      .app{padding:12px}.header{flex-direction:column}.header-actions{justify-content:flex-start}.update{text-align:left}
-      .top{grid-template-columns:1fr}.metric-value{font-size:36px}.mini-grid{grid-template-columns:1fr}
+    @media(max-width:650px) and (orientation:portrait){
+      .app{padding:12px}
+      .header{flex-direction:column}
+      .header-actions{justify-content:flex-start}
+      .update{text-align:left}
+      .top{grid-template-columns:1fr}
+      .metric-value{font-size:36px}
+      .mini-grid{grid-template-columns:1fr}
       .bar-row{grid-template-columns:80px 1fr 40px}
     }
 
@@ -306,6 +324,59 @@
     body.tv-compact .alerts{gap:5px}
     body.tv-compact .alert-item{padding:7px;font-size:10px}
     body.tv-compact .footer-note{font-size:8px;margin-top:4px}
+
+
+    /* Ajuste específico para navegadores de TV que reportam 960-1200 CSS px. */
+    @media (orientation:landscape) and (max-width:1200px){
+      .app{
+        width:calc(100vw - 10px) !important;
+        padding:6px 8px !important;
+      }
+      .header{margin-bottom:5px !important;gap:8px !important}
+      .brand-logo{height:30px !important}
+      .title-wrap h1{font-size:16px !important}
+      .title-wrap p{font-size:8px !important;margin-top:1px !important}
+      .brand-rule{height:2px !important;margin-top:4px !important}
+      .header-actions{gap:4px !important}
+      .update{font-size:8px !important;line-height:1.2 !important}
+      .status{font-size:8px !important;padding:3px 6px !important;margin-top:2px !important}
+      .btn{font-size:9px !important;padding:5px 7px !important;border-radius:7px !important}
+
+      .grid{gap:5px !important}
+      .top,.middle{margin-bottom:5px !important}
+      .card{padding:8px !important;border-radius:9px !important}
+
+      .metric-head{margin-bottom:4px !important}
+      .metric-title{font-size:8px !important}
+      .icon-wrap{width:24px !important;height:24px !important;border-radius:7px !important}
+      .icon-wrap svg{width:13px !important;height:13px !important}
+      .metric-value{font-size:26px !important}
+      .metric-sub{font-size:8px !important;margin-top:4px !important}
+      .breakdown{margin-top:5px !important;gap:4px !important}
+      .chip{font-size:7px !important;padding:3px 5px !important}
+      .view-list{font-size:8px !important;margin-top:4px !important}
+
+      .section-title{margin-bottom:5px !important}
+      .section-title h2{font-size:9px !important}
+      .section-title span{font-size:7px !important}
+      .chart{height:120px !important}
+
+      .mini-grid{gap:5px !important}
+      .mini{padding:7px !important;border-radius:8px !important}
+      .mini .label{font-size:7px !important}
+      .mini .value{font-size:18px !important;margin-top:3px !important}
+
+      .bars{gap:5px !important}
+      .bar-row{grid-template-columns:58px 1fr 22px !important;gap:5px !important}
+      .bar-label,.bar-value{font-size:7px !important}
+      .track{height:7px !important}
+
+      .alerts{gap:4px !important}
+      .alert-item{padding:5px !important;font-size:7px !important;border-radius:7px !important}
+      .alert-badge{width:6px !important;height:6px !important;margin-top:2px !important}
+
+      .footer-note{font-size:6px !important;margin-top:3px !important}
+    }
 
   </style>
 </head>
@@ -869,32 +940,29 @@ function fitDashboardToViewport(){
   document.body.classList.remove('tv-compact');
   app.style.transform='scale(1)';
 
-  const margin=4;
+  const margin=3;
   const availableWidth=Math.max(320, window.innerWidth - margin*2);
   const availableHeight=Math.max(320, window.innerHeight - margin*2);
 
-  // O layout deve priorizar uso total da largura da TV.
-  app.style.width=`${Math.max(320, availableWidth)}px`;
+  app.style.width=`${availableWidth}px`;
 
   let rect=app.getBoundingClientRect();
 
-  // Se a altura estourar, aplica primeiro um modo compacto.
-  if(rect.height > availableHeight){
+  // Em paisagem, preserva a estrutura horizontal e só reduz por escala se necessário.
+  const landscape=window.innerWidth >= window.innerHeight;
+
+  if(!landscape && rect.height > availableHeight){
     document.body.classList.add('tv-compact');
     app.style.transform='scale(1)';
     rect=app.getBoundingClientRect();
   }
 
-  // Só escala em último caso e o mínimo possível.
   const scaleX=availableWidth/rect.width;
   const scaleY=availableHeight/rect.height;
-  let scale=Math.min(1, scaleX, scaleY);
+  let scale=Math.min(1,scaleX,scaleY);
 
-  if(scale > 0.985){
-    scale=1;
-  } else {
-    scale=Math.max(scale, 0.94);
-  }
+  // Mantém o layout horizontal; evita transform exagerado.
+  if(scale > 0.99) scale=1;
 
   app.style.transform=`scale(${scale})`;
 }
