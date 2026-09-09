@@ -69,17 +69,18 @@
     }
     button,input{font:inherit}
     .app{
-      max-width:1520px;margin:0 auto;padding:14px;
-      width:min(1520px, calc(100vw - 16px));
+      max-width:none;margin:0 auto;padding:10px 12px;
+      width:calc(100vw - 24px);
       transform-origin:top center;
       transition:transform .18s ease;
       will-change:transform;
+      box-sizing:border-box;
     }
-    .header{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:10px}
+    .header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}
     .brand-title{display:flex;align-items:center;gap:12px}
-    .brand-logo{height:40px;width:auto;display:block;object-fit:contain}
+    .brand-logo{height:38px;width:auto;display:block;object-fit:contain}
     .title-wrap h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.2px}
-    .title-wrap p{margin:4px 0 0;color:var(--muted);font-size:12px}
+    .title-wrap p{margin:3px 0 0;color:var(--muted);font-size:12px}
     .brand-rule{height:3px;border-radius:999px;background:var(--header-accent);margin-top:8px;opacity:.95}
     .header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
     .update{text-align:right;color:var(--muted);font-size:12px;line-height:1.5}
@@ -108,13 +109,13 @@
     }
     .dropzone.active{display:block;border-color:var(--blue);color:var(--text);background:rgba(90,167,255,.08)}
 
-    .grid{display:grid;gap:10px}
-    .top{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:10px}
-    .middle{grid-template-columns:1.35fr 1.35fr .9fr;margin-bottom:10px}
+    .grid{display:grid;gap:8px}
+    .top{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:8px}
+    .middle{grid-template-columns:1.35fr 1.35fr .9fr;margin-bottom:8px}
     .bottom{grid-template-columns:1.2fr .8fr}
     .card{
       background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--border);
-      border-radius:14px;padding:14px;min-width:0;box-shadow:var(--shadow);
+      border-radius:14px;padding:12px;min-width:0;box-shadow:var(--shadow);
     }
     .card-clickable{cursor:pointer;transition:border-color .15s ease, transform .15s ease}
     .card-clickable:hover{border-color:#465767;transform:translateY(-1px)}
@@ -161,32 +162,32 @@
     .icon-wrap svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .icon-green{color:var(--green)} .icon-yellow{color:var(--yellow)} .icon-orange{color:var(--orange)}
     .icon-red{color:var(--red)} .icon-blue{color:var(--blue)}
-    .metric-value{font-size:40px;font-weight:750;line-height:1;letter-spacing:-1.5px}
-    .metric-sub{margin-top:8px;color:var(--muted);font-size:12px}
+    .metric-value{font-size:38px;font-weight:750;line-height:1;letter-spacing:-1.4px}
+    .metric-sub{margin-top:7px;color:var(--muted);font-size:12px}
     .metric-sub strong{color:var(--text)}
     .ok{color:var(--green)} .warn{color:var(--yellow)} .alert{color:var(--orange)} .danger{color:var(--red)}
     .kpi-oldest{color:var(--red)!important}
     .kpi-above-target{color:var(--orange-kpi)!important}
 
-    .section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+    .section-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
     .section-title h2{margin:0;font-size:14px;letter-spacing:.3px}
-    .section-title span{color:var(--muted);font-size:12px}
-    .chart{width:100%;height:180px;display:block;overflow:visible}
+    .section-title span{color:var(--muted);font-size:11px}
+    .chart{width:100%;height:min(18vh, 180px);display:block;overflow:visible}
     .mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
-    .mini{padding:12px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.015)}
+    .mini{padding:10px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.015)}
     .mini .label{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.7px}
-    .mini .value{margin-top:6px;font-size:24px;font-weight:700}
-    .bars{display:flex;flex-direction:column;gap:10px}
-    .bar-row{display:grid;grid-template-columns:90px 1fr 42px;gap:8px;align-items:center}
-    .bar-label,.bar-value{font-size:12px;color:var(--muted)}
+    .mini .value{margin-top:5px;font-size:22px;font-weight:700}
+    .bars{display:flex;flex-direction:column;gap:8px}
+    .bar-row{display:grid;grid-template-columns:82px 1fr 34px;gap:8px;align-items:center}
+    .bar-label,.bar-value{font-size:11px;color:var(--muted)}
     .track{height:10px;background:#0d1116;border-radius:999px;overflow:hidden;border:1px solid #202a33}
     .fill{height:100%;border-radius:999px}
     .f-green{background:var(--green)} .f-yellow{background:var(--yellow)}
     .f-orange{background:var(--orange)} .f-red{background:var(--red)}
-    .alerts{display:flex;flex-direction:column;gap:8px}
-    .alert-item{display:flex;align-items:flex-start;gap:10px;padding:10px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.015);font-size:12px;line-height:1.35}
+    .alerts{display:flex;flex-direction:column;gap:6px}
+    .alert-item{display:flex;align-items:flex-start;gap:8px;padding:8px;border-radius:10px;border:1px solid var(--border);background:rgba(255,255,255,.015);font-size:11px;line-height:1.3}
     .alert-badge{flex:0 0 auto;width:9px;height:9px;border-radius:50%;margin-top:4px}
-    .footer-note{color:var(--muted);font-size:10px;margin-top:8px;text-align:right}
+    .footer-note{color:var(--muted);font-size:9px;margin-top:6px;text-align:right}
     .empty{color:var(--muted);font-size:13px;padding:16px 0}
     .breakdown{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
     .chip{font-size:11px;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:5px 8px}
@@ -274,43 +275,43 @@
       .header-actions{gap:8px}
     }
 
-    body.tv-compact .app{max-width:1460px;width:min(1460px, calc(100vw - 12px));padding:10px}
-    body.tv-compact .header{margin-bottom:8px;gap:10px}
-    body.tv-compact .brand-logo{height:36px}
-    body.tv-compact .title-wrap h1{font-size:20px}
-    body.tv-compact .title-wrap p{font-size:11px;margin-top:3px}
-    body.tv-compact .brand-rule{height:2px;margin-top:6px}
-    body.tv-compact .header-actions{gap:6px}
-    body.tv-compact .update{font-size:10px;line-height:1.35}
-    body.tv-compact .status{padding:4px 8px;font-size:10px}
-    body.tv-compact .btn{padding:7px 10px;font-size:11px}
-    body.tv-compact .grid{gap:8px}
+    body.tv-compact .app{width:calc(100vw - 12px);padding:8px 10px}
+    body.tv-compact .header{margin-bottom:6px;gap:8px}
+    body.tv-compact .brand-logo{height:34px}
+    body.tv-compact .title-wrap h1{font-size:19px}
+    body.tv-compact .title-wrap p{font-size:10px;margin-top:2px}
+    body.tv-compact .brand-rule{height:2px;margin-top:5px}
+    body.tv-compact .header-actions{gap:5px}
+    body.tv-compact .update{font-size:9px;line-height:1.25}
+    body.tv-compact .status{padding:3px 7px;font-size:9px}
+    body.tv-compact .btn{padding:6px 9px;font-size:10px}
+    body.tv-compact .grid{gap:7px}
     body.tv-compact .top,
-    body.tv-compact .middle{margin-bottom:8px}
-    body.tv-compact .card{padding:12px;border-radius:12px}
-    body.tv-compact .metric-title{font-size:11px}
-    body.tv-compact .metric-head{margin-bottom:7px}
-    body.tv-compact .metric-value{font-size:34px}
-    body.tv-compact .metric-sub{font-size:11px;margin-top:7px}
-    body.tv-compact .section-title{margin-bottom:8px}
-    body.tv-compact .section-title h2{font-size:13px}
-    body.tv-compact .section-title span{font-size:11px}
-    body.tv-compact .chart{height:150px}
-    body.tv-compact .mini{padding:10px}
-    body.tv-compact .mini .value{font-size:22px}
-    body.tv-compact .mini .label{font-size:10px}
-    body.tv-compact .bar-row{grid-template-columns:82px 1fr 34px}
+    body.tv-compact .middle{margin-bottom:7px}
+    body.tv-compact .card{padding:10px;border-radius:12px}
+    body.tv-compact .metric-title{font-size:10px}
+    body.tv-compact .metric-head{margin-bottom:6px}
+    body.tv-compact .metric-value{font-size:32px}
+    body.tv-compact .metric-sub{font-size:10px;margin-top:6px}
+    body.tv-compact .section-title{margin-bottom:7px}
+    body.tv-compact .section-title h2{font-size:12px}
+    body.tv-compact .section-title span{font-size:10px}
+    body.tv-compact .chart{height:min(16vh, 145px)}
+    body.tv-compact .mini{padding:9px}
+    body.tv-compact .mini .value{font-size:20px}
+    body.tv-compact .mini .label{font-size:9px}
+    body.tv-compact .bar-row{grid-template-columns:76px 1fr 30px}
     body.tv-compact .bar-label,
-    body.tv-compact .bar-value{font-size:11px}
-    body.tv-compact .alerts{gap:6px}
-    body.tv-compact .alert-item{padding:8px;font-size:11px}
-    body.tv-compact .footer-note{font-size:9px;margin-top:6px}
+    body.tv-compact .bar-value{font-size:10px}
+    body.tv-compact .alerts{gap:5px}
+    body.tv-compact .alert-item{padding:7px;font-size:10px}
+    body.tv-compact .footer-note{font-size:8px;margin-top:4px}
 
   </style>
 </head>
 
 <body>
-<main class="app">
+<main class="app" aria-label="Dashboard operacional de gate">
   <header class="header">
     <div class="title-wrap">
       <div class="brand-title">
@@ -862,34 +863,38 @@ function renderAboveTargetTable(data){
 function fitDashboardToViewport(){
   const app=document.querySelector('.app');
   const modal=$('aboveTargetModal');
-
   if(!app) return;
   if(modal && modal.classList.contains('open')) return;
 
-  // Primeiro tentamos caber na tela com uma versão mais compacta,
-  // evitando reduzir demais toda a interface.
   document.body.classList.remove('tv-compact');
   app.style.transform='scale(1)';
 
-  const margin=6;
+  const margin=4;
   const availableWidth=Math.max(320, window.innerWidth - margin*2);
   const availableHeight=Math.max(320, window.innerHeight - margin*2);
 
+  // O layout deve priorizar uso total da largura da TV.
+  app.style.width=`${Math.max(320, availableWidth)}px`;
+
   let rect=app.getBoundingClientRect();
 
-  if(rect.height > availableHeight || window.innerHeight < 920){
+  // Se a altura estourar, aplica primeiro um modo compacto.
+  if(rect.height > availableHeight){
     document.body.classList.add('tv-compact');
     app.style.transform='scale(1)';
     rect=app.getBoundingClientRect();
   }
 
+  // Só escala em último caso e o mínimo possível.
   const scaleX=availableWidth/rect.width;
   const scaleY=availableHeight/rect.height;
   let scale=Math.min(1, scaleX, scaleY);
 
-  // Evita reduções desnecessárias que deixam tudo minúsculo.
-  if(scale > 0.94) scale=1;
-  scale=Math.max(scale, 0.88);
+  if(scale > 0.985){
+    scale=1;
+  } else {
+    scale=Math.max(scale, 0.94);
+  }
 
   app.style.transform=`scale(${scale})`;
 }
