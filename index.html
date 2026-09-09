@@ -61,12 +61,20 @@
       --shadow:0 12px 28px rgba(20,20,60,.10);
     }
     *{box-sizing:border-box}
+    html,body{width:100%;height:100%;overflow:hidden}
     body{
       margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       background:var(--bg);color:var(--text);min-height:100vh;transition:background .2s ease,color .2s ease;
+      display:flex;justify-content:center;align-items:flex-start;
     }
     button,input{font:inherit}
-    .app{max-width:1600px;margin:0 auto;padding:20px}
+    .app{
+      max-width:1600px;margin:0 auto;padding:20px;
+      width:min(1600px, calc(100vw - 20px));
+      transform-origin:top center;
+      transition:transform .18s ease;
+      will-change:transform;
+    }
     .header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:18px}
     .brand-title{display:flex;align-items:center;gap:14px}
     .brand-logo{height:46px;width:auto;display:block;object-fit:contain}
@@ -208,6 +216,62 @@
       .app{padding:12px}.header{flex-direction:column}.header-actions{justify-content:flex-start}.update{text-align:left}
       .top{grid-template-columns:1fr}.metric-value{font-size:36px}.mini-grid{grid-template-columns:1fr}
       .bar-row{grid-template-columns:80px 1fr 40px}
+    }
+
+    @media (max-height:920px){
+      .app{padding:14px;width:min(1600px, calc(100vw - 14px))}
+      .header{margin-bottom:12px}
+      .brand-logo{height:38px}
+      .title-wrap h1{font-size:21px}
+      .title-wrap p{font-size:12px;margin-top:4px}
+      .brand-rule{margin-top:10px}
+      .grid{gap:10px}
+      .top,.middle{margin-bottom:10px}
+      .card{padding:14px;border-radius:14px}
+      .metric-head{margin-bottom:8px}
+      .metric-value{font-size:34px}
+      .metric-sub{margin-top:8px;font-size:12px}
+      .section-title{margin-bottom:10px}
+      .section-title h2{font-size:13px}
+      .section-title span{font-size:11px}
+      .chart{height:175px}
+      .mini{padding:12px}
+      .mini .value{font-size:24px}
+      .bars{gap:10px}
+      .bar-row{gap:8px}
+      .alert-item{padding:10px;font-size:12px}
+      .footer-note{margin-top:10px;font-size:10px}
+      .update{font-size:11px}
+      .status{padding:5px 9px;font-size:11px}
+      .btn{padding:9px 12px}
+    }
+
+    @media (max-height:780px){
+      .app{padding:10px;width:min(1600px, calc(100vw - 10px))}
+      .header{margin-bottom:8px}
+      .brand-logo{height:34px}
+      .title-wrap h1{font-size:19px}
+      .title-wrap p{font-size:11px}
+      .brand-rule{height:2px;margin-top:8px}
+      .grid{gap:8px}
+      .top,.middle{margin-bottom:8px}
+      .card{padding:12px;border-radius:12px}
+      .icon-wrap{width:30px;height:30px}
+      .icon-wrap svg{width:16px;height:16px}
+      .metric-title{font-size:11px}
+      .metric-value{font-size:30px}
+      .metric-sub{font-size:11px}
+      .chart{height:150px}
+      .mini{padding:10px}
+      .mini .label{font-size:10px}
+      .mini .value{font-size:22px}
+      .bar-label,.bar-value{font-size:11px}
+      .alerts{gap:8px}
+      .alert-item{padding:9px;font-size:11px}
+      .footer-note{margin-top:8px;font-size:9px}
+      .update{font-size:10px}
+      .btn{padding:8px 10px;font-size:11px}
+      .header-actions{gap:8px}
     }
   </style>
 </head>
@@ -762,6 +826,27 @@ function renderAboveTargetTable(data){
   }).join('');
 }
 
+function fitDashboardToViewport(){
+  const app=document.querySelector('.app');
+  const modal=$('aboveTargetModal');
+
+  if(!app) return;
+  if(modal && modal.classList.contains('open')) return;
+
+  app.style.transform='scale(1)';
+
+  const margin=8;
+  const rect=app.getBoundingClientRect();
+  const availableWidth=Math.max(320, window.innerWidth - margin*2);
+  const availableHeight=Math.max(320, window.innerHeight - margin*2);
+
+  const scaleX=availableWidth/rect.width;
+  const scaleY=availableHeight/rect.height;
+  const scale=Math.min(1, scaleX, scaleY);
+
+  app.style.transform=`scale(${scale})`;
+}
+
 function render(data, fileName, reportDate){
   $('reportName').textContent=fileName;
   $('updatedAt').textContent=fmtDateTime(reportDate);
@@ -812,6 +897,7 @@ function render(data, fileName, reportDate){
   renderStayBars(data.buckets,data.operationalInside.length);
   renderAboveTargetTable(data);
   renderAlerts(data);
+  requestAnimationFrame(fitDashboardToViewport);
 }
 
 
@@ -1000,26 +1086,31 @@ $('aboveTargetCard').addEventListener('click',()=>{
 $('closeAboveTargetModal').addEventListener('click',()=>{
   $('aboveTargetModal').classList.remove('open');
   $('aboveTargetModal').setAttribute('aria-hidden','true');
+  requestAnimationFrame(fitDashboardToViewport);
 });
 $('aboveTargetModal').addEventListener('click',e=>{
   if(e.target===$('aboveTargetModal')){
     $('aboveTargetModal').classList.remove('open');
     $('aboveTargetModal').setAttribute('aria-hidden','true');
+    requestAnimationFrame(fitDashboardToViewport);
   }
 });
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'){
     $('aboveTargetModal').classList.remove('open');
     $('aboveTargetModal').setAttribute('aria-hidden','true');
+    requestAnimationFrame(fitDashboardToViewport);
   }
 });
 
 $('themeToggle').addEventListener('click',()=>{
   const current = document.body.classList.contains('light-theme') ? 'light' : 'dark';
   applyTheme(current === 'light' ? 'dark' : 'light');
+  requestAnimationFrame(fitDashboardToViewport);
 });
 
 initTheme();
+requestAnimationFrame(fitDashboardToViewport);
 
 $('autoRefreshButton').addEventListener('click',()=>{
   $('errorBox').style.display='none';
@@ -1027,6 +1118,10 @@ $('autoRefreshButton').addEventListener('click',()=>{
 });
 
 startAutoRefresh();
+
+window.addEventListener('resize',()=>requestAnimationFrame(fitDashboardToViewport));
+window.addEventListener('orientationchange',()=>requestAnimationFrame(fitDashboardToViewport));
+setTimeout(()=>requestAnimationFrame(fitDashboardToViewport),250);
 
 $('fileInput').addEventListener('change',e=>{ if(e.target.files[0]) handleFile(e.target.files[0]); });
 
