@@ -1,53 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T22:35:38.447Z",
-  "reportDate": "2026-09-10T22:30:01.000Z",
-  "sourceFile": "REP_TTTReport_422914188.xlsx",
+  "updatedAt": "2026-09-10T22:43:57.857Z",
+  "reportDate": "2026-09-10T22:40:00.000Z",
+  "sourceFile": "REP_TTTReport_-82140350.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 13,
     "averageTTT": 21,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "IIT6E40",
-      "trailer": "GNF0932",
+      "truck": "ALW0D60",
+      "trailer": "LWX5I72",
       "type": "DTC",
-      "enteredYard": "2026-09-10T21:42:53.603Z",
-      "minutes": 47
+      "enteredYard": "2026-09-10T22:03:23.383Z",
+      "minutes": 37
     }
   },
   "typeBreakdown": {
-    "DTC": 7,
-    "NORMAL": 4
+    "DTC": 6,
+    "NORMAL": 7
   },
   "flow": {
-    "entriesToday": 538,
-    "exitsToday": 526,
+    "entriesToday": 544,
+    "exitsToday": 530,
     "movementsLastHour": 46,
     "balanceLastHour": 4
   },
   "aboveTargetVehicles": [
     {
-      "truck": "IIT6E40",
-      "trailer": "GNF0932",
+      "truck": "ALW0D60",
+      "trailer": "LWX5I72",
       "type": "DTC",
-      "enteredYard": "2026-09-10T21:42:53.603Z",
-      "minutes": 47
-    },
-    {
-      "truck": "LYJ2G23",
-      "trailer": "MLR3735",
-      "type": "DTC",
-      "enteredYard": "2026-09-10T21:49:13.930Z",
-      "minutes": 41
+      "enteredYard": "2026-09-10T22:03:23.383Z",
+      "minutes": 37
     }
   ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 13,
     "buckets": {
-      "upTo15": 5,
-      "from16To32": 4,
-      "from33To60": 2,
+      "upTo15": 9,
+      "from16To32": 3,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -130,7 +123,7 @@
     },
     {
       "hour": "19",
-      "value": 21
+      "value": 26
     },
     {
       "hour": "20",
@@ -228,7 +221,7 @@
     },
     {
       "hour": "19",
-      "value": 12
+      "value": 18
     },
     {
       "hour": "20",
