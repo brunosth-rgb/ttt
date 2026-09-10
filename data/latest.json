@@ -1,38 +1,53 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T16:16:49.566Z",
-  "reportDate": "2026-09-10T16:10:00.000Z",
-  "sourceFile": "REP_TTTReport_-89392830.xlsx",
+  "updatedAt": "2026-09-10T16:23:36.471Z",
+  "reportDate": "2026-09-10T16:20:01.000Z",
+  "sourceFile": "REP_TTTReport_-60531987.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 20,
+    "insideTerminal": 18,
     "averageTTT": 19,
-    "aboveTarget": 0,
+    "aboveTarget": 2,
     "oldestTruck": {
-      "truck": "AMX3C82",
-      "trailer": "QJT4E50",
-      "type": "DTC",
-      "enteredYard": "2026-09-10T15:40:15.297Z",
-      "minutes": 30
+      "truck": "IKY6202",
+      "trailer": "LZX6H10",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-10T15:44:12.697Z",
+      "minutes": 36
     }
   },
   "typeBreakdown": {
-    "DTC": 13,
-    "NORMAL": 7
+    "NORMAL": 6,
+    "DTC": 12
   },
   "flow": {
-    "entriesToday": 341,
-    "exitsToday": 321,
-    "movementsLastHour": 60,
-    "balanceLastHour": 8
+    "entriesToday": 344,
+    "exitsToday": 326,
+    "movementsLastHour": 57,
+    "balanceLastHour": 5
   },
-  "aboveTargetVehicles": [],
+  "aboveTargetVehicles": [
+    {
+      "truck": "IKY6202",
+      "trailer": "LZX6H10",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-10T15:44:12.697Z",
+      "minutes": 36
+    },
+    {
+      "truck": "ILF5F47",
+      "trailer": "AEM1562",
+      "type": "DTC",
+      "enteredYard": "2026-09-10T15:44:24.097Z",
+      "minutes": 36
+    }
+  ],
   "dwell": {
-    "eligibleVehicles": 20,
+    "eligibleVehicles": 18,
     "buckets": {
-      "upTo15": 13,
-      "from16To32": 7,
-      "from33To60": 0,
+      "upTo15": 7,
+      "from16To32": 9,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -91,7 +106,7 @@
     },
     {
       "hour": "13",
-      "value": 27
+      "value": 24
     },
     {
       "hour": "14",
@@ -189,7 +204,7 @@
     },
     {
       "hour": "13",
-      "value": 10
+      "value": 13
     },
     {
       "hour": "14",
