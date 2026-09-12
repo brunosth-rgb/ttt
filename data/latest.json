@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T21:28:11.280Z",
-  "reportDate": "2026-09-12T21:25:00.000Z",
-  "sourceFile": "REP_TTTReport_851061752.xlsx",
+  "updatedAt": "2026-09-12T21:33:17.428Z",
+  "reportDate": "2026-09-12T21:30:00.000Z",
+  "sourceFile": "REP_TTTReport_722570871.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 1,
+    "insideTerminal": 2,
     "averageTTT": 17,
     "aboveTarget": 0,
     "oldestTruck": {
@@ -13,23 +13,24 @@
       "trailer": "MDM3G93",
       "type": "DTC",
       "enteredYard": "2026-09-12T21:21:52.520Z",
-      "minutes": 3
+      "minutes": 8
     }
   },
   "typeBreakdown": {
-    "DTC": 1
+    "DTC": 1,
+    "NORMAL": 1
   },
   "flow": {
-    "entriesToday": 283,
+    "entriesToday": 284,
     "exitsToday": 282,
-    "movementsLastHour": 6,
-    "balanceLastHour": 0
+    "movementsLastHour": 7,
+    "balanceLastHour": 1
   },
   "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 1,
+    "eligibleVehicles": 2,
     "buckets": {
-      "upTo15": 1,
+      "upTo15": 2,
       "from16To32": 0,
       "from33To60": 0,
       "above60": 0
@@ -208,7 +209,7 @@
     },
     {
       "hour": "18",
-      "value": 1
+      "value": 2
     },
     {
       "hour": "19",
