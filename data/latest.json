@@ -1,29 +1,47 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-14T07:52:37.339Z",
-  "reportDate": "2026-09-14T07:50:00.000Z",
-  "sourceFile": "REP_TTTReport_-55714124.xlsx",
+  "updatedAt": "2026-09-14T13:04:03.844Z",
+  "reportDate": "2026-09-14T12:49:53.000Z",
+  "sourceFile": "REP_TTTReport_403686061.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 0,
-    "averageTTT": 13,
-    "aboveTarget": 0,
-    "oldestTruck": null
+    "insideTerminal": 13,
+    "averageTTT": 23,
+    "aboveTarget": 1,
+    "oldestTruck": {
+      "truck": "AOP6E88",
+      "trailer": "RYF7E27",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-14T12:15:38.460Z",
+      "minutes": 34
+    }
   },
-  "typeBreakdown": {},
+  "typeBreakdown": {
+    "DTA": 2,
+    "NORMAL": 5,
+    "DTC": 6
+  },
   "flow": {
-    "entriesToday": 4,
-    "exitsToday": 4,
-    "movementsLastHour": 0,
-    "balanceLastHour": 0
+    "entriesToday": 105,
+    "exitsToday": 92,
+    "movementsLastHour": 47,
+    "balanceLastHour": 3
   },
-  "aboveTargetVehicles": [],
+  "aboveTargetVehicles": [
+    {
+      "truck": "AOP6E88",
+      "trailer": "RYF7E27",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-14T12:15:38.460Z",
+      "minutes": 34
+    }
+  ],
   "dwell": {
-    "eligibleVehicles": 0,
+    "eligibleVehicles": 11,
     "buckets": {
-      "upTo15": 0,
-      "from16To32": 0,
-      "from33To60": 0,
+      "upTo15": 7,
+      "from16To32": 3,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -50,23 +68,23 @@
     },
     {
       "hour": "05",
-      "value": null
+      "value": 18
     },
     {
       "hour": "06",
-      "value": null
+      "value": 19
     },
     {
       "hour": "07",
-      "value": null
+      "value": 29
     },
     {
       "hour": "08",
-      "value": null
+      "value": 20
     },
     {
       "hour": "09",
-      "value": null
+      "value": 31
     },
     {
       "hour": "10",
@@ -148,23 +166,23 @@
     },
     {
       "hour": "05",
-      "value": 0
+      "value": 27
     },
     {
       "hour": "06",
-      "value": 0
+      "value": 15
     },
     {
       "hour": "07",
-      "value": 0
+      "value": 17
     },
     {
       "hour": "08",
-      "value": 0
+      "value": 21
     },
     {
       "hour": "09",
-      "value": 0
+      "value": 21
     },
     {
       "hour": "10",
