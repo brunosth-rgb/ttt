@@ -378,6 +378,260 @@
       .footer-note{font-size:6px !important;margin-top:3px !important}
     }
 
+  
+    /* =========================================================
+       TV FULLSCREEN RESPONSIVO
+       Baseado diretamente em 100vw x 100vh, sem transform/scale.
+       ========================================================= */
+    html,body{
+      width:100vw !important;
+      height:100vh !important;
+      min-height:0 !important;
+      margin:0 !important;
+      overflow:hidden !important;
+    }
+
+    body{
+      display:block !important;
+    }
+
+    .app{
+      width:100vw !important;
+      max-width:none !important;
+      height:100vh !important;
+      min-height:0 !important;
+      margin:0 !important;
+      padding:1vh 1vw !important;
+      box-sizing:border-box !important;
+      transform:none !important;
+      transition:none !important;
+      will-change:auto !important;
+
+      display:grid !important;
+      grid-template-rows:
+        minmax(6.5vh,auto)
+        minmax(15vh,auto)
+        minmax(27vh,auto)
+        minmax(0,1fr)
+        auto;
+      row-gap:.8vh !important;
+      align-content:stretch !important;
+    }
+
+    .header{
+      min-height:0 !important;
+      margin-bottom:0 !important;
+      gap:.8vw !important;
+      align-items:center !important;
+    }
+
+    .brand-title{gap:.7vw !important}
+    .brand-logo{
+      height:clamp(26px,4.5vh,42px) !important;
+      width:auto !important;
+    }
+    .title-wrap h1{
+      font-size:clamp(15px,1.35vw,24px) !important;
+    }
+    .title-wrap p{
+      font-size:clamp(8px,.65vw,12px) !important;
+      margin-top:.2vh !important;
+    }
+    .brand-rule{
+      height:2px !important;
+      margin-top:.5vh !important;
+    }
+
+    .header-actions{
+      gap:.45vw !important;
+      flex-wrap:nowrap !important;
+    }
+    .update{
+      font-size:clamp(7px,.55vw,11px) !important;
+      line-height:1.25 !important;
+    }
+    .status{
+      font-size:clamp(7px,.55vw,11px) !important;
+      padding:.45vh .5vw !important;
+      margin-top:.25vh !important;
+    }
+    .btn{
+      font-size:clamp(7px,.58vw,11px) !important;
+      padding:.65vh .65vw !important;
+      border-radius:.55vw !important;
+      white-space:nowrap !important;
+    }
+
+    .grid{
+      gap:.55vw !important;
+      min-height:0 !important;
+    }
+
+    .top,
+    .middle{
+      margin-bottom:0 !important;
+    }
+
+    .top{
+      grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+      min-height:0 !important;
+    }
+
+    .middle{
+      grid-template-columns:1.35fr 1.35fr .9fr !important;
+      min-height:0 !important;
+    }
+
+    .bottom{
+      grid-template-columns:1.2fr .8fr !important;
+      min-height:0 !important;
+    }
+
+    .card{
+      min-height:0 !important;
+      padding:.9vh .75vw !important;
+      border-radius:.7vw !important;
+      overflow:hidden !important;
+    }
+
+    .metric-head{margin-bottom:.55vh !important}
+    .metric-title{
+      font-size:clamp(7px,.6vw,11px) !important;
+    }
+    .icon-wrap{
+      width:clamp(24px,2vw,34px) !important;
+      height:clamp(24px,2vw,34px) !important;
+      border-radius:.55vw !important;
+    }
+    .icon-wrap svg{
+      width:clamp(13px,1.1vw,18px) !important;
+      height:clamp(13px,1.1vw,18px) !important;
+    }
+    .metric-value{
+      font-size:clamp(23px,2.25vw,40px) !important;
+    }
+    .metric-sub{
+      font-size:clamp(7px,.6vw,11px) !important;
+      margin-top:.6vh !important;
+    }
+
+    .breakdown{
+      margin-top:.65vh !important;
+      gap:.4vw !important;
+    }
+    .chip{
+      font-size:clamp(6px,.5vw,10px) !important;
+      padding:.35vh .45vw !important;
+    }
+    .view-list{
+      font-size:clamp(6px,.5vw,10px) !important;
+      margin-top:.45vh !important;
+    }
+
+    .section-title{
+      margin-bottom:.55vh !important;
+      gap:.5vw !important;
+    }
+    .section-title h2{
+      font-size:clamp(9px,.75vw,14px) !important;
+    }
+    .section-title span{
+      font-size:clamp(6px,.52vw,10px) !important;
+    }
+
+    .chart{
+      height:min(17vh,180px) !important;
+      min-height:0 !important;
+    }
+
+    .mini-grid{
+      gap:.5vw !important;
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    }
+    .mini{
+      padding:.75vh .6vw !important;
+      border-radius:.6vw !important;
+    }
+    .mini .label{
+      font-size:clamp(6px,.48vw,9px) !important;
+    }
+    .mini .value{
+      font-size:clamp(16px,1.35vw,24px) !important;
+      margin-top:.35vh !important;
+    }
+
+    .bars{
+      gap:.65vh !important;
+    }
+    .bar-row{
+      grid-template-columns:minmax(52px,5.2vw) 1fr minmax(24px,2vw) !important;
+      gap:.45vw !important;
+    }
+    .bar-label,.bar-value{
+      font-size:clamp(6px,.5vw,10px) !important;
+    }
+    .track{
+      height:clamp(6px,.9vh,10px) !important;
+    }
+
+    .alerts{
+      gap:.5vh !important;
+      min-height:0 !important;
+      overflow:hidden !important;
+    }
+    .alert-item{
+      padding:.6vh .5vw !important;
+      font-size:clamp(6px,.52vw,10px) !important;
+      border-radius:.55vw !important;
+      line-height:1.2 !important;
+    }
+    .alert-badge{
+      width:clamp(6px,.48vw,9px) !important;
+      height:clamp(6px,.48vw,9px) !important;
+      margin-top:.25vh !important;
+    }
+
+    .footer-note{
+      margin-top:0 !important;
+      font-size:clamp(6px,.45vw,9px) !important;
+      line-height:1.15 !important;
+      align-self:end !important;
+    }
+
+    .error-box,
+    .dropzone{
+      position:fixed !important;
+      left:1vw !important;
+      right:1vw !important;
+      top:8vh !important;
+      z-index:900 !important;
+    }
+
+    /* Desativa as regras antigas de compactação por largura da viewport.
+       A adaptação agora é feita por unidades vw/vh. */
+    body.tv-compact .app{
+      width:100vw !important;
+      height:100vh !important;
+      padding:1vh 1vw !important;
+    }
+
+    /* Em telas muito baixas, reduz levemente a faixa intermediária
+       sem aplicar zoom ou transform. */
+    @media (max-height:720px) and (orientation:landscape){
+      .app{
+        grid-template-rows:
+          minmax(6vh,auto)
+          minmax(14vh,auto)
+          minmax(25vh,auto)
+          minmax(0,1fr)
+          auto !important;
+        row-gap:.6vh !important;
+        padding:.7vh .7vw !important;
+      }
+      .chart{height:min(15vh,135px) !important}
+      .card{padding:.65vh .6vw !important}
+    }
+
   </style>
 </head>
 
@@ -933,38 +1187,12 @@ function renderAboveTargetTable(data){
 
 function fitDashboardToViewport(){
   const app=document.querySelector('.app');
-  const modal=$('aboveTargetModal');
   if(!app) return;
-  if(modal && modal.classList.contains('open')) return;
 
   document.body.classList.remove('tv-compact');
-  app.style.transform='scale(1)';
-
-  const margin=3;
-  const availableWidth=Math.max(320, window.innerWidth - margin*2);
-  const availableHeight=Math.max(320, window.innerHeight - margin*2);
-
-  app.style.width=`${availableWidth}px`;
-
-  let rect=app.getBoundingClientRect();
-
-  // Em paisagem, preserva a estrutura horizontal e só reduz por escala se necessário.
-  const landscape=window.innerWidth >= window.innerHeight;
-
-  if(!landscape && rect.height > availableHeight){
-    document.body.classList.add('tv-compact');
-    app.style.transform='scale(1)';
-    rect=app.getBoundingClientRect();
-  }
-
-  const scaleX=availableWidth/rect.width;
-  const scaleY=availableHeight/rect.height;
-  let scale=Math.min(1,scaleX,scaleY);
-
-  // Mantém o layout horizontal; evita transform exagerado.
-  if(scale > 0.99) scale=1;
-
-  app.style.transform=`scale(${scale})`;
+  app.style.transform='none';
+  app.style.width='100vw';
+  app.style.height='100vh';
 }
 function render(data, fileName, reportDate){
   $('reportName').textContent=fileName;
