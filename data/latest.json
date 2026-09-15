@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T23:08:58.752Z",
-  "reportDate": "2026-09-15T23:00:00.000Z",
-  "sourceFile": "REP_TTTReport_-31608202.xlsx",
+  "updatedAt": "2026-09-15T23:15:31.237Z",
+  "reportDate": "2026-09-15T23:10:00.000Z",
+  "sourceFile": "REP_TTTReport_-91803235.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 23,
     "averageTTT": 23,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "IFS1F13",
       "trailer": "IJB5H16",
       "type": "NORMAL",
       "enteredYard": "2026-09-15T22:17:49.533Z",
-      "minutes": 42
+      "minutes": 52
     }
   },
   "typeBreakdown": {
-    "NORMAL": 16,
+    "NORMAL": 20,
     "DTC": 3
   },
   "flow": {
-    "entriesToday": 411,
-    "exitsToday": 392,
-    "movementsLastHour": 70,
-    "balanceLastHour": 8
+    "entriesToday": 418,
+    "exitsToday": 395,
+    "movementsLastHour": 75,
+    "balanceLastHour": 11
   },
   "aboveTargetVehicles": [
     {
@@ -32,22 +32,29 @@
       "trailer": "IJB5H16",
       "type": "NORMAL",
       "enteredYard": "2026-09-15T22:17:49.533Z",
-      "minutes": 42
+      "minutes": 52
     },
     {
       "truck": "AEY1E91",
       "trailer": "MQR3J66",
       "type": "DTC",
       "enteredYard": "2026-09-15T22:23:47.027Z",
-      "minutes": 36
+      "minutes": 46
+    },
+    {
+      "truck": "LXP5375",
+      "trailer": "ACQ8J68",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-15T22:37:44.263Z",
+      "minutes": 32
     }
   ],
   "dwell": {
-    "eligibleVehicles": 19,
+    "eligibleVehicles": 23,
     "buckets": {
-      "upTo15": 14,
-      "from16To32": 3,
-      "from33To60": 2,
+      "upTo15": 13,
+      "from16To32": 7,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -134,7 +141,7 @@
     },
     {
       "hour": "20",
-      "value": null
+      "value": 23
     },
     {
       "hour": "21",
@@ -232,7 +239,7 @@
     },
     {
       "hour": "20",
-      "value": 0
+      "value": 7
     },
     {
       "hour": "21",
