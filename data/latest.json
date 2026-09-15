@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T15:37:42.592Z",
-  "reportDate": "2026-09-15T15:30:00.000Z",
-  "sourceFile": "REP_TTTReport_-35286586.xlsx",
+  "updatedAt": "2026-09-15T15:40:32.983Z",
+  "reportDate": "2026-09-15T15:35:00.000Z",
+  "sourceFile": "REP_TTTReport_825288044.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
+    "insideTerminal": 18,
     "averageTTT": 19,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "DBI2F45",
       "trailer": "AFS3I81",
       "type": "DTC",
       "enteredYard": "2026-09-15T14:49:57.693Z",
-      "minutes": 40
+      "minutes": 45
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "DTC": 2,
-    "NORMAL": 12
+    "NORMAL": 15
   },
   "flow": {
-    "entriesToday": 198,
-    "exitsToday": 183,
-    "movementsLastHour": 60,
-    "balanceLastHour": 0
+    "entriesToday": 203,
+    "exitsToday": 185,
+    "movementsLastHour": 63,
+    "balanceLastHour": 3
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,29 @@
       "trailer": "AFS3I81",
       "type": "DTC",
       "enteredYard": "2026-09-15T14:49:57.693Z",
-      "minutes": 40
+      "minutes": 45
     },
     {
       "truck": "IEA3927",
       "trailer": "LXC8J67",
       "type": "NORMAL",
       "enteredYard": "2026-09-15T14:57:53.633Z",
-      "minutes": 32
+      "minutes": 37
+    },
+    {
+      "truck": "MHA3B99",
+      "trailer": "TPW6D19",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-15T15:02:11.797Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 14,
+    "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 7,
+      "upTo15": 9,
       "from16To32": 5,
-      "from33To60": 2,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -103,7 +110,7 @@
     },
     {
       "hour": "12",
-      "value": 21
+      "value": 20
     },
     {
       "hour": "13",
@@ -201,7 +208,7 @@
     },
     {
       "hour": "12",
-      "value": 14
+      "value": 19
     },
     {
       "hour": "13",
