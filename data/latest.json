@@ -1,39 +1,54 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T10:20:49.072Z",
-  "reportDate": "2026-09-16T10:15:00.000Z",
-  "sourceFile": "REP_TTTReport_882597536.xlsx",
+  "updatedAt": "2026-09-16T10:25:27.763Z",
+  "reportDate": "2026-09-16T10:20:00.000Z",
+  "sourceFile": "REP_TTTReport_274324739.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 26,
+    "insideTerminal": 24,
     "averageTTT": 20,
-    "aboveTarget": 0,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "MLT1I29",
       "trailer": "QHB7A92",
       "type": "DTC",
       "enteredYard": "2026-09-16T09:45:17.607Z",
-      "minutes": 30
+      "minutes": 35
     }
   },
   "typeBreakdown": {
     "DTA": 2,
-    "DTC": 3,
-    "NORMAL": 21
+    "DTC": 4,
+    "NORMAL": 18
   },
   "flow": {
-    "entriesToday": 177,
-    "exitsToday": 151,
-    "movementsLastHour": 68,
-    "balanceLastHour": 14
+    "entriesToday": 179,
+    "exitsToday": 155,
+    "movementsLastHour": 63,
+    "balanceLastHour": 9
   },
-  "aboveTargetVehicles": [],
+  "aboveTargetVehicles": [
+    {
+      "truck": "MLT1I29",
+      "trailer": "QHB7A92",
+      "type": "DTC",
+      "enteredYard": "2026-09-16T09:45:17.607Z",
+      "minutes": 35
+    },
+    {
+      "truck": "MJC1F45",
+      "trailer": "NUL2A28",
+      "type": "DTC",
+      "enteredYard": "2026-09-16T09:46:00.207Z",
+      "minutes": 34
+    }
+  ],
   "dwell": {
-    "eligibleVehicles": 24,
+    "eligibleVehicles": 22,
     "buckets": {
-      "upTo15": 15,
-      "from16To32": 9,
-      "from33To60": 0,
+      "upTo15": 13,
+      "from16To32": 7,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -68,7 +83,7 @@
     },
     {
       "hour": "07",
-      "value": 16
+      "value": 18
     },
     {
       "hour": "08",
@@ -166,7 +181,7 @@
     },
     {
       "hour": "07",
-      "value": 16
+      "value": 18
     },
     {
       "hour": "08",
