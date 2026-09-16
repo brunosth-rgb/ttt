@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T01:00:10.757Z",
-  "reportDate": "2026-09-16T00:50:01.000Z",
-  "sourceFile": "REP_TTTReport_-31341243.xlsx",
+  "updatedAt": "2026-09-16T01:00:53.446Z",
+  "reportDate": "2026-09-16T00:55:00.000Z",
+  "sourceFile": "REP_TTTReport_599670930.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 17,
+    "insideTerminal": 15,
     "averageTTT": 24,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "QTL8I95",
       "trailer": "TAI5J43",
       "type": "NORMAL",
       "enteredYard": "2026-09-15T23:57:38.370Z",
-      "minutes": 52
+      "minutes": 57
     }
   },
   "typeBreakdown": {
-    "NORMAL": 17
+    "NORMAL": 15
   },
   "flow": {
-    "entriesToday": 482,
-    "exitsToday": 465,
-    "movementsLastHour": 92,
-    "balanceLastHour": 0
+    "entriesToday": 486,
+    "exitsToday": 470,
+    "movementsLastHour": 97,
+    "balanceLastHour": -1
   },
   "aboveTargetVehicles": [
     {
@@ -31,22 +31,29 @@
       "trailer": "TAI5J43",
       "type": "NORMAL",
       "enteredYard": "2026-09-15T23:57:38.370Z",
-      "minutes": 52
+      "minutes": 57
     },
     {
       "truck": "LWW0F68",
       "trailer": "IHP4B95",
       "type": "NORMAL",
       "enteredYard": "2026-09-16T00:05:54.687Z",
-      "minutes": 44
+      "minutes": 49
+    },
+    {
+      "truck": "IEG9B84",
+      "trailer": "IHI1J48",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-16T00:21:58.243Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 17,
+    "eligibleVehicles": 15,
     "buckets": {
-      "upTo15": 9,
-      "from16To32": 6,
-      "from33To60": 2,
+      "upTo15": 8,
+      "from16To32": 4,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -137,7 +144,7 @@
     },
     {
       "hour": "21",
-      "value": 32
+      "value": 31
     },
     {
       "hour": "22",
@@ -235,7 +242,7 @@
     },
     {
       "hour": "21",
-      "value": 39
+      "value": 43
     },
     {
       "hour": "22",
