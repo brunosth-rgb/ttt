@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T21:14:58.674Z",
-  "reportDate": "2026-09-16T21:05:00.000Z",
-  "sourceFile": "REP_TTTReport_-14620522.xlsx",
+  "updatedAt": "2026-09-16T21:19:22.199Z",
+  "reportDate": "2026-09-16T21:10:00.000Z",
+  "sourceFile": "REP_TTTReport_-58905071.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 14,
     "averageTTT": 26,
     "aboveTarget": 4,
     "oldestTruck": {
@@ -13,18 +13,18 @@
       "trailer": "DBP3E03",
       "type": "DTC",
       "enteredYard": "2026-09-16T20:10:05.150Z",
-      "minutes": 55
+      "minutes": 60
     }
   },
   "typeBreakdown": {
     "DTC": 3,
-    "NORMAL": 13
+    "NORMAL": 11
   },
   "flow": {
     "entriesToday": 521,
-    "exitsToday": 505,
-    "movementsLastHour": 65,
-    "balanceLastHour": -3
+    "exitsToday": 507,
+    "movementsLastHour": 58,
+    "balanceLastHour": -6
   },
   "aboveTargetVehicles": [
     {
@@ -32,35 +32,35 @@
       "trailer": "DBP3E03",
       "type": "DTC",
       "enteredYard": "2026-09-16T20:10:05.150Z",
-      "minutes": 55
+      "minutes": 60
     },
     {
       "truck": "LZB4794",
       "trailer": "ADX8060",
       "type": "DTC",
       "enteredYard": "2026-09-16T20:18:21.150Z",
-      "minutes": 47
+      "minutes": 52
     },
     {
       "truck": "KOP8D16",
       "trailer": "LZF1B23",
       "type": "DTC",
       "enteredYard": "2026-09-16T20:24:03.283Z",
-      "minutes": 41
+      "minutes": 46
     },
     {
       "truck": "CPJ3D54",
       "trailer": "AHT4D51",
       "type": "NORMAL",
       "enteredYard": "2026-09-16T20:27:07.733Z",
-      "minutes": 38
+      "minutes": 43
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 14,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 2,
+      "upTo15": 3,
+      "from16To32": 7,
       "from33To60": 4,
       "above60": 0
     }
@@ -140,7 +140,7 @@
     },
     {
       "hour": "18",
-      "value": 46
+      "value": 32
     },
     {
       "hour": "19",
