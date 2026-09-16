@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T17:51:14.572Z",
-  "reportDate": "2026-09-16T17:45:00.000Z",
-  "sourceFile": "REP_TTTReport_-55761254.xlsx",
+  "updatedAt": "2026-09-16T17:55:35.745Z",
+  "reportDate": "2026-09-16T17:50:00.000Z",
+  "sourceFile": "REP_TTTReport_749343334.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 7,
+    "insideTerminal": 6,
     "averageTTT": 26,
-    "aboveTarget": 1,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "MAX6D10",
       "trailer": "CBR7423",
       "type": "DTC",
       "enteredYard": "2026-09-16T17:08:26.810Z",
-      "minutes": 37
+      "minutes": 42
     }
   },
   "typeBreakdown": {
-    "DTC": 4,
+    "DTC": 3,
     "NORMAL": 3
   },
   "flow": {
-    "entriesToday": 412,
-    "exitsToday": 405,
-    "movementsLastHour": 72,
-    "balanceLastHour": -8
+    "entriesToday": 413,
+    "exitsToday": 407,
+    "movementsLastHour": 67,
+    "balanceLastHour": -7
   },
   "aboveTargetVehicles": [
     {
@@ -32,15 +32,22 @@
       "trailer": "CBR7423",
       "type": "DTC",
       "enteredYard": "2026-09-16T17:08:26.810Z",
-      "minutes": 37
+      "minutes": 42
+    },
+    {
+      "truck": "LZF0E74",
+      "trailer": "MBT4I56",
+      "type": "DTC",
+      "enteredYard": "2026-09-16T17:14:08.363Z",
+      "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 7,
+    "eligibleVehicles": 6,
     "buckets": {
       "upTo15": 2,
-      "from16To32": 4,
-      "from33To60": 1,
+      "from16To32": 2,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -201,7 +208,7 @@
     },
     {
       "hour": "14",
-      "value": 24
+      "value": 25
     },
     {
       "hour": "15",
