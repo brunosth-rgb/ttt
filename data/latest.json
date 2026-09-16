@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T14:56:11.970Z",
-  "reportDate": "2026-09-16T14:50:00.000Z",
-  "sourceFile": "REP_TTTReport_-74611619.xlsx",
+  "updatedAt": "2026-09-16T15:00:21.691Z",
+  "reportDate": "2026-09-16T14:55:00.000Z",
+  "sourceFile": "REP_TTTReport_-61129282.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 23,
+    "insideTerminal": 24,
     "averageTTT": 23,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "IFI0A44",
       "trailer": "JJD6C61",
       "type": "NORMAL",
       "enteredYard": "2026-09-16T14:10:32.447Z",
-      "minutes": 39
+      "minutes": 44
     }
   },
   "typeBreakdown": {
     "DTA": 4,
     "NORMAL": 15,
-    "DTC": 4
+    "DTC": 5
   },
   "flow": {
-    "entriesToday": 314,
-    "exitsToday": 291,
-    "movementsLastHour": 66,
-    "balanceLastHour": 2
+    "entriesToday": 318,
+    "exitsToday": 293,
+    "movementsLastHour": 69,
+    "balanceLastHour": 3
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,29 @@
       "trailer": "JJD6C61",
       "type": "NORMAL",
       "enteredYard": "2026-09-16T14:10:32.447Z",
-      "minutes": 39
+      "minutes": 44
     },
     {
       "truck": "AGB2310",
       "trailer": "AAV1I84",
       "type": "DTC",
       "enteredYard": "2026-09-16T14:15:19.093Z",
-      "minutes": 35
+      "minutes": 40
+    },
+    {
+      "truck": "BWI8C04",
+      "trailer": "IBI7F61",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-16T14:21:36.137Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 19,
+    "eligibleVehicles": 20,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 11,
-      "from33To60": 2,
+      "upTo15": 10,
+      "from16To32": 7,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -99,7 +106,7 @@
     },
     {
       "hour": "11",
-      "value": 36
+      "value": 35
     },
     {
       "hour": "12",
@@ -197,7 +204,7 @@
     },
     {
       "hour": "11",
-      "value": 31
+      "value": 35
     },
     {
       "hour": "12",
