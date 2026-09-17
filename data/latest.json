@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T08:00:27.195Z",
-  "reportDate": "2026-09-17T07:55:00.000Z",
-  "sourceFile": "REP_TTTReport_677229543.xlsx",
+  "updatedAt": "2026-09-17T08:05:37.662Z",
+  "reportDate": "2026-09-17T08:00:01.000Z",
+  "sourceFile": "REP_TTTReport_-74523889.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 13,
+    "insideTerminal": 17,
     "averageTTT": 18,
-    "aboveTarget": 1,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "HQR4H49",
       "trailer": "BTS9A46",
       "type": "DTC",
       "enteredYard": "2026-09-17T07:16:42.143Z",
-      "minutes": 38
+      "minutes": 43
     }
   },
   "typeBreakdown": {
-    "DTC": 7,
-    "NORMAL": 6
+    "DTC": 8,
+    "NORMAL": 9
   },
   "flow": {
-    "entriesToday": 143,
-    "exitsToday": 130,
-    "movementsLastHour": 72,
-    "balanceLastHour": 4
+    "entriesToday": 149,
+    "exitsToday": 132,
+    "movementsLastHour": 74,
+    "balanceLastHour": 2
   },
   "aboveTargetVehicles": [
     {
@@ -32,15 +32,29 @@
       "trailer": "BTS9A46",
       "type": "DTC",
       "enteredYard": "2026-09-17T07:16:42.143Z",
-      "minutes": 38
+      "minutes": 43
+    },
+    {
+      "truck": "MKG0D90",
+      "trailer": "OAX0A82",
+      "type": "DTC",
+      "enteredYard": "2026-09-17T07:24:48.517Z",
+      "minutes": 35
+    },
+    {
+      "truck": "MCN8G15",
+      "trailer": "QHS0J95",
+      "type": "DTC",
+      "enteredYard": "2026-09-17T07:25:57.807Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 13,
+    "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 2,
-      "from33To60": 1,
+      "upTo15": 14,
+      "from16To32": 0,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -161,7 +175,7 @@
     },
     {
       "hour": "04",
-      "value": 32
+      "value": 38
     },
     {
       "hour": "05",
