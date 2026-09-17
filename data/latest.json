@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T10:00:26.400Z",
-  "reportDate": "2026-09-17T09:55:00.000Z",
-  "sourceFile": "REP_TTTReport_-50815006.xlsx",
+  "updatedAt": "2026-09-17T10:07:59.194Z",
+  "reportDate": "2026-09-17T10:00:00.000Z",
+  "sourceFile": "REP_TTTReport_160957689.xlsx",
   "targetTTT": 32,
   "metrics": {
     "insideTerminal": 18,
-    "averageTTT": 20,
-    "aboveTarget": 1,
+    "averageTTT": 21,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "IIA2177",
       "trailer": "LZD5634",
       "type": "DTC",
       "enteredYard": "2026-09-17T09:22:27.500Z",
-      "minutes": 33
+      "minutes": 38
     }
   },
   "typeBreakdown": {
@@ -22,10 +22,10 @@
     "NORMAL": 13
   },
   "flow": {
-    "entriesToday": 215,
-    "exitsToday": 197,
-    "movementsLastHour": 66,
-    "balanceLastHour": 12
+    "entriesToday": 218,
+    "exitsToday": 200,
+    "movementsLastHour": 65,
+    "balanceLastHour": 9
   },
   "aboveTargetVehicles": [
     {
@@ -33,15 +33,22 @@
       "trailer": "LZD5634",
       "type": "DTC",
       "enteredYard": "2026-09-17T09:22:27.500Z",
-      "minutes": 33
+      "minutes": 38
+    },
+    {
+      "truck": "BTT4A13",
+      "trailer": "IFX2842",
+      "type": "DTC",
+      "enteredYard": "2026-09-17T09:26:01.530Z",
+      "minutes": 34
     }
   ],
   "dwell": {
     "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 9,
-      "from16To32": 7,
-      "from33To60": 1,
+      "upTo15": 12,
+      "from16To32": 3,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -72,7 +79,7 @@
     },
     {
       "hour": "06",
-      "value": 22
+      "value": 23
     },
     {
       "hour": "07",
@@ -170,7 +177,7 @@
     },
     {
       "hour": "06",
-      "value": 34
+      "value": 37
     },
     {
       "hour": "07",
