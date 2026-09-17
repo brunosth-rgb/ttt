@@ -1,54 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T08:35:08.681Z",
-  "reportDate": "2026-09-17T08:30:00.000Z",
-  "sourceFile": "REP_TTTReport_-41002982.xlsx",
+  "updatedAt": "2026-09-17T08:41:42.847Z",
+  "reportDate": "2026-09-17T08:35:00.000Z",
+  "sourceFile": "REP_TTTReport_477423010.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 22,
-    "averageTTT": 19,
-    "aboveTarget": 2,
+    "insideTerminal": 19,
+    "averageTTT": 20,
+    "aboveTarget": 0,
     "oldestTruck": {
-      "truck": "LVP9C52",
-      "trailer": "DBM6I27",
+      "truck": "ICX8A16",
+      "trailer": "MAF6C97",
       "type": "DTC",
-      "enteredYard": "2026-09-17T07:52:49.987Z",
-      "minutes": 37
+      "enteredYard": "2026-09-17T08:07:25.750Z",
+      "minutes": 28
     }
   },
   "typeBreakdown": {
-    "DTC": 7,
-    "NORMAL": 14,
+    "DTC": 6,
+    "NORMAL": 12,
     "DTA": 1
   },
   "flow": {
-    "entriesToday": 170,
-    "exitsToday": 148,
-    "movementsLastHour": 67,
-    "balanceLastHour": 9
+    "entriesToday": 171,
+    "exitsToday": 152,
+    "movementsLastHour": 68,
+    "balanceLastHour": 10
   },
-  "aboveTargetVehicles": [
-    {
-      "truck": "LVP9C52",
-      "trailer": "DBM6I27",
-      "type": "DTC",
-      "enteredYard": "2026-09-17T07:52:49.987Z",
-      "minutes": 37
-    },
-    {
-      "truck": "IOO9443",
-      "trailer": "ELH1E86",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-17T07:56:27.403Z",
-      "minutes": 34
-    }
-  ],
+  "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 21,
+    "eligibleVehicles": 18,
     "buckets": {
-      "upTo15": 9,
-      "from16To32": 10,
-      "from33To60": 2,
+      "upTo15": 5,
+      "from16To32": 13,
+      "from33To60": 0,
       "above60": 0
     }
   },
@@ -75,7 +60,7 @@
     },
     {
       "hour": "05",
-      "value": 29
+      "value": 30
     },
     {
       "hour": "06",
@@ -173,7 +158,7 @@
     },
     {
       "hour": "05",
-      "value": 22
+      "value": 23
     },
     {
       "hour": "06",
