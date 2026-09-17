@@ -1,47 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T09:25:39.165Z",
-  "reportDate": "2026-09-17T09:20:01.000Z",
-  "sourceFile": "REP_TTTReport_-91812075.xlsx",
+  "updatedAt": "2026-09-17T09:35:27.090Z",
+  "reportDate": "2026-09-17T09:30:01.000Z",
+  "sourceFile": "REP_TTTReport_522088255.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 14,
+    "insideTerminal": 17,
     "averageTTT": 20,
-    "aboveTarget": 1,
+    "aboveTarget": 0,
     "oldestTruck": {
-      "truck": "MPY9650",
-      "trailer": "ABP2I30",
+      "truck": "IGJ2F23",
+      "trailer": "IEV4F47",
       "type": "DTC",
-      "enteredYard": "2026-09-17T08:32:42.043Z",
-      "minutes": 47
+      "enteredYard": "2026-09-17T09:10:04.030Z",
+      "minutes": 20
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "DTC": 6,
-    "NORMAL": 7
+    "NORMAL": 10
   },
   "flow": {
-    "entriesToday": 191,
-    "exitsToday": 177,
-    "movementsLastHour": 63,
-    "balanceLastHour": -11
+    "entriesToday": 201,
+    "exitsToday": 184,
+    "movementsLastHour": 67,
+    "balanceLastHour": -5
   },
-  "aboveTargetVehicles": [
-    {
-      "truck": "MPY9650",
-      "trailer": "ABP2I30",
-      "type": "DTC",
-      "enteredYard": "2026-09-17T08:32:42.043Z",
-      "minutes": 47
-    }
-  ],
+  "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 13,
+    "eligibleVehicles": 16,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 2,
-      "from33To60": 1,
+      "upTo15": 15,
+      "from16To32": 1,
+      "from33To60": 0,
       "above60": 0
     }
   },
@@ -72,7 +64,7 @@
     },
     {
       "hour": "06",
-      "value": 23
+      "value": 22
     },
     {
       "hour": "07",
@@ -170,7 +162,7 @@
     },
     {
       "hour": "06",
-      "value": 10
+      "value": 20
     },
     {
       "hour": "07",
