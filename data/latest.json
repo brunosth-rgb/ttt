@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T11:35:40.556Z",
-  "reportDate": "2026-09-18T11:30:02.000Z",
-  "sourceFile": "REP_TTTReport_-84210397.xlsx",
+  "updatedAt": "2026-09-18T11:40:28.551Z",
+  "reportDate": "2026-09-18T11:35:00.000Z",
+  "sourceFile": "REP_TTTReport_207274680.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 10,
     "averageTTT": 24,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "MCN8G15",
       "trailer": "QHS0J95",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:52:22.377Z",
-      "minutes": 98
+      "minutes": 103
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "DTC": 2,
-    "NORMAL": 8
+    "NORMAL": 7
   },
   "flow": {
-    "entriesToday": 204,
-    "exitsToday": 193,
+    "entriesToday": 206,
+    "exitsToday": 196,
     "movementsLastHour": 52,
-    "balanceLastHour": -6
+    "balanceLastHour": -8
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,29 @@
       "trailer": "QHS0J95",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:52:22.377Z",
-      "minutes": 98
+      "minutes": 103
     },
     {
       "truck": "JTH2H83",
       "trailer": "MKO9B99",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:55:19.153Z",
-      "minutes": 95
+      "minutes": 100
+    },
+    {
+      "truck": "GKM8G36",
+      "trailer": "IGD9F41",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-18T10:58:33.930Z",
+      "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 10,
+    "eligibleVehicles": 9,
     "buckets": {
-      "upTo15": 3,
-      "from16To32": 5,
-      "from33To60": 0,
+      "upTo15": 5,
+      "from16To32": 1,
+      "from33To60": 1,
       "above60": 2
     }
   },
@@ -87,7 +94,7 @@
     },
     {
       "hour": "08",
-      "value": 36
+      "value": 34
     },
     {
       "hour": "09",
@@ -185,7 +192,7 @@
     },
     {
       "hour": "08",
-      "value": 9
+      "value": 11
     },
     {
       "hour": "09",
