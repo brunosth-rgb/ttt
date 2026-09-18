@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T11:45:40.084Z",
-  "reportDate": "2026-09-18T11:40:01.000Z",
-  "sourceFile": "REP_TTTReport_-47249830.xlsx",
+  "updatedAt": "2026-09-18T11:50:20.164Z",
+  "reportDate": "2026-09-18T11:45:00.000Z",
+  "sourceFile": "REP_TTTReport_861699305.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 12,
+    "insideTerminal": 13,
     "averageTTT": 24,
     "aboveTarget": 3,
     "oldestTruck": {
@@ -13,19 +13,19 @@
       "trailer": "QHS0J95",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:52:22.377Z",
-      "minutes": 108
+      "minutes": 113
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "DTC": 2,
-    "NORMAL": 9
+    "NORMAL": 10
   },
   "flow": {
-    "entriesToday": 209,
-    "exitsToday": 197,
-    "movementsLastHour": 50,
-    "balanceLastHour": -8
+    "entriesToday": 212,
+    "exitsToday": 199,
+    "movementsLastHour": 51,
+    "balanceLastHour": -7
   },
   "aboveTargetVehicles": [
     {
@@ -33,28 +33,28 @@
       "trailer": "QHS0J95",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:52:22.377Z",
-      "minutes": 108
+      "minutes": 113
     },
     {
       "truck": "JTH2H83",
       "trailer": "MKO9B99",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:55:19.153Z",
-      "minutes": 105
+      "minutes": 110
     },
     {
       "truck": "GKM8G36",
       "trailer": "IGD9F41",
       "type": "NORMAL",
       "enteredYard": "2026-09-18T10:58:33.930Z",
-      "minutes": 41
+      "minutes": 46
     }
   ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 12,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 2,
+      "upTo15": 8,
+      "from16To32": 1,
       "from33To60": 1,
       "above60": 2
     }
@@ -94,7 +94,7 @@
     },
     {
       "hour": "08",
-      "value": 34
+      "value": 32
     },
     {
       "hour": "09",
@@ -192,7 +192,7 @@
     },
     {
       "hour": "08",
-      "value": 14
+      "value": 17
     },
     {
       "hour": "09",
