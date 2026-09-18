@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T12:08:02.246Z",
-  "reportDate": "2026-09-18T12:00:02.000Z",
-  "sourceFile": "REP_TTTReport_-78309527.xlsx",
+  "updatedAt": "2026-09-18T12:10:18.807Z",
+  "reportDate": "2026-09-18T12:05:00.000Z",
+  "sourceFile": "REP_TTTReport_359704925.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 13,
+    "insideTerminal": 14,
     "averageTTT": 24,
     "aboveTarget": 2,
     "oldestTruck": {
@@ -13,19 +13,19 @@
       "trailer": "QHS0J95",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:52:22.377Z",
-      "minutes": 128
+      "minutes": 133
     }
   },
   "typeBreakdown": {
     "DTA": 1,
-    "DTC": 2,
-    "NORMAL": 10
+    "DTC": 1,
+    "NORMAL": 12
   },
   "flow": {
-    "entriesToday": 217,
-    "exitsToday": 204,
-    "movementsLastHour": 47,
-    "balanceLastHour": -3
+    "entriesToday": 219,
+    "exitsToday": 205,
+    "movementsLastHour": 46,
+    "balanceLastHour": 0
   },
   "aboveTargetVehicles": [
     {
@@ -33,23 +33,23 @@
       "trailer": "QHS0J95",
       "type": "DTC",
       "enteredYard": "2026-09-18T09:52:22.377Z",
-      "minutes": 128
+      "minutes": 133
     },
     {
-      "truck": "JTH2H83",
-      "trailer": "MKO9B99",
-      "type": "DTC",
-      "enteredYard": "2026-09-18T09:55:19.153Z",
-      "minutes": 125
+      "truck": "ITM1667",
+      "trailer": "ITM1G68",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-18T11:30:20.077Z",
+      "minutes": 35
     }
   ],
   "dwell": {
-    "eligibleVehicles": 12,
+    "eligibleVehicles": 13,
     "buckets": {
       "upTo15": 5,
-      "from16To32": 5,
-      "from33To60": 0,
-      "above60": 2
+      "from16To32": 6,
+      "from33To60": 1,
+      "above60": 1
     }
   },
   "hourlyTTT": [
@@ -91,7 +91,7 @@
     },
     {
       "hour": "09",
-      "value": null
+      "value": 128
     },
     {
       "hour": "10",
@@ -189,7 +189,7 @@
     },
     {
       "hour": "09",
-      "value": 0
+      "value": 2
     },
     {
       "hour": "10",
