@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T03:51:41.012Z",
-  "reportDate": "2026-09-22T03:45:02.000Z",
-  "sourceFile": "REP_TTTReport_-29933945.xlsx",
+  "updatedAt": "2026-09-22T03:55:11.663Z",
+  "reportDate": "2026-09-22T03:50:03.000Z",
+  "sourceFile": "REP_TTTReport_357331453.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 22,
-    "averageTTT": 25,
-    "aboveTarget": 1,
+    "insideTerminal": 26,
+    "averageTTT": 26,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "MCC9I79",
       "trailer": "LYC9J09",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T03:01:49.097Z",
-      "minutes": 43
+      "minutes": 48
     }
   },
   "typeBreakdown": {
-    "NORMAL": 22
+    "NORMAL": 26
   },
   "flow": {
-    "entriesToday": 35,
-    "exitsToday": 13,
-    "movementsLastHour": 48,
-    "balanceLastHour": 22
+    "entriesToday": 44,
+    "exitsToday": 18,
+    "movementsLastHour": 62,
+    "balanceLastHour": 26
   },
   "aboveTargetVehicles": [
     {
@@ -31,22 +31,36 @@
       "trailer": "LYC9J09",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T03:01:49.097Z",
-      "minutes": 43
+      "minutes": 48
+    },
+    {
+      "truck": "LZR0G25",
+      "trailer": "CKY2F84",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-22T03:15:43.823Z",
+      "minutes": 34
+    },
+    {
+      "truck": "LYQ4A27",
+      "trailer": "MDE6C20",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-22T03:15:52.627Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 22,
+    "eligibleVehicles": 26,
     "buckets": {
-      "upTo15": 4,
-      "from16To32": 17,
-      "from33To60": 1,
+      "upTo15": 11,
+      "from16To32": 12,
+      "from33To60": 3,
       "above60": 0
     }
   },
   "hourlyTTT": [
     {
       "hour": "00",
-      "value": 25
+      "value": 26
     },
     {
       "hour": "01",
@@ -144,7 +158,7 @@
   "hourlyReceived": [
     {
       "hour": "00",
-      "value": 35
+      "value": 44
     },
     {
       "hour": "01",
