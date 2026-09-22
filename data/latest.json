@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T02:17:43.382Z",
-  "reportDate": "2026-09-22T02:10:02.000Z",
-  "sourceFile": "REP_TTTReport_-51977641.xlsx",
+  "updatedAt": "2026-09-22T02:22:12.141Z",
+  "reportDate": "2026-09-22T02:15:01.000Z",
+  "sourceFile": "REP_TTTReport_711484564.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 21,
     "averageTTT": 20,
     "aboveTarget": 6,
     "oldestTruck": {
@@ -13,17 +13,17 @@
       "trailer": "ADZ1594",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:19:03.160Z",
-      "minutes": 51
+      "minutes": 56
     }
   },
   "typeBreakdown": {
-    "NORMAL": 19
+    "NORMAL": 21
   },
   "flow": {
-    "entriesToday": 602,
-    "exitsToday": 583,
+    "entriesToday": 607,
+    "exitsToday": 586,
     "movementsLastHour": 75,
-    "balanceLastHour": 3
+    "balanceLastHour": 5
   },
   "aboveTargetVehicles": [
     {
@@ -31,49 +31,49 @@
       "trailer": "ADZ1594",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:19:03.160Z",
-      "minutes": 51
+      "minutes": 56
     },
     {
       "truck": "AUU3G28",
       "trailer": "HRV0C94",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:20:18.983Z",
-      "minutes": 50
+      "minutes": 55
     },
     {
       "truck": "AEY4851",
       "trailer": "GLG4332",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:28:41.477Z",
-      "minutes": 41
+      "minutes": 46
     },
     {
       "truck": "LZI5143",
       "trailer": "BTR5122",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:29:03.107Z",
-      "minutes": 41
+      "minutes": 46
     },
     {
       "truck": "KFS9I24",
       "trailer": "ABS4H89",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:29:44.870Z",
-      "minutes": 40
+      "minutes": 45
     },
     {
       "truck": "AHF9056",
       "trailer": "BTR2I50",
       "type": "NORMAL",
       "enteredYard": "2026-09-22T01:31:22.473Z",
-      "minutes": 39
+      "minutes": 44
     }
   ],
   "dwell": {
-    "eligibleVehicles": 19,
+    "eligibleVehicles": 21,
     "buckets": {
-      "upTo15": 7,
-      "from16To32": 6,
+      "upTo15": 10,
+      "from16To32": 5,
       "from33To60": 6,
       "above60": 0
     }
@@ -173,7 +173,7 @@
     },
     {
       "hour": "23",
-      "value": 32
+      "value": 28
     }
   ],
   "hourlyReceived": [
@@ -271,7 +271,7 @@
     },
     {
       "hour": "23",
-      "value": 5
+      "value": 10
     }
   ]
 }
