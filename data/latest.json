@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23T08:09:56.329Z",
-  "reportDate": "2026-09-23T08:00:07.000Z",
-  "sourceFile": "REP_TTTReport_175941819.xlsx",
+  "updatedAt": "2026-09-23T08:10:14.986Z",
+  "reportDate": "2026-09-23T08:05:11.000Z",
+  "sourceFile": "REP_TTTReport_752130386.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 17,
     "averageTTT": 20,
-    "aboveTarget": 1,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "KAM0238",
       "trailer": "AGD5G51",
       "type": "NORMAL",
       "enteredYard": "2026-09-23T07:20:23.950Z",
-      "minutes": 40
+      "minutes": 45
     }
   },
   "typeBreakdown": {
-    "NORMAL": 16
+    "NORMAL": 17
   },
   "flow": {
-    "entriesToday": 225,
-    "exitsToday": 209,
-    "movementsLastHour": 87,
-    "balanceLastHour": -3
+    "entriesToday": 229,
+    "exitsToday": 212,
+    "movementsLastHour": 90,
+    "balanceLastHour": 0
   },
   "aboveTargetVehicles": [
     {
@@ -31,15 +31,29 @@
       "trailer": "AGD5G51",
       "type": "NORMAL",
       "enteredYard": "2026-09-23T07:20:23.950Z",
-      "minutes": 40
+      "minutes": 45
+    },
+    {
+      "truck": "BWZ1G93",
+      "trailer": "KBF5F56",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-23T07:32:04.007Z",
+      "minutes": 33
+    },
+    {
+      "truck": "AET3C95",
+      "trailer": "AAN8501",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-23T07:32:04.423Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 13,
-      "from16To32": 2,
-      "from33To60": 1,
+      "upTo15": 14,
+      "from16To32": 0,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -66,7 +80,7 @@
     },
     {
       "hour": "05",
-      "value": null
+      "value": 13
     },
     {
       "hour": "06",
@@ -164,7 +178,7 @@
     },
     {
       "hour": "05",
-      "value": 0
+      "value": 4
     },
     {
       "hour": "06",
