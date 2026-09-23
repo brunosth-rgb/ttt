@@ -1,52 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23T12:00:57.854Z",
-  "reportDate": "2026-09-23T11:55:01.000Z",
-  "sourceFile": "REP_TTTReport_995046206.xlsx",
+  "updatedAt": "2026-09-23T12:07:13.025Z",
+  "reportDate": "2026-09-23T12:01:29.000Z",
+  "sourceFile": "REP_TTTReport_712410607.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 13,
     "averageTTT": 19,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "QTK0680",
-      "trailer": "RYP3H93",
+      "truck": "ECM4E95",
+      "trailer": "RLA1H37",
       "type": "NORMAL",
-      "enteredYard": "2026-09-23T11:07:55.620Z",
-      "minutes": 47
+      "enteredYard": "2026-09-23T11:19:52.720Z",
+      "minutes": 42
     }
   },
   "typeBreakdown": {
-    "NORMAL": 11
+    "NORMAL": 13
   },
   "flow": {
-    "entriesToday": 368,
-    "exitsToday": 357,
-    "movementsLastHour": 63,
-    "balanceLastHour": 3
+    "entriesToday": 372,
+    "exitsToday": 359,
+    "movementsLastHour": 62,
+    "balanceLastHour": 2
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "QTK0680",
-      "trailer": "RYP3H93",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-23T11:07:55.620Z",
-      "minutes": 47
-    },
     {
       "truck": "ECM4E95",
       "trailer": "RLA1H37",
       "type": "NORMAL",
       "enteredYard": "2026-09-23T11:19:52.720Z",
-      "minutes": 35
+      "minutes": 42
     }
   ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 13,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 3,
-      "from33To60": 2,
+      "upTo15": 7,
+      "from16To32": 5,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -85,11 +78,11 @@
     },
     {
       "hour": "08",
-      "value": 13
+      "value": 14
     },
     {
       "hour": "09",
-      "value": null
+      "value": 53
     },
     {
       "hour": "10",
@@ -183,7 +176,7 @@
     },
     {
       "hour": "08",
-      "value": 29
+      "value": 33
     },
     {
       "hour": "09",
