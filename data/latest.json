@@ -1,37 +1,52 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23T23:30:57.196Z",
-  "reportDate": "2026-09-23T23:25:02.000Z",
-  "sourceFile": "REP_TTTReport_-37161438.xlsx",
+  "updatedAt": "2026-09-23T23:42:36.185Z",
+  "reportDate": "2026-09-23T23:35:11.000Z",
+  "sourceFile": "REP_TTTReport_850097464.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 12,
     "averageTTT": 19,
-    "aboveTarget": 0,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "AMR1F87",
       "trailer": "ACR6B05",
       "type": "NORMAL",
       "enteredYard": "2026-09-23T22:58:21.450Z",
-      "minutes": 27
+      "minutes": 37
     }
   },
   "typeBreakdown": {
-    "NORMAL": 11
+    "NORMAL": 12
   },
   "flow": {
-    "entriesToday": 684,
-    "exitsToday": 672,
-    "movementsLastHour": 70,
-    "balanceLastHour": -2
+    "entriesToday": 691,
+    "exitsToday": 678,
+    "movementsLastHour": 76,
+    "balanceLastHour": 6
   },
-  "aboveTargetVehicles": [],
+  "aboveTargetVehicles": [
+    {
+      "truck": "AMR1F87",
+      "trailer": "ACR6B05",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-23T22:58:21.450Z",
+      "minutes": 37
+    },
+    {
+      "truck": "TBX6E04",
+      "trailer": "GDY1E21",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-23T23:01:46.943Z",
+      "minutes": 33
+    }
+  ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 12,
     "buckets": {
-      "upTo15": 7,
-      "from16To32": 4,
-      "from33To60": 0,
+      "upTo15": 10,
+      "from16To32": 0,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -216,7 +231,7 @@
     },
     {
       "hour": "20",
-      "value": 19
+      "value": 26
     },
     {
       "hour": "21",
