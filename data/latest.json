@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24T20:08:50.679Z",
-  "reportDate": "2026-09-24T20:00:00.000Z",
-  "sourceFile": "REP_TTTReport_736252919.xlsx",
+  "updatedAt": "2026-09-24T20:10:42.623Z",
+  "reportDate": "2026-09-24T20:05:00.000Z",
+  "sourceFile": "REP_TTTReport_683476442.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 15,
     "averageTTT": 19,
     "aboveTarget": 1,
     "oldestTruck": {
@@ -13,17 +13,17 @@
       "trailer": "LZZ0516",
       "type": "NORMAL",
       "enteredYard": "2026-09-24T12:50:56.473Z",
-      "minutes": 429
+      "minutes": 434
     }
   },
   "typeBreakdown": {
-    "NORMAL": 16
+    "NORMAL": 15
   },
   "flow": {
-    "entriesToday": 536,
-    "exitsToday": 520,
-    "movementsLastHour": 77,
-    "balanceLastHour": 3
+    "entriesToday": 538,
+    "exitsToday": 523,
+    "movementsLastHour": 72,
+    "balanceLastHour": 0
   },
   "aboveTargetVehicles": [
     {
@@ -31,14 +31,14 @@
       "trailer": "LZZ0516",
       "type": "NORMAL",
       "enteredYard": "2026-09-24T12:50:56.473Z",
-      "minutes": 429
+      "minutes": 434
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 15,
     "buckets": {
-      "upTo15": 15,
-      "from16To32": 0,
+      "upTo15": 12,
+      "from16To32": 2,
       "from33To60": 0,
       "above60": 1
     }
@@ -114,7 +114,7 @@
     },
     {
       "hour": "17",
-      "value": null
+      "value": 17
     },
     {
       "hour": "18",
@@ -212,7 +212,7 @@
     },
     {
       "hour": "17",
-      "value": 0
+      "value": 2
     },
     {
       "hour": "18",
