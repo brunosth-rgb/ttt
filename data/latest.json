@@ -1,52 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24T21:36:18.783Z",
-  "reportDate": "2026-09-24T21:30:01.000Z",
-  "sourceFile": "REP_TTTReport_470024747.xlsx",
+  "updatedAt": "2026-09-24T21:43:25.966Z",
+  "reportDate": "2026-09-24T21:35:00.000Z",
+  "sourceFile": "REP_TTTReport_340106806.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 10,
+    "insideTerminal": 11,
     "averageTTT": 19,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "LZO5326",
-      "trailer": "AIS3G64",
+      "truck": "BXG6I53",
+      "trailer": "LZF0E05",
       "type": "NORMAL",
-      "enteredYard": "2026-09-24T20:55:15.210Z",
+      "enteredYard": "2026-09-24T20:59:59.657Z",
       "minutes": 35
     }
   },
   "typeBreakdown": {
-    "NORMAL": 10
+    "NORMAL": 11
   },
   "flow": {
-    "entriesToday": 592,
-    "exitsToday": 581,
-    "movementsLastHour": 78,
-    "balanceLastHour": 0
+    "entriesToday": 595,
+    "exitsToday": 584,
+    "movementsLastHour": 77,
+    "balanceLastHour": -1
   },
   "aboveTargetVehicles": [
     {
-      "truck": "LZO5326",
-      "trailer": "AIS3G64",
+      "truck": "BXG6I53",
+      "trailer": "LZF0E05",
       "type": "NORMAL",
-      "enteredYard": "2026-09-24T20:55:15.210Z",
-      "minutes": 35
-    },
-    {
-      "truck": "LXY2J56",
-      "trailer": "BSF5A28",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-24T20:55:23.750Z",
+      "enteredYard": "2026-09-24T20:59:59.657Z",
       "minutes": 35
     }
   ],
   "dwell": {
-    "eligibleVehicles": 10,
+    "eligibleVehicles": 11,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 2,
-      "from33To60": 2,
+      "upTo15": 9,
+      "from16To32": 1,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -125,7 +118,7 @@
     },
     {
       "hour": "18",
-      "value": 25
+      "value": 26
     },
     {
       "hour": "19",
@@ -223,7 +216,7 @@
     },
     {
       "hour": "18",
-      "value": 13
+      "value": 16
     },
     {
       "hour": "19",
