@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24T16:35:43.381Z",
-  "reportDate": "2026-09-24T16:30:01.000Z",
-  "sourceFile": "REP_TTTReport_503273245.xlsx",
+  "updatedAt": "2026-09-24T16:41:17.782Z",
+  "reportDate": "2026-09-24T16:35:01.000Z",
+  "sourceFile": "REP_TTTReport_802988893.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
+    "insideTerminal": 9,
     "averageTTT": 20,
-    "aboveTarget": 4,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "LZS5A98",
       "trailer": "LZZ0516",
       "type": "NORMAL",
       "enteredYard": "2026-09-24T12:50:56.473Z",
-      "minutes": 219
+      "minutes": 224
     }
   },
   "typeBreakdown": {
-    "NORMAL": 15
+    "NORMAL": 9
   },
   "flow": {
     "entriesToday": 402,
-    "exitsToday": 387,
-    "movementsLastHour": 54,
-    "balanceLastHour": 2
+    "exitsToday": 393,
+    "movementsLastHour": 53,
+    "balanceLastHour": 1
   },
   "aboveTargetVehicles": [
     {
@@ -31,36 +31,22 @@
       "trailer": "LZZ0516",
       "type": "NORMAL",
       "enteredYard": "2026-09-24T12:50:56.473Z",
-      "minutes": 219
+      "minutes": 224
     },
     {
       "truck": "JXA4C92",
       "trailer": "MIV6E38",
       "type": "NORMAL",
       "enteredYard": "2026-09-24T15:49:36.250Z",
-      "minutes": 40
-    },
-    {
-      "truck": "LYP0240",
-      "trailer": "QHC8147",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-24T15:51:51.767Z",
-      "minutes": 38
-    },
-    {
-      "truck": "LWU5G72",
-      "trailer": "ENF9J11",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-24T15:52:32.930Z",
-      "minutes": 37
+      "minutes": 45
     }
   ],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 9,
     "buckets": {
-      "upTo15": 9,
+      "upTo15": 5,
       "from16To32": 2,
-      "from33To60": 3,
+      "from33To60": 1,
       "above60": 1
     }
   },
@@ -119,7 +105,7 @@
     },
     {
       "hour": "13",
-      "value": 25
+      "value": 26
     },
     {
       "hour": "14",
