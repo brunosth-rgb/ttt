@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-25T22:10:31.883Z",
-  "reportDate": "2026-09-25T22:05:01.000Z",
-  "sourceFile": "REP_TTTReport_-89616218.xlsx",
+  "updatedAt": "2026-09-25T22:16:57.097Z",
+  "reportDate": "2026-09-25T22:10:01.000Z",
+  "sourceFile": "REP_TTTReport_353134937.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 20,
     "averageTTT": 24,
     "aboveTarget": 3,
     "oldestTruck": {
@@ -13,17 +13,17 @@
       "trailer": "IIE3699",
       "type": "NORMAL",
       "enteredYard": "2026-09-25T21:17:34.647Z",
-      "minutes": 47
+      "minutes": 52
     }
   },
   "typeBreakdown": {
-    "NORMAL": 16
+    "NORMAL": 20
   },
   "flow": {
-    "entriesToday": 635,
+    "entriesToday": 639,
     "exitsToday": 619,
     "movementsLastHour": 76,
-    "balanceLastHour": -6
+    "balanceLastHour": -2
   },
   "aboveTargetVehicles": [
     {
@@ -31,28 +31,28 @@
       "trailer": "IIE3699",
       "type": "NORMAL",
       "enteredYard": "2026-09-25T21:17:34.647Z",
-      "minutes": 47
+      "minutes": 52
     },
     {
       "truck": "MII0294",
       "trailer": "LXH4B96",
       "type": "NORMAL",
       "enteredYard": "2026-09-25T21:30:24.573Z",
-      "minutes": 35
+      "minutes": 40
     },
     {
       "truck": "AFX3903",
       "trailer": "MAW9403",
       "type": "NORMAL",
       "enteredYard": "2026-09-25T21:32:35.973Z",
-      "minutes": 32
+      "minutes": 37
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 20,
     "buckets": {
       "upTo15": 9,
-      "from16To32": 4,
+      "from16To32": 8,
       "from33To60": 3,
       "above60": 0
     }
@@ -234,7 +234,7 @@
     },
     {
       "hour": "19",
-      "value": 2
+      "value": 6
     },
     {
       "hour": "20",
