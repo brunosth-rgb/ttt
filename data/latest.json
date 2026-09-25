@@ -1,53 +1,38 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-25T18:05:30.794Z",
-  "reportDate": "2026-09-25T18:00:00.000Z",
-  "sourceFile": "REP_TTTReport_573547957.xlsx",
+  "updatedAt": "2026-09-25T18:13:39.491Z",
+  "reportDate": "2026-09-25T18:05:00.000Z",
+  "sourceFile": "REP_TTTReport_-34268262.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
+    "insideTerminal": 17,
     "averageTTT": 21,
-    "aboveTarget": 2,
+    "aboveTarget": 0,
     "oldestTruck": {
-      "truck": "LYM4C00",
-      "trailer": "ICQ4975",
-      "type": "DTC",
-      "enteredYard": "2026-09-25T17:19:27.157Z",
-      "minutes": 41
+      "truck": "MGE7C93",
+      "trailer": "IIX3887",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-25T17:45:47.863Z",
+      "minutes": 19
     }
   },
   "typeBreakdown": {
-    "DTC": 5,
-    "NORMAL": 10
+    "NORMAL": 14,
+    "DTC": 3
   },
   "flow": {
-    "entriesToday": 477,
-    "exitsToday": 462,
-    "movementsLastHour": 76,
-    "balanceLastHour": 4
+    "entriesToday": 483,
+    "exitsToday": 466,
+    "movementsLastHour": 79,
+    "balanceLastHour": 7
   },
-  "aboveTargetVehicles": [
-    {
-      "truck": "LYM4C00",
-      "trailer": "ICQ4975",
-      "type": "DTC",
-      "enteredYard": "2026-09-25T17:19:27.157Z",
-      "minutes": 41
-    },
-    {
-      "truck": "AFI0G72",
-      "trailer": "QJR7F83",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-25T17:24:43.583Z",
-      "minutes": 35
-    }
-  ],
+  "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 11,
-      "from16To32": 2,
-      "from33To60": 2,
+      "upTo15": 13,
+      "from16To32": 4,
+      "from33To60": 0,
       "above60": 0
     }
   },
@@ -114,7 +99,7 @@
     },
     {
       "hour": "15",
-      "value": null
+      "value": 35
     },
     {
       "hour": "16",
@@ -212,7 +197,7 @@
     },
     {
       "hour": "15",
-      "value": 0
+      "value": 6
     },
     {
       "hour": "16",
