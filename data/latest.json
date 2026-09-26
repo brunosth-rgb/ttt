@@ -1,52 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-26T05:35:10.788Z",
-  "reportDate": "2026-09-26T05:30:00.000Z",
-  "sourceFile": "REP_TTTReport_-17367096.xlsx",
+  "updatedAt": "2026-09-26T05:45:08.852Z",
+  "reportDate": "2026-09-26T05:40:00.000Z",
+  "sourceFile": "REP_TTTReport_-50971675.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 15,
     "averageTTT": 26,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "AFH8C10",
-      "trailer": "ACY6I09",
+      "truck": "IIF3I40",
+      "trailer": "MCB7D49",
       "type": "NORMAL",
-      "enteredYard": "2026-09-26T04:52:49.473Z",
-      "minutes": 37
+      "enteredYard": "2026-09-26T05:06:47.030Z",
+      "minutes": 33
     }
   },
   "typeBreakdown": {
-    "NORMAL": 16
+    "NORMAL": 15
   },
   "flow": {
-    "entriesToday": 97,
-    "exitsToday": 81,
-    "movementsLastHour": 81,
-    "balanceLastHour": -5
+    "entriesToday": 103,
+    "exitsToday": 88,
+    "movementsLastHour": 85,
+    "balanceLastHour": 3
   },
   "aboveTargetVehicles": [
     {
-      "truck": "AFH8C10",
-      "trailer": "ACY6I09",
+      "truck": "IIF3I40",
+      "trailer": "MCB7D49",
       "type": "NORMAL",
-      "enteredYard": "2026-09-26T04:52:49.473Z",
-      "minutes": 37
-    },
-    {
-      "truck": "ABA3519",
-      "trailer": "AAN2750",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-26T04:54:46.077Z",
-      "minutes": 35
+      "enteredYard": "2026-09-26T05:06:47.030Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 15,
     "buckets": {
       "upTo15": 11,
       "from16To32": 3,
-      "from33To60": 2,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -61,7 +54,7 @@
     },
     {
       "hour": "02",
-      "value": 19
+      "value": 21
     },
     {
       "hour": "03",
@@ -159,7 +152,7 @@
     },
     {
       "hour": "02",
-      "value": 22
+      "value": 28
     },
     {
       "hour": "03",
