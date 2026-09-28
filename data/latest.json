@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-28T08:00:07.156Z",
-  "reportDate": "2026-09-28T07:55:00.000Z",
-  "sourceFile": "REP_TTTReport_-33867345.xlsx",
+  "updatedAt": "2026-09-28T08:06:45.059Z",
+  "reportDate": "2026-09-28T08:00:00.000Z",
+  "sourceFile": "REP_TTTReport_-80704239.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 4,
+    "insideTerminal": 7,
     "averageTTT": 10,
     "aboveTarget": 0,
     "oldestTruck": {
@@ -13,24 +13,25 @@
       "trailer": "SXG1A72",
       "type": "NORMAL",
       "enteredYard": "2026-09-28T07:43:51.707Z",
-      "minutes": 11
+      "minutes": 16
     }
   },
   "typeBreakdown": {
-    "NORMAL": 4
+    "NORMAL": 6,
+    "DTA": 1
   },
   "flow": {
-    "entriesToday": 9,
+    "entriesToday": 12,
     "exitsToday": 5,
-    "movementsLastHour": 6,
-    "balanceLastHour": 4
+    "movementsLastHour": 9,
+    "balanceLastHour": 7
   },
   "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 4,
+    "eligibleVehicles": 6,
     "buckets": {
-      "upTo15": 4,
-      "from16To32": 0,
+      "upTo15": 5,
+      "from16To32": 1,
       "from33To60": 0,
       "above60": 0
     }
@@ -152,7 +153,7 @@
     },
     {
       "hour": "04",
-      "value": 5
+      "value": 8
     },
     {
       "hour": "05",
