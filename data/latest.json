@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T10:55:31.178Z",
-  "reportDate": "2026-09-29T10:50:00.000Z",
-  "sourceFile": "REP_TTTReport_-51496655.xlsx",
+  "updatedAt": "2026-09-29T11:00:14.767Z",
+  "reportDate": "2026-09-29T10:55:00.000Z",
+  "sourceFile": "REP_TTTReport_717846723.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 2,
+    "insideTerminal": 4,
     "averageTTT": 25,
     "aboveTarget": 2,
     "oldestTruck": {
@@ -13,17 +13,17 @@
       "trailer": "RKZ5E48",
       "type": "NORMAL",
       "enteredYard": "2026-09-29T09:47:55.433Z",
-      "minutes": 62
+      "minutes": 67
     }
   },
   "typeBreakdown": {
-    "NORMAL": 2
+    "NORMAL": 4
   },
   "flow": {
-    "entriesToday": 96,
+    "entriesToday": 103,
     "exitsToday": 81,
-    "movementsLastHour": 28,
-    "balanceLastHour": 0
+    "movementsLastHour": 30,
+    "balanceLastHour": 2
   },
   "aboveTargetVehicles": [
     {
@@ -31,23 +31,23 @@
       "trailer": "RKZ5E48",
       "type": "NORMAL",
       "enteredYard": "2026-09-29T09:47:55.433Z",
-      "minutes": 62
+      "minutes": 67
     },
     {
       "truck": "GYS3G83",
       "trailer": "FQG8102",
       "type": "NORMAL",
       "enteredYard": "2026-09-29T09:50:49.320Z",
-      "minutes": 59
+      "minutes": 64
     }
   ],
   "dwell": {
-    "eligibleVehicles": 2,
+    "eligibleVehicles": 4,
     "buckets": {
-      "upTo15": 0,
+      "upTo15": 2,
       "from16To32": 0,
-      "from33To60": 1,
-      "above60": 1
+      "from33To60": 0,
+      "above60": 2
     }
   },
   "hourlyTTT": [
@@ -179,7 +179,7 @@
     },
     {
       "hour": "07",
-      "value": 9
+      "value": 16
     },
     {
       "hour": "08",
