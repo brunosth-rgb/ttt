@@ -1,60 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T19:40:37.490Z",
-  "reportDate": "2026-09-30T19:35:00.000Z",
-  "sourceFile": "REP_TTTReport_158927917.xlsx",
+  "updatedAt": "2026-09-30T19:51:41.260Z",
+  "reportDate": "2026-09-30T19:45:01.000Z",
+  "sourceFile": "REP_TTTReport_731313320.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 26,
+    "insideTerminal": 21,
     "averageTTT": 33,
-    "aboveTarget": 3,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "LYS6A08",
-      "trailer": "MAI2889",
+      "truck": "AGI9311",
+      "trailer": "IBU0B22",
       "type": "NORMAL",
-      "enteredYard": "2026-09-30T18:48:00.060Z",
-      "minutes": 47
+      "enteredYard": "2026-09-30T19:05:19.290Z",
+      "minutes": 40
     }
   },
   "typeBreakdown": {
-    "NORMAL": 20,
-    "DTC": 6
+    "NORMAL": 17,
+    "DTC": 4
   },
   "flow": {
-    "entriesToday": 669,
-    "exitsToday": 643,
-    "movementsLastHour": 91,
-    "balanceLastHour": 7
+    "entriesToday": 672,
+    "exitsToday": 651,
+    "movementsLastHour": 86,
+    "balanceLastHour": 0
   },
   "aboveTargetVehicles": [
     {
-      "truck": "LYS6A08",
-      "trailer": "MAI2889",
+      "truck": "AGI9311",
+      "trailer": "IBU0B22",
       "type": "NORMAL",
-      "enteredYard": "2026-09-30T18:48:00.060Z",
-      "minutes": 47
-    },
-    {
-      "truck": "LZO5326",
-      "trailer": "AIS3G64",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-30T18:59:00.720Z",
-      "minutes": 36
-    },
-    {
-      "truck": "IEU1838",
-      "trailer": "IFK5585",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-30T19:01:39.697Z",
-      "minutes": 33
+      "enteredYard": "2026-09-30T19:05:19.290Z",
+      "minutes": 40
     }
   ],
   "dwell": {
-    "eligibleVehicles": 26,
+    "eligibleVehicles": 21,
     "buckets": {
-      "upTo15": 13,
-      "from16To32": 10,
-      "from33To60": 3,
+      "upTo15": 9,
+      "from16To32": 11,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -223,7 +209,7 @@
     },
     {
       "hour": "16",
-      "value": 24
+      "value": 27
     },
     {
       "hour": "17",
