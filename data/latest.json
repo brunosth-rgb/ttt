@@ -1,46 +1,53 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T19:21:18.948Z",
-  "reportDate": "2026-09-30T19:15:00.000Z",
-  "sourceFile": "REP_TTTReport_-48407837.xlsx",
+  "updatedAt": "2026-09-30T19:25:59.719Z",
+  "reportDate": "2026-09-30T19:20:01.000Z",
+  "sourceFile": "REP_TTTReport_483930777.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 27,
+    "insideTerminal": 24,
     "averageTTT": 33,
-    "aboveTarget": 1,
+    "aboveTarget": 2,
     "oldestTruck": {
-      "truck": "MLC0676",
-      "trailer": "TPV6C33",
+      "truck": "ASQ4H31",
+      "trailer": "SXL0G98",
       "type": "NORMAL",
-      "enteredYard": "2026-09-30T18:39:19.373Z",
+      "enteredYard": "2026-09-30T18:44:13.660Z",
       "minutes": 36
     }
   },
   "typeBreakdown": {
-    "NORMAL": 23,
+    "NORMAL": 20,
     "DTC": 4
   },
   "flow": {
-    "entriesToday": 654,
-    "exitsToday": 626,
-    "movementsLastHour": 89,
-    "balanceLastHour": 9
+    "entriesToday": 656,
+    "exitsToday": 631,
+    "movementsLastHour": 88,
+    "balanceLastHour": 4
   },
   "aboveTargetVehicles": [
     {
-      "truck": "MLC0676",
-      "trailer": "TPV6C33",
+      "truck": "ASQ4H31",
+      "trailer": "SXL0G98",
       "type": "NORMAL",
-      "enteredYard": "2026-09-30T18:39:19.373Z",
+      "enteredYard": "2026-09-30T18:44:13.660Z",
       "minutes": 36
+    },
+    {
+      "truck": "LYS6A08",
+      "trailer": "MAI2889",
+      "type": "NORMAL",
+      "enteredYard": "2026-09-30T18:48:00.060Z",
+      "minutes": 32
     }
   ],
   "dwell": {
-    "eligibleVehicles": 27,
+    "eligibleVehicles": 24,
     "buckets": {
       "upTo15": 9,
-      "from16To32": 17,
-      "from33To60": 1,
+      "from16To32": 13,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -111,7 +118,7 @@
     },
     {
       "hour": "16",
-      "value": 35
+      "value": 34
     },
     {
       "hour": "17",
@@ -209,7 +216,7 @@
     },
     {
       "hour": "16",
-      "value": 9
+      "value": 11
     },
     {
       "hour": "17",
