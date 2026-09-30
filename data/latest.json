@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T09:11:29.350Z",
-  "reportDate": "2026-09-30T09:05:00.000Z",
-  "sourceFile": "REP_TTTReport_-85318191.xlsx",
+  "updatedAt": "2026-09-30T09:25:19.114Z",
+  "reportDate": "2026-09-30T09:15:00.000Z",
+  "sourceFile": "REP_TTTReport_114026790.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 14,
     "averageTTT": 36,
-    "aboveTarget": 3,
+    "aboveTarget": 1,
     "oldestTruck": {
       "truck": "MDE6B60",
       "trailer": "LZD6J39",
       "type": "NORMAL",
       "enteredYard": "2026-09-30T06:58:14.950Z",
-      "minutes": 127
+      "minutes": 137
     }
   },
   "typeBreakdown": {
-    "NORMAL": 11
+    "NORMAL": 14
   },
   "flow": {
-    "entriesToday": 237,
-    "exitsToday": 226,
-    "movementsLastHour": 44,
-    "balanceLastHour": -6
+    "entriesToday": 245,
+    "exitsToday": 231,
+    "movementsLastHour": 48,
+    "balanceLastHour": 0
   },
   "aboveTargetVehicles": [
     {
@@ -31,30 +31,16 @@
       "trailer": "LZD6J39",
       "type": "NORMAL",
       "enteredYard": "2026-09-30T06:58:14.950Z",
-      "minutes": 127
-    },
-    {
-      "truck": "LZJ1H23",
-      "trailer": "LZN9I94",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-30T07:52:27.617Z",
-      "minutes": 73
-    },
-    {
-      "truck": "DBF4F04",
-      "trailer": "UGI3I08",
-      "type": "NORMAL",
-      "enteredYard": "2026-09-30T07:55:05.343Z",
-      "minutes": 70
+      "minutes": 137
     }
   ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 14,
     "buckets": {
-      "upTo15": 8,
-      "from16To32": 0,
+      "upTo15": 9,
+      "from16To32": 4,
       "from33To60": 0,
-      "above60": 3
+      "above60": 1
     }
   },
   "hourlyTTT": [
@@ -84,7 +70,7 @@
     },
     {
       "hour": "06",
-      "value": 6
+      "value": 32
     },
     {
       "hour": "07",
@@ -182,7 +168,7 @@
     },
     {
       "hour": "06",
-      "value": 1
+      "value": 9
     },
     {
       "hour": "07",
