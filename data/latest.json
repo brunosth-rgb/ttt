@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T13:05:32.647Z",
-  "reportDate": "2026-10-02T13:00:01.000Z",
-  "sourceFile": "REP_TTTReport_217377909.xlsx",
+  "updatedAt": "2026-10-02T13:11:32.605Z",
+  "reportDate": "2026-10-02T13:05:00.000Z",
+  "sourceFile": "REP_TTTReport_-18865474.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
+    "insideTerminal": 20,
     "averageTTT": 22,
-    "aboveTarget": 2,
+    "aboveTarget": 4,
     "oldestTruck": {
       "truck": "MCN9C85",
       "trailer": "CPJ4155",
       "type": "DTC",
       "enteredYard": "2026-10-02T12:18:33.903Z",
-      "minutes": 41
+      "minutes": 46
     }
   },
   "typeBreakdown": {
     "DTA": 3,
-    "DTC": 6,
-    "NORMAL": 6
+    "DTC": 7,
+    "NORMAL": 10
   },
   "flow": {
-    "entriesToday": 368,
+    "entriesToday": 373,
     "exitsToday": 353,
     "movementsLastHour": 93,
-    "balanceLastHour": 3
+    "balanceLastHour": 9
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,36 @@
       "trailer": "CPJ4155",
       "type": "DTC",
       "enteredYard": "2026-10-02T12:18:33.903Z",
-      "minutes": 41
+      "minutes": 46
     },
     {
       "truck": "IJH5C07",
       "trailer": "BXI7H04",
       "type": "DTC",
       "enteredYard": "2026-10-02T12:22:47.217Z",
+      "minutes": 42
+    },
+    {
+      "truck": "LZT8B39",
+      "trailer": "MDO1E37",
+      "type": "DTC",
+      "enteredYard": "2026-10-02T12:28:03.667Z",
       "minutes": 37
+    },
+    {
+      "truck": "IEZ1F62",
+      "trailer": "IID2H96",
+      "type": "DTC",
+      "enteredYard": "2026-10-02T12:31:09.640Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 12,
+    "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 4,
-      "from33To60": 2,
+      "upTo15": 11,
+      "from16To32": 2,
+      "from33To60": 4,
       "above60": 0
     }
   },
@@ -193,7 +207,7 @@
     },
     {
       "hour": "10",
-      "value": 0
+      "value": 5
     },
     {
       "hour": "11",
