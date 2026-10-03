@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T10:00:19.296Z",
-  "reportDate": "2026-10-03T09:55:00.000Z",
-  "sourceFile": "REP_TTTReport_291248387.xlsx",
+  "updatedAt": "2026-10-03T10:05:14.885Z",
+  "reportDate": "2026-10-03T10:00:01.000Z",
+  "sourceFile": "REP_TTTReport_204591384.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
+    "insideTerminal": 17,
     "averageTTT": 16,
-    "aboveTarget": 3,
+    "aboveTarget": 5,
     "oldestTruck": {
       "truck": "OKE2B27",
       "trailer": "SXV2B32",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:12:10.137Z",
-      "minutes": 43
+      "minutes": 48
     }
   },
   "typeBreakdown": {
-    "NORMAL": 12,
+    "NORMAL": 14,
     "DTC": 3
   },
   "flow": {
-    "entriesToday": 161,
-    "exitsToday": 146,
+    "entriesToday": 164,
+    "exitsToday": 147,
     "movementsLastHour": 41,
     "balanceLastHour": 9
   },
@@ -32,29 +32,43 @@
       "trailer": "SXV2B32",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:12:10.137Z",
-      "minutes": 43
+      "minutes": 48
     },
     {
       "truck": "QJJ9C66",
       "trailer": "QJH7377",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:13:05.347Z",
-      "minutes": 42
+      "minutes": 47
     },
     {
       "truck": "RLI8J23",
       "trailer": "QIP9231",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:18:59.857Z",
+      "minutes": 41
+    },
+    {
+      "truck": "NMZ3H88",
+      "trailer": "AWO8C26",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-03T09:23:54.750Z",
+      "minutes": 36
+    },
+    {
+      "truck": "KMS6B99",
+      "trailer": "MMM0J67",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-03T09:24:02.287Z",
       "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 17,
     "buckets": {
-      "upTo15": 9,
-      "from16To32": 3,
-      "from33To60": 3,
+      "upTo15": 10,
+      "from16To32": 2,
+      "from33To60": 5,
       "above60": 0
     }
   },
@@ -183,7 +197,7 @@
     },
     {
       "hour": "06",
-      "value": 22
+      "value": 25
     },
     {
       "hour": "07",
