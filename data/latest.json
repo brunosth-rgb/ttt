@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T10:30:56.487Z",
-  "reportDate": "2026-10-03T10:25:00.000Z",
-  "sourceFile": "REP_TTTReport_-59492854.xlsx",
+  "updatedAt": "2026-10-03T10:35:32.464Z",
+  "reportDate": "2026-10-03T10:30:01.000Z",
+  "sourceFile": "REP_TTTReport_737396523.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 32,
+    "insideTerminal": 34,
     "averageTTT": 16,
-    "aboveTarget": 12,
+    "aboveTarget": 15,
     "oldestTruck": {
       "truck": "OKE2B27",
       "trailer": "SXV2B32",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:12:10.137Z",
-      "minutes": 73
+      "minutes": 78
     }
   },
   "typeBreakdown": {
-    "NORMAL": 26,
+    "NORMAL": 28,
     "DTC": 6
   },
   "flow": {
-    "entriesToday": 180,
+    "entriesToday": 182,
     "exitsToday": 148,
-    "movementsLastHour": 40,
-    "balanceLastHour": 22
+    "movementsLastHour": 39,
+    "balanceLastHour": 25
   },
   "aboveTargetVehicles": [
     {
@@ -32,92 +32,113 @@
       "trailer": "SXV2B32",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:12:10.137Z",
-      "minutes": 73
+      "minutes": 78
     },
     {
       "truck": "QJJ9C66",
       "trailer": "QJH7377",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:13:05.347Z",
-      "minutes": 72
+      "minutes": 77
     },
     {
       "truck": "NMZ3H88",
       "trailer": "AWO8C26",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:23:54.750Z",
-      "minutes": 61
+      "minutes": 66
     },
     {
       "truck": "KMS6B99",
       "trailer": "MMM0J67",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:24:02.287Z",
-      "minutes": 61
+      "minutes": 66
     },
     {
       "truck": "GPA6A99",
       "trailer": "MLJ1D94",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:41:45.277Z",
-      "minutes": 43
+      "minutes": 48
     },
     {
       "truck": "AOB5B81",
       "trailer": "IEN4732",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:43:55.917Z",
-      "minutes": 41
+      "minutes": 46
     },
     {
       "truck": "AIU1F73",
       "trailer": "BWC1J45",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:46:04.727Z",
-      "minutes": 39
+      "minutes": 44
     },
     {
       "truck": "QEO3G38",
       "trailer": "TPY1G78",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:47:36.433Z",
-      "minutes": 37
+      "minutes": 42
     },
     {
       "truck": "MQR8G96",
       "trailer": "IBR0F77",
       "type": "DTC",
       "enteredYard": "2026-10-03T09:49:32.847Z",
-      "minutes": 35
+      "minutes": 40
     },
     {
       "truck": "BTT4A13",
       "trailer": "IFX2842",
       "type": "DTC",
       "enteredYard": "2026-10-03T09:50:01.137Z",
-      "minutes": 35
+      "minutes": 40
     },
     {
       "truck": "IEJ0B82",
       "trailer": "LYD6H58",
       "type": "NORMAL",
       "enteredYard": "2026-10-03T09:50:21.377Z",
-      "minutes": 35
+      "minutes": 40
     },
     {
       "truck": "IQJ5D81",
       "trailer": "MFO0I12",
       "type": "DTC",
       "enteredYard": "2026-10-03T09:52:59.433Z",
+      "minutes": 37
+    },
+    {
+      "truck": "RLA9F10",
+      "trailer": "UMI6A14",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-03T09:53:22.737Z",
+      "minutes": 37
+    },
+    {
+      "truck": "BAK8G50",
+      "trailer": "MCB1D12",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-03T09:57:12.863Z",
+      "minutes": 33
+    },
+    {
+      "truck": "IIK2289",
+      "trailer": "IGI2H88",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-03T09:57:39.853Z",
       "minutes": 32
     }
   ],
   "dwell": {
-    "eligibleVehicles": 32,
+    "eligibleVehicles": 34,
     "buckets": {
       "upTo15": 10,
-      "from16To32": 10,
-      "from33To60": 8,
+      "from16To32": 9,
+      "from33To60": 11,
       "above60": 4
     }
   },
@@ -250,7 +271,7 @@
     },
     {
       "hour": "07",
-      "value": 16
+      "value": 18
     },
     {
       "hour": "08",
