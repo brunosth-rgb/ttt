@@ -1,53 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T13:45:18.098Z",
-  "reportDate": "2026-10-05T13:40:02.000Z",
-  "sourceFile": "REP_TTTReport_-23405783.xlsx",
+  "updatedAt": "2026-10-05T13:55:27.724Z",
+  "reportDate": "2026-10-05T13:50:01.000Z",
+  "sourceFile": "REP_TTTReport_-68339652.xlsx",
   "targetTTT": 32,
   "metrics": {
     "insideTerminal": 13,
     "averageTTT": 18,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "DRI5G94",
-      "trailer": "QJE5826",
+      "truck": "QJC7286",
+      "trailer": "QJL5135",
       "type": "NORMAL",
-      "enteredYard": "2026-10-05T12:59:35.063Z",
-      "minutes": 40
+      "enteredYard": "2026-10-05T13:00:36.633Z",
+      "minutes": 49
     }
   },
   "typeBreakdown": {
-    "DTA": 3,
-    "NORMAL": 10
+    "DTA": 4,
+    "NORMAL": 9
   },
   "flow": {
-    "entriesToday": 264,
-    "exitsToday": 251,
-    "movementsLastHour": 41,
+    "entriesToday": 270,
+    "exitsToday": 257,
+    "movementsLastHour": 45,
     "balanceLastHour": 9
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "DRI5G94",
-      "trailer": "QJE5826",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-05T12:59:35.063Z",
-      "minutes": 40
-    },
     {
       "truck": "QJC7286",
       "trailer": "QJL5135",
       "type": "NORMAL",
       "enteredYard": "2026-10-05T13:00:36.633Z",
-      "minutes": 39
+      "minutes": 49
     }
   ],
   "dwell": {
-    "eligibleVehicles": 10,
+    "eligibleVehicles": 9,
     "buckets": {
-      "upTo15": 4,
-      "from16To32": 4,
-      "from33To60": 2,
+      "upTo15": 6,
+      "from16To32": 2,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -94,7 +87,7 @@
     },
     {
       "hour": "10",
-      "value": 16
+      "value": 20
     },
     {
       "hour": "11",
@@ -192,7 +185,7 @@
     },
     {
       "hour": "10",
-      "value": 16
+      "value": 22
     },
     {
       "hour": "11",
