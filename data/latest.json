@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T23:21:16.089Z",
-  "reportDate": "2026-10-06T23:15:01.000Z",
-  "sourceFile": "REP_TTTReport_227433227.xlsx",
+  "updatedAt": "2026-10-06T23:29:10.263Z",
+  "reportDate": "2026-10-06T23:20:01.000Z",
+  "sourceFile": "REP_TTTReport_709730068.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 28,
+    "insideTerminal": 25,
     "averageTTT": 39,
-    "aboveTarget": 8,
+    "aboveTarget": 9,
     "oldestTruck": {
       "truck": "TPJ9G89",
       "trailer": "TQD4C74",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T18:08:47.003Z",
-      "minutes": 306
+      "minutes": 311
     }
   },
   "typeBreakdown": {
     "DTA": 1,
-    "NORMAL": 21,
+    "NORMAL": 18,
     "DTC": 6
   },
   "flow": {
-    "entriesToday": 644,
-    "exitsToday": 615,
-    "movementsLastHour": 97,
-    "balanceLastHour": -3
+    "entriesToday": 646,
+    "exitsToday": 620,
+    "movementsLastHour": 100,
+    "balanceLastHour": -4
   },
   "aboveTargetVehicles": [
     {
@@ -33,64 +33,71 @@
       "trailer": "TQD4C74",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T18:08:47.003Z",
-      "minutes": 306
+      "minutes": 311
     },
     {
       "truck": "MDW3G32",
       "trailer": "AWE2E59",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T19:09:27.820Z",
-      "minutes": 246
+      "minutes": 251
     },
     {
       "truck": "FAU2C19",
       "trailer": "TJM0B62",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T19:43:32.277Z",
-      "minutes": 211
+      "minutes": 216
     },
     {
       "truck": "MGZ8150",
       "trailer": "RLI8D64",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T20:34:00.413Z",
-      "minutes": 161
+      "minutes": 166
     },
     {
       "truck": "IRN2122",
       "trailer": "IUF4781",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T20:51:11.687Z",
-      "minutes": 144
+      "minutes": 149
     },
     {
       "truck": "RDS9H48",
       "trailer": "TQK9C25",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T21:50:25.323Z",
-      "minutes": 85
+      "minutes": 90
     },
     {
       "truck": "AMK7J46",
       "trailer": "MDX6939",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T21:59:19.173Z",
-      "minutes": 76
+      "minutes": 81
     },
     {
       "truck": "LXH1D63",
       "trailer": "AGB2I08",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T22:28:14.167Z",
-      "minutes": 47
+      "minutes": 52
+    },
+    {
+      "truck": "IOD2B19",
+      "trailer": "QIQ5F08",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-06T22:45:50.410Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 27,
+    "eligibleVehicles": 24,
     "buckets": {
-      "upTo15": 11,
-      "from16To32": 8,
-      "from33To60": 1,
+      "upTo15": 10,
+      "from16To32": 5,
+      "from33To60": 2,
       "above60": 7
     }
   },
@@ -177,7 +184,7 @@
     },
     {
       "hour": "20",
-      "value": 27
+      "value": 25
     },
     {
       "hour": "21",
@@ -275,7 +282,7 @@
     },
     {
       "hour": "20",
-      "value": 11
+      "value": 13
     },
     {
       "hour": "21",
