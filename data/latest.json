@@ -1,67 +1,67 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T09:25:20.373Z",
-  "reportDate": "2026-10-06T09:20:01.000Z",
-  "sourceFile": "REP_TTTReport_384628367.xlsx",
+  "updatedAt": "2026-10-06T09:30:09.068Z",
+  "reportDate": "2026-10-06T09:25:00.000Z",
+  "sourceFile": "REP_TTTReport_267404972.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
-    "averageTTT": 20,
+    "insideTerminal": 17,
+    "averageTTT": 21,
     "aboveTarget": 4,
     "oldestTruck": {
-      "truck": "MPR9D97",
-      "trailer": "MAF7C67",
+      "truck": "ADM7226",
+      "trailer": "MFZ6898",
       "type": "NORMAL",
-      "enteredYard": "2026-10-06T07:45:54.980Z",
-      "minutes": 94
+      "enteredYard": "2026-10-06T08:22:26.097Z",
+      "minutes": 63
     }
   },
   "typeBreakdown": {
-    "NORMAL": 11,
     "DTA": 1,
+    "NORMAL": 9,
     "DTC": 7
   },
   "flow": {
-    "entriesToday": 146,
-    "exitsToday": 127,
-    "movementsLastHour": 39,
+    "entriesToday": 149,
+    "exitsToday": 132,
+    "movementsLastHour": 43,
     "balanceLastHour": 11
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "MPR9D97",
-      "trailer": "MAF7C67",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-06T07:45:54.980Z",
-      "minutes": 94
-    },
     {
       "truck": "ADM7226",
       "trailer": "MFZ6898",
       "type": "NORMAL",
       "enteredYard": "2026-10-06T08:22:26.097Z",
-      "minutes": 58
-    },
-    {
-      "truck": "LZY3F83",
-      "trailer": "MPJ3G32",
-      "type": "DTC",
-      "enteredYard": "2026-10-06T08:46:18.450Z",
-      "minutes": 34
+      "minutes": 63
     },
     {
       "truck": "IIS4H66",
       "trailer": "GLK1676",
       "type": "DTC",
       "enteredYard": "2026-10-06T08:46:54.493Z",
+      "minutes": 38
+    },
+    {
+      "truck": "CUD2710",
+      "trailer": "SXL5E84",
+      "type": "DTC",
+      "enteredYard": "2026-10-06T08:51:47.127Z",
+      "minutes": 33
+    },
+    {
+      "truck": "IBB9H27",
+      "trailer": "ADU9C93",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-06T08:52:12.253Z",
       "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 18,
+    "eligibleVehicles": 16,
     "buckets": {
-      "upTo15": 7,
-      "from16To32": 7,
+      "upTo15": 8,
+      "from16To32": 4,
       "from33To60": 3,
       "above60": 1
     }
@@ -93,7 +93,7 @@
     },
     {
       "hour": "06",
-      "value": 24
+      "value": 32
     },
     {
       "hour": "07",
@@ -191,7 +191,7 @@
     },
     {
       "hour": "06",
-      "value": 8
+      "value": 11
     },
     {
       "hour": "07",
