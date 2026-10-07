@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T14:10:28.717Z",
-  "reportDate": "2026-10-07T14:05:40.000Z",
-  "sourceFile": "REP_TTTReport_636991717.xlsx",
+  "updatedAt": "2026-10-07T14:15:47.739Z",
+  "reportDate": "2026-10-07T14:10:57.000Z",
+  "sourceFile": "REP_TTTReport_-53660678.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 23,
+    "insideTerminal": 22,
     "averageTTT": 26,
-    "aboveTarget": 3,
+    "aboveTarget": 1,
     "oldestTruck": {
       "truck": "JDD5B70",
       "trailer": "LVI0I06",
       "type": "NORMAL",
       "enteredYard": "2026-10-07T12:25:40.873Z",
-      "minutes": 100
+      "minutes": 105
     }
   },
   "typeBreakdown": {
     "DTA": 7,
-    "NORMAL": 16
+    "NORMAL": 15
   },
   "flow": {
-    "entriesToday": 358,
-    "exitsToday": 335,
-    "movementsLastHour": 86,
-    "balanceLastHour": -8
+    "entriesToday": 360,
+    "exitsToday": 338,
+    "movementsLastHour": 83,
+    "balanceLastHour": -9
   },
   "aboveTargetVehicles": [
     {
@@ -32,29 +32,15 @@
       "trailer": "LVI0I06",
       "type": "NORMAL",
       "enteredYard": "2026-10-07T12:25:40.873Z",
-      "minutes": 100
-    },
-    {
-      "truck": "RYK6F42",
-      "trailer": "TPS8F65",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-07T13:31:25.557Z",
-      "minutes": 34
-    },
-    {
-      "truck": "UBN5H92",
-      "trailer": "GEF9A43",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-07T13:33:37.530Z",
-      "minutes": 32
+      "minutes": 105
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 15,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 3,
-      "from33To60": 2,
+      "upTo15": 8,
+      "from16To32": 6,
+      "from33To60": 0,
       "above60": 1
     }
   },
@@ -105,7 +91,7 @@
     },
     {
       "hour": "11",
-      "value": 36
+      "value": 34
     },
     {
       "hour": "12",
@@ -203,7 +189,7 @@
     },
     {
       "hour": "11",
-      "value": 4
+      "value": 6
     },
     {
       "hour": "12",
