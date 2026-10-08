@@ -1,53 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T02:26:18.513Z",
-  "reportDate": "2026-10-08T02:20:00.000Z",
-  "sourceFile": "REP_TTTReport_245442360.xlsx",
+  "updatedAt": "2026-10-08T02:35:42.323Z",
+  "reportDate": "2026-10-08T02:30:00.000Z",
+  "sourceFile": "REP_TTTReport_-56862104.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 18,
     "averageTTT": 29,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "AVD3A04",
-      "trailer": "AEU5J29",
+      "truck": "LZA5870",
+      "trailer": "LXX8687",
       "type": "NORMAL",
-      "enteredYard": "2026-10-08T01:17:18.897Z",
-      "minutes": 63
+      "enteredYard": "2026-10-08T01:51:07.930Z",
+      "minutes": 39
     }
   },
   "typeBreakdown": {
-    "NORMAL": 16
+    "NORMAL": 18
   },
   "flow": {
-    "entriesToday": 760,
-    "exitsToday": 744,
-    "movementsLastHour": 46,
-    "balanceLastHour": 2
+    "entriesToday": 768,
+    "exitsToday": 750,
+    "movementsLastHour": 55,
+    "balanceLastHour": 3
   },
   "aboveTargetVehicles": [
     {
-      "truck": "AVD3A04",
-      "trailer": "AEU5J29",
+      "truck": "LZA5870",
+      "trailer": "LXX8687",
       "type": "NORMAL",
-      "enteredYard": "2026-10-08T01:17:18.897Z",
-      "minutes": 63
-    },
-    {
-      "truck": "IML2441",
-      "trailer": "FEI3E85",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-08T01:47:01.817Z",
-      "minutes": 33
+      "enteredYard": "2026-10-08T01:51:07.930Z",
+      "minutes": 39
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 18,
     "buckets": {
-      "upTo15": 10,
+      "upTo15": 13,
       "from16To32": 4,
       "from33To60": 1,
-      "above60": 1
+      "above60": 0
     }
   },
   "hourlyTTT": [
@@ -145,7 +138,7 @@
     },
     {
       "hour": "23",
-      "value": 16
+      "value": 23
     }
   ],
   "hourlyReceived": [
@@ -243,7 +236,7 @@
     },
     {
       "hour": "23",
-      "value": 13
+      "value": 21
     }
   ]
 }
