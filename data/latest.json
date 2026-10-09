@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T08:01:04.243Z",
-  "reportDate": "2026-10-09T07:55:00.000Z",
-  "sourceFile": "REP_TTTReport_668527087.xlsx",
+  "updatedAt": "2026-10-09T08:05:12.305Z",
+  "reportDate": "2026-10-09T08:00:00.000Z",
+  "sourceFile": "REP_TTTReport_533129563.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 27,
     "averageTTT": 27,
-    "aboveTarget": 3,
+    "aboveTarget": 4,
     "oldestTruck": {
       "truck": "MDU4990",
       "trailer": "AIS5A26",
       "type": "NORMAL",
       "enteredYard": "2026-10-09T07:15:57.197Z",
-      "minutes": 39
+      "minutes": 44
     }
   },
   "typeBreakdown": {
-    "NORMAL": 19
+    "NORMAL": 27
   },
   "flow": {
-    "entriesToday": 178,
-    "exitsToday": 159,
-    "movementsLastHour": 52,
-    "balanceLastHour": 14
+    "entriesToday": 187,
+    "exitsToday": 160,
+    "movementsLastHour": 59,
+    "balanceLastHour": 25
   },
   "aboveTargetVehicles": [
     {
@@ -31,29 +31,36 @@
       "trailer": "AIS5A26",
       "type": "NORMAL",
       "enteredYard": "2026-10-09T07:15:57.197Z",
-      "minutes": 39
+      "minutes": 44
     },
     {
       "truck": "LYH5673",
       "trailer": "MDN6600",
       "type": "NORMAL",
       "enteredYard": "2026-10-09T07:16:01.290Z",
-      "minutes": 39
+      "minutes": 44
     },
     {
       "truck": "LYC8366",
       "trailer": "ALK8H58",
       "type": "NORMAL",
       "enteredYard": "2026-10-09T07:18:38.513Z",
+      "minutes": 41
+    },
+    {
+      "truck": "MVU7H35",
+      "trailer": "ADU7E99",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-09T07:24:25.810Z",
       "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 19,
+    "eligibleVehicles": 27,
     "buckets": {
-      "upTo15": 14,
-      "from16To32": 2,
-      "from33To60": 3,
+      "upTo15": 19,
+      "from16To32": 4,
+      "from33To60": 4,
       "above60": 0
     }
   },
@@ -174,7 +181,7 @@
     },
     {
       "hour": "04",
-      "value": 33
+      "value": 42
     },
     {
       "hour": "05",
