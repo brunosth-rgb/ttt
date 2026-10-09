@@ -1,55 +1,40 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T14:09:37.847Z",
-  "reportDate": "2026-10-09T14:00:01.000Z",
-  "sourceFile": "REP_TTTReport_192556043.xlsx",
+  "updatedAt": "2026-10-09T14:10:29.852Z",
+  "reportDate": "2026-10-09T14:05:00.000Z",
+  "sourceFile": "REP_TTTReport_315222110.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 29,
+    "insideTerminal": 30,
     "averageTTT": 28,
-    "aboveTarget": 2,
+    "aboveTarget": 0,
     "oldestTruck": {
-      "truck": "AMX3C82",
-      "trailer": "QJT4E50",
+      "truck": "LYH2945",
+      "trailer": "MAJ6939",
       "type": "NORMAL",
-      "enteredYard": "2026-10-09T12:50:38.980Z",
-      "minutes": 69
+      "enteredYard": "2026-10-09T13:34:53.360Z",
+      "minutes": 30
     }
   },
   "typeBreakdown": {
     "DTA": 4,
-    "NORMAL": 18,
+    "NORMAL": 19,
     "DTC": 7
   },
   "flow": {
-    "entriesToday": 388,
-    "exitsToday": 358,
-    "movementsLastHour": 67,
-    "balanceLastHour": 9
+    "entriesToday": 392,
+    "exitsToday": 362,
+    "movementsLastHour": 69,
+    "balanceLastHour": 5
   },
-  "aboveTargetVehicles": [
-    {
-      "truck": "AMX3C82",
-      "trailer": "QJT4E50",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-09T12:50:38.980Z",
-      "minutes": 69
-    },
-    {
-      "truck": "LWS3G00",
-      "trailer": "RAI4F87",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-09T12:58:11.033Z",
-      "minutes": 62
-    }
-  ],
+  "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 25,
+    "eligibleVehicles": 26,
     "buckets": {
-      "upTo15": 20,
-      "from16To32": 3,
+      "upTo15": 17,
+      "from16To32": 9,
       "from33To60": 0,
-      "above60": 2
+      "above60": 0
     }
   },
   "hourlyTTT": [
@@ -99,7 +84,7 @@
     },
     {
       "hour": "11",
-      "value": null
+      "value": 57
     },
     {
       "hour": "12",
@@ -197,7 +182,7 @@
     },
     {
       "hour": "11",
-      "value": 0
+      "value": 4
     },
     {
       "hour": "12",
