@@ -1,27 +1,35 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:00:41.306Z",
-  "reportDate": "2026-10-11T02:55:01.000Z",
-  "sourceFile": "REP_TTTReport_-78878771.xlsx",
+  "updatedAt": "2026-10-11T03:25:05.039Z",
+  "reportDate": "2026-10-11T03:20:01.000Z",
+  "sourceFile": "REP_TTTReport_813519097.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 0,
-    "averageTTT": 21,
+    "insideTerminal": 1,
+    "averageTTT": 0,
     "aboveTarget": 0,
-    "oldestTruck": null
+    "oldestTruck": {
+      "truck": "AAL5B80",
+      "trailer": "KFP0H33",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-11T03:16:01.137Z",
+      "minutes": 4
+    }
   },
-  "typeBreakdown": {},
+  "typeBreakdown": {
+    "NORMAL": 1
+  },
   "flow": {
-    "entriesToday": 624,
-    "exitsToday": 624,
-    "movementsLastHour": 18,
-    "balanceLastHour": -8
+    "entriesToday": 1,
+    "exitsToday": 0,
+    "movementsLastHour": 1,
+    "balanceLastHour": 1
   },
   "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 0,
+    "eligibleVehicles": 1,
     "buckets": {
-      "upTo15": 0,
+      "upTo15": 1,
       "from16To32": 0,
       "from33To60": 0,
       "above60": 0
@@ -30,197 +38,197 @@
   "hourlyTTT": [
     {
       "hour": "00",
-      "value": 14
+      "value": null
     },
     {
       "hour": "01",
-      "value": 18
+      "value": null
     },
     {
       "hour": "02",
-      "value": 24
+      "value": null
     },
     {
       "hour": "03",
-      "value": 20
+      "value": null
     },
     {
       "hour": "04",
-      "value": 29
+      "value": null
     },
     {
       "hour": "05",
-      "value": 29
+      "value": null
     },
     {
       "hour": "06",
-      "value": 25
+      "value": null
     },
     {
       "hour": "07",
-      "value": 25
+      "value": null
     },
     {
       "hour": "08",
-      "value": 23
+      "value": null
     },
     {
       "hour": "09",
-      "value": 18
+      "value": null
     },
     {
       "hour": "10",
-      "value": 31
+      "value": null
     },
     {
       "hour": "11",
-      "value": 29
+      "value": null
     },
     {
       "hour": "12",
-      "value": 20
+      "value": null
     },
     {
       "hour": "13",
-      "value": 17
+      "value": null
     },
     {
       "hour": "14",
-      "value": 25
+      "value": null
     },
     {
       "hour": "15",
-      "value": 18
+      "value": null
     },
     {
       "hour": "16",
-      "value": 18
+      "value": null
     },
     {
       "hour": "17",
-      "value": 15
+      "value": null
     },
     {
       "hour": "18",
-      "value": 12
+      "value": null
     },
     {
       "hour": "19",
-      "value": 30
+      "value": null
     },
     {
       "hour": "20",
-      "value": 17
+      "value": null
     },
     {
       "hour": "21",
-      "value": 18
+      "value": null
     },
     {
       "hour": "22",
-      "value": 14
+      "value": null
     },
     {
       "hour": "23",
-      "value": 15
+      "value": null
     }
   ],
   "hourlyReceived": [
     {
       "hour": "00",
-      "value": 23
+      "value": 1
     },
     {
       "hour": "01",
-      "value": 25
+      "value": 0
     },
     {
       "hour": "02",
-      "value": 21
+      "value": 0
     },
     {
       "hour": "03",
-      "value": 20
+      "value": 0
     },
     {
       "hour": "04",
-      "value": 15
+      "value": 0
     },
     {
       "hour": "05",
-      "value": 24
+      "value": 0
     },
     {
       "hour": "06",
-      "value": 22
+      "value": 0
     },
     {
       "hour": "07",
-      "value": 11
+      "value": 0
     },
     {
       "hour": "08",
-      "value": 32
+      "value": 0
     },
     {
       "hour": "09",
-      "value": 26
+      "value": 0
     },
     {
       "hour": "10",
-      "value": 31
+      "value": 0
     },
     {
       "hour": "11",
-      "value": 24
+      "value": 0
     },
     {
       "hour": "12",
-      "value": 16
+      "value": 0
     },
     {
       "hour": "13",
-      "value": 28
+      "value": 0
     },
     {
       "hour": "14",
-      "value": 38
+      "value": 0
     },
     {
       "hour": "15",
-      "value": 45
+      "value": 0
     },
     {
       "hour": "16",
-      "value": 40
+      "value": 0
     },
     {
       "hour": "17",
-      "value": 29
+      "value": 0
     },
     {
       "hour": "18",
-      "value": 36
+      "value": 0
     },
     {
       "hour": "19",
-      "value": 36
+      "value": 0
     },
     {
       "hour": "20",
-      "value": 33
+      "value": 0
     },
     {
       "hour": "21",
-      "value": 26
+      "value": 0
     },
     {
       "hour": "22",
-      "value": 19
+      "value": 0
     },
     {
       "hour": "23",
-      "value": 4
+      "value": 0
     }
   ]
 }
