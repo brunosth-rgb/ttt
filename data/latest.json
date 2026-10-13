@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T15:05:48.619Z",
-  "reportDate": "2026-10-13T15:00:00.000Z",
-  "sourceFile": "REP_TTTReport_-41796674.xlsx",
+  "updatedAt": "2026-10-13T15:15:23.990Z",
+  "reportDate": "2026-10-13T15:10:00.000Z",
+  "sourceFile": "REP_TTTReport_-47716615.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 13,
+    "insideTerminal": 19,
     "averageTTT": 21,
-    "aboveTarget": 1,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "LZX8182",
       "trailer": "LZK9161",
       "type": "DTC",
       "enteredYard": "2026-10-13T13:23:37.350Z",
-      "minutes": 96
+      "minutes": 106
     }
   },
   "typeBreakdown": {
     "DTA": 1,
-    "DTC": 11,
-    "NORMAL": 1
+    "DTC": 12,
+    "NORMAL": 6
   },
   "flow": {
-    "entriesToday": 155,
-    "exitsToday": 141,
-    "movementsLastHour": 35,
-    "balanceLastHour": 1
+    "entriesToday": 163,
+    "exitsToday": 144,
+    "movementsLastHour": 40,
+    "balanceLastHour": 6
   },
   "aboveTargetVehicles": [
     {
@@ -33,15 +33,29 @@
       "trailer": "LZK9161",
       "type": "DTC",
       "enteredYard": "2026-10-13T13:23:37.350Z",
-      "minutes": 96
+      "minutes": 106
+    },
+    {
+      "truck": "LZT8B39",
+      "trailer": "MDO1E37",
+      "type": "DTC",
+      "enteredYard": "2026-10-13T14:30:51.147Z",
+      "minutes": 39
+    },
+    {
+      "truck": "IEZ1F62",
+      "trailer": "IID2H96",
+      "type": "DTC",
+      "enteredYard": "2026-10-13T14:32:09.207Z",
+      "minutes": 38
     }
   ],
   "dwell": {
-    "eligibleVehicles": 12,
+    "eligibleVehicles": 18,
     "buckets": {
       "upTo15": 9,
-      "from16To32": 2,
-      "from33To60": 0,
+      "from16To32": 6,
+      "from33To60": 2,
       "above60": 1
     }
   },
@@ -96,7 +110,7 @@
     },
     {
       "hour": "12",
-      "value": null
+      "value": 12
     },
     {
       "hour": "13",
@@ -190,11 +204,11 @@
     },
     {
       "hour": "11",
-      "value": 18
+      "value": 17
     },
     {
       "hour": "12",
-      "value": 0
+      "value": 9
     },
     {
       "hour": "13",
