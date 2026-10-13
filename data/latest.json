@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T04:25:03.650Z",
-  "reportDate": "2026-10-13T04:20:01.000Z",
-  "sourceFile": "REP_TTTReport_289601690.xlsx",
+  "updatedAt": "2026-10-13T04:30:48.162Z",
+  "reportDate": "2026-10-13T04:25:00.000Z",
+  "sourceFile": "REP_TTTReport_545277863.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 8,
-    "averageTTT": 10,
-    "aboveTarget": 1,
+    "insideTerminal": 7,
+    "averageTTT": 16,
+    "aboveTarget": 4,
     "oldestTruck": {
       "truck": "MJP2C04",
       "trailer": "MKO4A03",
       "type": "NORMAL",
       "enteredYard": "2026-10-13T03:46:23.277Z",
-      "minutes": 34
+      "minutes": 39
     }
   },
   "typeBreakdown": {
-    "NORMAL": 8
+    "NORMAL": 7
   },
   "flow": {
     "entriesToday": 10,
-    "exitsToday": 2,
-    "movementsLastHour": 10,
-    "balanceLastHour": 8
+    "exitsToday": 3,
+    "movementsLastHour": 11,
+    "balanceLastHour": 7
   },
   "aboveTargetVehicles": [
     {
@@ -31,15 +31,36 @@
       "trailer": "MKO4A03",
       "type": "NORMAL",
       "enteredYard": "2026-10-13T03:46:23.277Z",
-      "minutes": 34
+      "minutes": 39
+    },
+    {
+      "truck": "ITM1667",
+      "trailer": "ITM1G68",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-13T03:51:32.573Z",
+      "minutes": 33
+    },
+    {
+      "truck": "MCC9I79",
+      "trailer": "LYC9J09",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-13T03:51:49.730Z",
+      "minutes": 33
+    },
+    {
+      "truck": "ACI8D27",
+      "trailer": "IGG9C32",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-13T03:51:54.283Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 8,
+    "eligibleVehicles": 7,
     "buckets": {
       "upTo15": 0,
-      "from16To32": 7,
-      "from33To60": 1,
+      "from16To32": 3,
+      "from33To60": 4,
       "above60": 0
     }
   },
@@ -50,7 +71,7 @@
     },
     {
       "hour": "01",
-      "value": null
+      "value": 29
     },
     {
       "hour": "02",
