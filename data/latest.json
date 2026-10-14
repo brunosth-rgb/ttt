@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T10:25:09.729Z",
-  "reportDate": "2026-10-14T10:20:01.000Z",
-  "sourceFile": "REP_TTTReport_-21163668.xlsx",
+  "updatedAt": "2026-10-14T10:32:32.082Z",
+  "reportDate": "2026-10-14T10:25:00.000Z",
+  "sourceFile": "REP_TTTReport_-67238575.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 26,
+    "insideTerminal": 25,
     "averageTTT": 20,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "ANL0D10",
       "trailer": "ICX6D41",
       "type": "NORMAL",
       "enteredYard": "2026-10-14T09:32:36.793Z",
-      "minutes": 47
+      "minutes": 52
     }
   },
   "typeBreakdown": {
     "DTA": 3,
-    "NORMAL": 11,
-    "DTC": 12
+    "NORMAL": 12,
+    "DTC": 10
   },
   "flow": {
-    "entriesToday": 248,
-    "exitsToday": 222,
-    "movementsLastHour": 67,
-    "balanceLastHour": 15
+    "entriesToday": 250,
+    "exitsToday": 225,
+    "movementsLastHour": 70,
+    "balanceLastHour": 12
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,29 @@
       "trailer": "ICX6D41",
       "type": "NORMAL",
       "enteredYard": "2026-10-14T09:32:36.793Z",
-      "minutes": 47
+      "minutes": 52
     },
     {
       "truck": "ABR7D04",
       "trailer": "IEN1560",
       "type": "NORMAL",
       "enteredYard": "2026-10-14T09:37:50.010Z",
-      "minutes": 42
+      "minutes": 47
+    },
+    {
+      "truck": "MKE5I47",
+      "trailer": "LYR8D65",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-14T09:51:47.890Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 23,
+    "eligibleVehicles": 22,
     "buckets": {
-      "upTo15": 14,
+      "upTo15": 12,
       "from16To32": 7,
-      "from33To60": 2,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -83,7 +90,7 @@
     },
     {
       "hour": "07",
-      "value": 11
+      "value": 13
     },
     {
       "hour": "08",
@@ -181,7 +188,7 @@
     },
     {
       "hour": "07",
-      "value": 23
+      "value": 25
     },
     {
       "hour": "08",
