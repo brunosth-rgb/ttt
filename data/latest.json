@@ -1,68 +1,61 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T19:55:44.809Z",
-  "reportDate": "2026-10-15T19:45:01.000Z",
-  "sourceFile": "REP_TTTReport_-44738352.xlsx",
+  "updatedAt": "2026-10-15T20:07:19.432Z",
+  "reportDate": "2026-10-15T20:00:01.000Z",
+  "sourceFile": "REP_TTTReport_-49426443.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 18,
     "averageTTT": 42,
-    "aboveTarget": 4,
+    "aboveTarget": 3,
     "oldestTruck": {
-      "truck": "GZB2G16",
-      "trailer": "TPV9F49",
+      "truck": "HQR6J42",
+      "trailer": "MIS4F79",
       "type": "NORMAL",
-      "enteredYard": "2026-10-15T18:47:09.120Z",
-      "minutes": 58
+      "enteredYard": "2026-10-15T19:06:14.833Z",
+      "minutes": 54
     }
   },
   "typeBreakdown": {
     "DTA": 2,
-    "NORMAL": 16,
-    "DTC": 1
+    "NORMAL": 11,
+    "DTC": 5
   },
   "flow": {
-    "entriesToday": 535,
-    "exitsToday": 516,
-    "movementsLastHour": 78,
-    "balanceLastHour": 4
+    "entriesToday": 543,
+    "exitsToday": 525,
+    "movementsLastHour": 75,
+    "balanceLastHour": -3
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "GZB2G16",
-      "trailer": "TPV9F49",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-15T18:47:09.120Z",
-      "minutes": 58
-    },
-    {
-      "truck": "JXB0038",
-      "trailer": "MJL3875",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-15T19:03:46.830Z",
-      "minutes": 41
-    },
-    {
-      "truck": "LZN2E69",
-      "trailer": "AEN5H66",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-15T19:05:53.133Z",
-      "minutes": 39
-    },
     {
       "truck": "HQR6J42",
       "trailer": "MIS4F79",
       "type": "NORMAL",
       "enteredYard": "2026-10-15T19:06:14.833Z",
+      "minutes": 54
+    },
+    {
+      "truck": "MBK4890",
+      "trailer": "ACW9B54",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-15T19:16:13.870Z",
+      "minutes": 44
+    },
+    {
+      "truck": "LYF8H00",
+      "trailer": "LZL9235",
+      "type": "DTC",
+      "enteredYard": "2026-10-15T19:20:36.977Z",
       "minutes": 39
     }
   ],
   "dwell": {
-    "eligibleVehicles": 17,
+    "eligibleVehicles": 16,
     "buckets": {
-      "upTo15": 7,
-      "from16To32": 6,
-      "from33To60": 4,
+      "upTo15": 8,
+      "from16To32": 5,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -133,7 +126,7 @@
     },
     {
       "hour": "16",
-      "value": 28
+      "value": 29
     },
     {
       "hour": "17",
@@ -231,7 +224,7 @@
     },
     {
       "hour": "16",
-      "value": 28
+      "value": 36
     },
     {
       "hour": "17",
