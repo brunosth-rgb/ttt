@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T18:35:34.530Z",
-  "reportDate": "2026-10-15T18:30:00.000Z",
-  "sourceFile": "REP_TTTReport_471257218.xlsx",
+  "updatedAt": "2026-10-15T18:51:00.204Z",
+  "reportDate": "2026-10-15T18:45:00.000Z",
+  "sourceFile": "REP_TTTReport_-38417298.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 15,
     "averageTTT": 43,
-    "aboveTarget": 1,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "RLK4I40",
       "trailer": "SXK4J83",
       "type": "NORMAL",
       "enteredYard": "2026-10-15T16:10:34.387Z",
-      "minutes": 139
+      "minutes": 154
     }
   },
   "typeBreakdown": {
     "DTA": 2,
-    "NORMAL": 11,
-    "DTC": 6
+    "NORMAL": 10,
+    "DTC": 3
   },
   "flow": {
-    "entriesToday": 488,
-    "exitsToday": 469,
-    "movementsLastHour": 68,
-    "balanceLastHour": 8
+    "entriesToday": 494,
+    "exitsToday": 479,
+    "movementsLastHour": 69,
+    "balanceLastHour": 3
   },
   "aboveTargetVehicles": [
     {
@@ -33,15 +33,29 @@
       "trailer": "SXK4J83",
       "type": "NORMAL",
       "enteredYard": "2026-10-15T16:10:34.387Z",
-      "minutes": 139
+      "minutes": 154
+    },
+    {
+      "truck": "ICV5E63",
+      "trailer": "IGM3D43",
+      "type": "DTC",
+      "enteredYard": "2026-10-15T18:08:31.160Z",
+      "minutes": 36
+    },
+    {
+      "truck": "AIR4G88",
+      "trailer": "ICJ5D28",
+      "type": "DTC",
+      "enteredYard": "2026-10-15T18:11:09.423Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 17,
+    "eligibleVehicles": 13,
     "buckets": {
-      "upTo15": 9,
-      "from16To32": 7,
-      "from33To60": 0,
+      "upTo15": 6,
+      "from16To32": 4,
+      "from33To60": 2,
       "above60": 1
     }
   },
@@ -108,7 +122,7 @@
     },
     {
       "hour": "15",
-      "value": 26
+      "value": 24
     },
     {
       "hour": "16",
@@ -206,7 +220,7 @@
     },
     {
       "hour": "15",
-      "value": 20
+      "value": 26
     },
     {
       "hour": "16",
