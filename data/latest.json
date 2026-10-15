@@ -1,55 +1,48 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T17:35:54.206Z",
-  "reportDate": "2026-10-15T17:30:00.000Z",
-  "sourceFile": "REP_TTTReport_-79256999.xlsx",
+  "updatedAt": "2026-10-15T17:47:21.962Z",
+  "reportDate": "2026-10-15T17:40:01.000Z",
+  "sourceFile": "REP_TTTReport_586273708.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 11,
+    "insideTerminal": 12,
     "averageTTT": 44,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "AFH8C10",
-      "trailer": "ACY6I09",
+      "truck": "RLK4I40",
+      "trailer": "SXK4J83",
       "type": "NORMAL",
-      "enteredYard": "2026-10-15T14:33:53.213Z",
-      "minutes": 176
+      "enteredYard": "2026-10-15T16:10:34.387Z",
+      "minutes": 89
     }
   },
   "typeBreakdown": {
     "DTA": 2,
-    "NORMAL": 5,
-    "DTC": 4
+    "NORMAL": 9,
+    "DTC": 1
   },
   "flow": {
-    "entriesToday": 450,
-    "exitsToday": 439,
-    "movementsLastHour": 58,
-    "balanceLastHour": -22
+    "entriesToday": 457,
+    "exitsToday": 444,
+    "movementsLastHour": 61,
+    "balanceLastHour": -17
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "AFH8C10",
-      "trailer": "ACY6I09",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-15T14:33:53.213Z",
-      "minutes": 176
-    },
     {
       "truck": "RLK4I40",
       "trailer": "SXK4J83",
       "type": "NORMAL",
       "enteredYard": "2026-10-15T16:10:34.387Z",
-      "minutes": 79
+      "minutes": 89
     }
   ],
   "dwell": {
-    "eligibleVehicles": 9,
+    "eligibleVehicles": 10,
     "buckets": {
-      "upTo15": 2,
-      "from16To32": 5,
+      "upTo15": 7,
+      "from16To32": 2,
       "from33To60": 0,
-      "above60": 2
+      "above60": 1
     }
   },
   "hourlyTTT": [
@@ -111,7 +104,7 @@
     },
     {
       "hour": "14",
-      "value": 40
+      "value": 43
     },
     {
       "hour": "15",
@@ -209,7 +202,7 @@
     },
     {
       "hour": "14",
-      "value": 10
+      "value": 17
     },
     {
       "hour": "15",
