@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T10:05:53.650Z",
-  "reportDate": "2026-10-16T10:00:00.000Z",
-  "sourceFile": "REP_TTTReport_338365731.xlsx",
+  "updatedAt": "2026-10-16T10:10:23.263Z",
+  "reportDate": "2026-10-16T10:05:00.000Z",
+  "sourceFile": "REP_TTTReport_-65157092.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 17,
     "averageTTT": 37,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "LYW7010",
       "trailer": "MCO7414",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T09:17:18.243Z",
-      "minutes": 43
+      "minutes": 48
     }
   },
   "typeBreakdown": {
     "DTA": 5,
-    "NORMAL": 11
+    "NORMAL": 12
   },
   "flow": {
-    "entriesToday": 250,
-    "exitsToday": 234,
-    "movementsLastHour": 67,
+    "entriesToday": 252,
+    "exitsToday": 235,
+    "movementsLastHour": 69,
     "balanceLastHour": -9
   },
   "aboveTargetVehicles": [
@@ -32,22 +32,29 @@
       "trailer": "MCO7414",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T09:17:18.243Z",
-      "minutes": 43
+      "minutes": 48
     },
     {
       "truck": "IFP8I28",
       "trailer": "AGZ8E87",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T09:27:25.317Z",
-      "minutes": 33
+      "minutes": 38
+    },
+    {
+      "truck": "LUU0D94",
+      "trailer": "AVA2A47",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-16T09:29:41.453Z",
+      "minutes": 35
     }
   ],
   "dwell": {
-    "eligibleVehicles": 11,
+    "eligibleVehicles": 12,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 3,
-      "from33To60": 2,
+      "upTo15": 8,
+      "from16To32": 1,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -82,7 +89,7 @@
     },
     {
       "hour": "07",
-      "value": null
+      "value": 33
     },
     {
       "hour": "08",
@@ -180,7 +187,7 @@
     },
     {
       "hour": "07",
-      "value": 0
+      "value": 2
     },
     {
       "hour": "08",
