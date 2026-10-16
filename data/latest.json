@@ -1,73 +1,59 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T07:05:27.521Z",
-  "reportDate": "2026-10-16T07:00:00.000Z",
-  "sourceFile": "REP_TTTReport_442681618.xlsx",
+  "updatedAt": "2026-10-16T07:10:12.269Z",
+  "reportDate": "2026-10-16T07:05:00.000Z",
+  "sourceFile": "REP_TTTReport_-16652143.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 21,
     "averageTTT": 35,
-    "aboveTarget": 5,
+    "aboveTarget": 3,
     "oldestTruck": {
-      "truck": "BWP9E22",
-      "trailer": "AEP5I55",
+      "truck": "LXC2A94",
+      "trailer": "LXP8D97",
       "type": "NORMAL",
-      "enteredYard": "2026-10-16T06:14:54.477Z",
-      "minutes": 45
+      "enteredYard": "2026-10-16T06:18:28.293Z",
+      "minutes": 47
     }
   },
   "typeBreakdown": {
-    "NORMAL": 19
+    "NORMAL": 21
   },
   "flow": {
-    "entriesToday": 153,
-    "exitsToday": 134,
-    "movementsLastHour": 73,
+    "entriesToday": 157,
+    "exitsToday": 136,
+    "movementsLastHour": 69,
     "balanceLastHour": -11
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "BWP9E22",
-      "trailer": "AEP5I55",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-16T06:14:54.477Z",
-      "minutes": 45
-    },
-    {
-      "truck": "BTR6J13",
-      "trailer": "IKV2I95",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-16T06:18:04.770Z",
-      "minutes": 42
-    },
     {
       "truck": "LXC2A94",
       "trailer": "LXP8D97",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T06:18:28.293Z",
-      "minutes": 42
+      "minutes": 47
     },
     {
       "truck": "ACA5H87",
       "trailer": "ADZ1594",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T06:18:57.940Z",
-      "minutes": 41
+      "minutes": 46
     },
     {
       "truck": "LZR0G25",
       "trailer": "CKY2F84",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T06:21:14.920Z",
-      "minutes": 39
+      "minutes": 44
     }
   ],
   "dwell": {
-    "eligibleVehicles": 19,
+    "eligibleVehicles": 21,
     "buckets": {
-      "upTo15": 13,
-      "from16To32": 1,
-      "from33To60": 5,
+      "upTo15": 14,
+      "from16To32": 4,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -90,7 +76,7 @@
     },
     {
       "hour": "04",
-      "value": null
+      "value": 47
     },
     {
       "hour": "05",
@@ -188,7 +174,7 @@
     },
     {
       "hour": "04",
-      "value": 0
+      "value": 4
     },
     {
       "hour": "05",
