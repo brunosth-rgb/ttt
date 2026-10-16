@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T15:05:19.169Z",
-  "reportDate": "2026-10-16T15:00:01.000Z",
-  "sourceFile": "REP_TTTReport_359491236.xlsx",
+  "updatedAt": "2026-10-16T15:10:14.774Z",
+  "reportDate": "2026-10-16T15:05:01.000Z",
+  "sourceFile": "REP_TTTReport_-24510319.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 17,
+    "insideTerminal": 19,
     "averageTTT": 33,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "MMM1F91",
       "trailer": "UAZ4E96",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T14:23:11.440Z",
-      "minutes": 37
+      "minutes": 42
     }
   },
   "typeBreakdown": {
     "DTA": 4,
-    "NORMAL": 12,
+    "NORMAL": 14,
     "DTC": 1
   },
   "flow": {
-    "entriesToday": 361,
-    "exitsToday": 344,
-    "movementsLastHour": 55,
-    "balanceLastHour": -3
+    "entriesToday": 366,
+    "exitsToday": 347,
+    "movementsLastHour": 57,
+    "balanceLastHour": -1
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,29 @@
       "trailer": "UAZ4E96",
       "type": "NORMAL",
       "enteredYard": "2026-10-16T14:23:11.440Z",
-      "minutes": 37
+      "minutes": 42
     },
     {
-      "truck": "MER4G58",
-      "trailer": "MFK2J66",
+      "truck": "MET5H90",
+      "trailer": "MKU3J82",
       "type": "NORMAL",
-      "enteredYard": "2026-10-16T14:25:56.377Z",
+      "enteredYard": "2026-10-16T14:30:45.980Z",
+      "minutes": 34
+    },
+    {
+      "truck": "RAI6G75",
+      "trailer": "RXO5C37",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-16T14:31:16.553Z",
       "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 13,
+    "eligibleVehicles": 15,
     "buckets": {
-      "upTo15": 5,
-      "from16To32": 6,
-      "from33To60": 2,
+      "upTo15": 7,
+      "from16To32": 5,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -103,7 +110,7 @@
     },
     {
       "hour": "12",
-      "value": null
+      "value": 39
     },
     {
       "hour": "13",
@@ -197,11 +204,11 @@
     },
     {
       "hour": "11",
-      "value": 26
+      "value": 28
     },
     {
       "hour": "12",
-      "value": 0
+      "value": 3
     },
     {
       "hour": "13",
