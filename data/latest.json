@@ -1,59 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T09:14:33.370Z",
-  "reportDate": "2026-10-18T09:05:00.000Z",
-  "sourceFile": "REP_TTTReport_-90618664.xlsx",
+  "updatedAt": "2026-10-18T09:20:13.238Z",
+  "reportDate": "2026-10-18T09:15:00.000Z",
+  "sourceFile": "REP_TTTReport_-60843612.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 17,
+    "insideTerminal": 8,
     "averageTTT": 27,
-    "aboveTarget": 3,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "RHE4J97",
-      "trailer": "RXK7H12",
+      "truck": "RXN4B07",
+      "trailer": "FPI0G64",
       "type": "NORMAL",
-      "enteredYard": "2026-10-18T08:11:20.547Z",
-      "minutes": 54
+      "enteredYard": "2026-10-18T08:36:06.727Z",
+      "minutes": 39
     }
   },
   "typeBreakdown": {
-    "NORMAL": 17
+    "NORMAL": 8
   },
   "flow": {
     "entriesToday": 205,
-    "exitsToday": 188,
-    "movementsLastHour": 70,
-    "balanceLastHour": -2
+    "exitsToday": 197,
+    "movementsLastHour": 59,
+    "balanceLastHour": -9
   },
   "aboveTargetVehicles": [
     {
-      "truck": "RHE4J97",
-      "trailer": "RXK7H12",
+      "truck": "RXN4B07",
+      "trailer": "FPI0G64",
       "type": "NORMAL",
-      "enteredYard": "2026-10-18T08:11:20.547Z",
-      "minutes": 54
-    },
-    {
-      "truck": "LWW4H33",
-      "trailer": "IEL4I16",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-18T08:29:10.917Z",
-      "minutes": 36
-    },
-    {
-      "truck": "RYT3B13",
-      "trailer": "SXH3I99",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-18T08:32:32.720Z",
-      "minutes": 32
+      "enteredYard": "2026-10-18T08:36:06.727Z",
+      "minutes": 39
     }
   ],
   "dwell": {
-    "eligibleVehicles": 17,
+    "eligibleVehicles": 8,
     "buckets": {
-      "upTo15": 8,
-      "from16To32": 6,
-      "from33To60": 3,
+      "upTo15": 0,
+      "from16To32": 7,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -84,7 +70,7 @@
     },
     {
       "hour": "06",
-      "value": null
+      "value": 32
     },
     {
       "hour": "07",
