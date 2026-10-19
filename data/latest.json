@@ -1,39 +1,61 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T13:31:13.011Z",
-  "reportDate": "2026-10-19T13:25:02.000Z",
-  "sourceFile": "REP_TTTReport_-55565240.xlsx",
+  "updatedAt": "2026-10-19T13:40:35.580Z",
+  "reportDate": "2026-10-19T13:35:00.000Z",
+  "sourceFile": "REP_TTTReport_370326257.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 18,
     "averageTTT": 21,
-    "aboveTarget": 0,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "BXG6558",
       "trailer": "CQH1891",
       "type": "DTC",
       "enteredYard": "2026-10-19T12:53:53.817Z",
-      "minutes": 31
+      "minutes": 41
     }
   },
   "typeBreakdown": {
     "DTA": 4,
     "DTC": 6,
-    "NORMAL": 9
+    "NORMAL": 8
   },
   "flow": {
-    "entriesToday": 132,
-    "exitsToday": 113,
-    "movementsLastHour": 39,
+    "entriesToday": 136,
+    "exitsToday": 117,
+    "movementsLastHour": 45,
     "balanceLastHour": 13
   },
-  "aboveTargetVehicles": [],
+  "aboveTargetVehicles": [
+    {
+      "truck": "BXG6558",
+      "trailer": "CQH1891",
+      "type": "DTC",
+      "enteredYard": "2026-10-19T12:53:53.817Z",
+      "minutes": 41
+    },
+    {
+      "truck": "IKD5C48",
+      "trailer": "CZC3D91",
+      "type": "DTC",
+      "enteredYard": "2026-10-19T12:56:07.913Z",
+      "minutes": 39
+    },
+    {
+      "truck": "BWI5A87",
+      "trailer": "KCB1A26",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-19T13:01:25.073Z",
+      "minutes": 34
+    }
+  ],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 14,
     "buckets": {
-      "upTo15": 7,
-      "from16To32": 8,
-      "from33To60": 0,
+      "upTo15": 4,
+      "from16To32": 7,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -80,7 +102,7 @@
     },
     {
       "hour": "10",
-      "value": 16
+      "value": 19
     },
     {
       "hour": "11",
@@ -178,7 +200,7 @@
     },
     {
       "hour": "10",
-      "value": 14
+      "value": 18
     },
     {
       "hour": "11",
