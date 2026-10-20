@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T04:40:10.158Z",
-  "reportDate": "2026-10-20T04:35:01.000Z",
-  "sourceFile": "REP_TTTReport_171881529.xlsx",
+  "updatedAt": "2026-10-20T04:45:13.798Z",
+  "reportDate": "2026-10-20T04:40:01.000Z",
+  "sourceFile": "REP_TTTReport_-30240835.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 20,
-    "averageTTT": 25,
-    "aboveTarget": 1,
+    "insideTerminal": 21,
+    "averageTTT": 24,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "AJR4565",
       "trailer": "CYB1753",
       "type": "NORMAL",
       "enteredYard": "2026-10-20T03:15:34.783Z",
-      "minutes": 79
+      "minutes": 84
     }
   },
   "typeBreakdown": {
-    "NORMAL": 20
+    "NORMAL": 21
   },
   "flow": {
-    "entriesToday": 50,
-    "exitsToday": 30,
-    "movementsLastHour": 58,
-    "balanceLastHour": 8
+    "entriesToday": 54,
+    "exitsToday": 33,
+    "movementsLastHour": 63,
+    "balanceLastHour": 9
   },
   "aboveTargetVehicles": [
     {
@@ -31,15 +31,29 @@
       "trailer": "CYB1753",
       "type": "NORMAL",
       "enteredYard": "2026-10-20T03:15:34.783Z",
-      "minutes": 79
+      "minutes": 84
+    },
+    {
+      "truck": "AQS9A27",
+      "trailer": "MCM6G14",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-20T04:03:34.103Z",
+      "minutes": 36
+    },
+    {
+      "truck": "SUN8E99",
+      "trailer": "ELE0456",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-20T04:06:40.613Z",
+      "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 20,
+    "eligibleVehicles": 21,
     "buckets": {
-      "upTo15": 13,
-      "from16To32": 6,
-      "from33To60": 0,
+      "upTo15": 14,
+      "from16To32": 4,
+      "from33To60": 2,
       "above60": 1
     }
   },
@@ -50,7 +64,7 @@
     },
     {
       "hour": "01",
-      "value": 27
+      "value": 26
     },
     {
       "hour": "02",
@@ -148,7 +162,7 @@
     },
     {
       "hour": "01",
-      "value": 23
+      "value": 27
     },
     {
       "hour": "02",
