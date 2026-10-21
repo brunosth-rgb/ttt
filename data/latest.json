@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T07:00:26.946Z",
-  "reportDate": "2026-10-21T06:55:00.000Z",
-  "sourceFile": "REP_TTTReport_-80252526.xlsx",
+  "updatedAt": "2026-10-21T07:09:37.994Z",
+  "reportDate": "2026-10-21T07:00:00.000Z",
+  "sourceFile": "REP_TTTReport_-71639299.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 10,
+    "insideTerminal": 9,
     "averageTTT": 43,
     "aboveTarget": 2,
     "oldestTruck": {
@@ -13,17 +13,17 @@
       "trailer": "GLG4332",
       "type": "NORMAL",
       "enteredYard": "2026-10-21T04:59:44.377Z",
-      "minutes": 115
+      "minutes": 120
     }
   },
   "typeBreakdown": {
-    "NORMAL": 10
+    "NORMAL": 9
   },
   "flow": {
-    "entriesToday": 130,
-    "exitsToday": 120,
-    "movementsLastHour": 78,
-    "balanceLastHour": -20
+    "entriesToday": 132,
+    "exitsToday": 123,
+    "movementsLastHour": 73,
+    "balanceLastHour": -23
   },
   "aboveTargetVehicles": [
     {
@@ -31,21 +31,21 @@
       "trailer": "GLG4332",
       "type": "NORMAL",
       "enteredYard": "2026-10-21T04:59:44.377Z",
-      "minutes": 115
+      "minutes": 120
     },
     {
-      "truck": "RLA7A54",
-      "trailer": "MKU7066",
+      "truck": "BBE7F66",
+      "trailer": "MHN8H04",
       "type": "NORMAL",
-      "enteredYard": "2026-10-21T06:03:20.623Z",
-      "minutes": 52
+      "enteredYard": "2026-10-21T06:26:22.837Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 10,
+    "eligibleVehicles": 9,
     "buckets": {
-      "upTo15": 5,
-      "from16To32": 3,
+      "upTo15": 7,
+      "from16To32": 0,
       "from33To60": 1,
       "above60": 1
     }
@@ -163,7 +163,7 @@
     },
     {
       "hour": "03",
-      "value": 23
+      "value": 25
     },
     {
       "hour": "04",
