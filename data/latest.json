@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T08:25:26.650Z",
-  "reportDate": "2026-10-21T08:20:00.000Z",
-  "sourceFile": "REP_TTTReport_605090359.xlsx",
+  "updatedAt": "2026-10-21T08:30:17.808Z",
+  "reportDate": "2026-10-21T08:25:00.000Z",
+  "sourceFile": "REP_TTTReport_764705375.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 21,
-    "averageTTT": 39,
-    "aboveTarget": 2,
+    "insideTerminal": 19,
+    "averageTTT": 38,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "MKY2A28",
       "trailer": "RYI3D27",
       "type": "NORMAL",
       "enteredYard": "2026-10-21T07:29:48.023Z",
-      "minutes": 50
+      "minutes": 55
     }
   },
   "typeBreakdown": {
     "DTA": 6,
-    "NORMAL": 15
+    "NORMAL": 13
   },
   "flow": {
-    "entriesToday": 178,
-    "exitsToday": 157,
-    "movementsLastHour": 59,
-    "balanceLastHour": 11
+    "entriesToday": 179,
+    "exitsToday": 160,
+    "movementsLastHour": 61,
+    "balanceLastHour": 9
   },
   "aboveTargetVehicles": [
     {
@@ -32,22 +32,29 @@
       "trailer": "RYI3D27",
       "type": "NORMAL",
       "enteredYard": "2026-10-21T07:29:48.023Z",
-      "minutes": 50
+      "minutes": 55
     },
     {
       "truck": "AAD7F93",
       "trailer": "AET9284",
       "type": "NORMAL",
       "enteredYard": "2026-10-21T07:42:00.723Z",
-      "minutes": 38
+      "minutes": 43
+    },
+    {
+      "truck": "MJR4C90",
+      "trailer": "MHB6G43",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-21T07:52:31.717Z",
+      "minutes": 32
     }
   ],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 13,
     "buckets": {
-      "upTo15": 8,
+      "upTo15": 5,
       "from16To32": 5,
-      "from33To60": 2,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -74,7 +81,7 @@
     },
     {
       "hour": "05",
-      "value": 14
+      "value": 13
     },
     {
       "hour": "06",
@@ -172,7 +179,7 @@
     },
     {
       "hour": "05",
-      "value": 18
+      "value": 19
     },
     {
       "hour": "06",
