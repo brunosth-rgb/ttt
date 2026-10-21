@@ -1,55 +1,48 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T14:00:52.120Z",
-  "reportDate": "2026-10-21T13:55:00.000Z",
-  "sourceFile": "REP_TTTReport_-40973216.xlsx",
+  "updatedAt": "2026-10-21T14:11:13.782Z",
+  "reportDate": "2026-10-21T14:05:00.000Z",
+  "sourceFile": "REP_TTTReport_-41899255.xlsx",
   "targetTTT": 32,
   "metrics": {
     "insideTerminal": 29,
     "averageTTT": 34,
-    "aboveTarget": 2,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "BWI4987",
-      "trailer": "MLY9F46",
+      "truck": "MBH2150",
+      "trailer": "MDO1J14",
       "type": "NORMAL",
-      "enteredYard": "2026-10-21T11:46:16.530Z",
-      "minutes": 129
+      "enteredYard": "2026-10-21T13:29:29.830Z",
+      "minutes": 36
     }
   },
   "typeBreakdown": {
     "DTA": 9,
-    "NORMAL": 19,
-    "DTC": 1
+    "NORMAL": 18,
+    "DTC": 2
   },
   "flow": {
-    "entriesToday": 380,
-    "exitsToday": 351,
-    "movementsLastHour": 79,
-    "balanceLastHour": 5
+    "entriesToday": 387,
+    "exitsToday": 358,
+    "movementsLastHour": 80,
+    "balanceLastHour": 8
   },
   "aboveTargetVehicles": [
     {
-      "truck": "BWI4987",
-      "trailer": "MLY9F46",
+      "truck": "MBH2150",
+      "trailer": "MDO1J14",
       "type": "NORMAL",
-      "enteredYard": "2026-10-21T11:46:16.530Z",
-      "minutes": 129
-    },
-    {
-      "truck": "AIN0I08",
-      "trailer": "IHM0B86",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-21T13:17:56.357Z",
-      "minutes": 37
+      "enteredYard": "2026-10-21T13:29:29.830Z",
+      "minutes": 36
     }
   ],
   "dwell": {
     "eligibleVehicles": 20,
     "buckets": {
       "upTo15": 13,
-      "from16To32": 5,
+      "from16To32": 6,
       "from33To60": 1,
-      "above60": 1
+      "above60": 0
     }
   },
   "hourlyTTT": [
@@ -95,11 +88,11 @@
     },
     {
       "hour": "10",
-      "value": 25
+      "value": 29
     },
     {
       "hour": "11",
-      "value": null
+      "value": 30
     },
     {
       "hour": "12",
@@ -193,11 +186,11 @@
     },
     {
       "hour": "10",
-      "value": 39
+      "value": 43
     },
     {
       "hour": "11",
-      "value": 0
+      "value": 3
     },
     {
       "hour": "12",
