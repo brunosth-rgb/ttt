@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T22:05:38.023Z",
-  "reportDate": "2026-10-22T22:00:00.000Z",
-  "sourceFile": "REP_TTTReport_900877757.xlsx",
+  "updatedAt": "2026-10-22T22:10:41.021Z",
+  "reportDate": "2026-10-22T22:05:01.000Z",
+  "sourceFile": "REP_TTTReport_-36988991.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 19,
+    "insideTerminal": 25,
     "averageTTT": 29,
-    "aboveTarget": 2,
+    "aboveTarget": 4,
     "oldestTruck": {
       "truck": "MAH0D38",
       "trailer": "BWB6D26",
       "type": "DTC",
       "enteredYard": "2026-10-22T17:56:19.387Z",
-      "minutes": 244
+      "minutes": 249
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "DTC": 1,
-    "NORMAL": 17
+    "NORMAL": 23
   },
   "flow": {
-    "entriesToday": 664,
+    "entriesToday": 670,
     "exitsToday": 645,
-    "movementsLastHour": 49,
-    "balanceLastHour": 7
+    "movementsLastHour": 55,
+    "balanceLastHour": 13
   },
   "aboveTargetVehicles": [
     {
@@ -33,22 +33,36 @@
       "trailer": "BWB6D26",
       "type": "DTC",
       "enteredYard": "2026-10-22T17:56:19.387Z",
-      "minutes": 244
+      "minutes": 249
     },
     {
       "truck": "ABE1C23",
       "trailer": "LZA5E33",
       "type": "NORMAL",
       "enteredYard": "2026-10-22T21:18:35.053Z",
-      "minutes": 41
+      "minutes": 46
+    },
+    {
+      "truck": "AYV9G16",
+      "trailer": "RYQ6G14",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-22T21:30:42.533Z",
+      "minutes": 34
+    },
+    {
+      "truck": "TPQ7A33",
+      "trailer": "QJS0E43",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-22T21:31:09.773Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 18,
+    "eligibleVehicles": 24,
     "buckets": {
-      "upTo15": 8,
-      "from16To32": 8,
-      "from33To60": 1,
+      "upTo15": 11,
+      "from16To32": 9,
+      "from33To60": 3,
       "above60": 1
     }
   },
@@ -229,7 +243,7 @@
     },
     {
       "hour": "19",
-      "value": 0
+      "value": 6
     },
     {
       "hour": "20",
