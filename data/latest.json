@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T13:10:38.871Z",
-  "reportDate": "2026-10-22T13:00:02.000Z",
-  "sourceFile": "REP_TTTReport_-28428724.xlsx",
+  "updatedAt": "2026-10-22T13:12:20.663Z",
+  "reportDate": "2026-10-22T13:05:00.000Z",
+  "sourceFile": "REP_TTTReport_626597878.xlsx",
   "targetTTT": 32,
   "metrics": {
     "insideTerminal": 14,
     "averageTTT": 28,
-    "aboveTarget": 5,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "ADX6A74",
       "trailer": "LXH3C86",
       "type": "NORMAL",
       "enteredYard": "2026-10-22T12:14:05.530Z",
-      "minutes": 46
+      "minutes": 51
     }
   },
   "typeBreakdown": {
@@ -22,10 +22,10 @@
     "DTC": 1
   },
   "flow": {
-    "entriesToday": 373,
-    "exitsToday": 359,
-    "movementsLastHour": 67,
-    "balanceLastHour": -3
+    "entriesToday": 375,
+    "exitsToday": 361,
+    "movementsLastHour": 63,
+    "balanceLastHour": -5
   },
   "aboveTargetVehicles": [
     {
@@ -33,43 +33,29 @@
       "trailer": "LXH3C86",
       "type": "NORMAL",
       "enteredYard": "2026-10-22T12:14:05.530Z",
-      "minutes": 46
+      "minutes": 51
     },
     {
       "truck": "AEK5B69",
       "trailer": "MLG0I29",
       "type": "NORMAL",
       "enteredYard": "2026-10-22T12:17:17.907Z",
-      "minutes": 43
-    },
-    {
-      "truck": "AJC1A88",
-      "trailer": "ANF7G87",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-22T12:17:39.763Z",
-      "minutes": 42
-    },
-    {
-      "truck": "LZX8182",
-      "trailer": "LZK9161",
-      "type": "DTC",
-      "enteredYard": "2026-10-22T12:24:48.590Z",
-      "minutes": 35
+      "minutes": 48
     },
     {
       "truck": "FIF5F07",
       "trailer": "BZB7J06",
       "type": "NORMAL",
       "enteredYard": "2026-10-22T12:28:00.707Z",
-      "minutes": 32
+      "minutes": 37
     }
   ],
   "dwell": {
     "eligibleVehicles": 5,
     "buckets": {
-      "upTo15": 0,
+      "upTo15": 2,
       "from16To32": 0,
-      "from33To60": 5,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -116,7 +102,7 @@
     },
     {
       "hour": "10",
-      "value": null
+      "value": 43
     },
     {
       "hour": "11",
@@ -214,7 +200,7 @@
     },
     {
       "hour": "10",
-      "value": 0
+      "value": 2
     },
     {
       "hour": "11",
