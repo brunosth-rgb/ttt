@@ -1,52 +1,37 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T07:00:10.857Z",
-  "reportDate": "2026-10-22T06:55:00.000Z",
-  "sourceFile": "REP_TTTReport_586691676.xlsx",
+  "updatedAt": "2026-10-22T07:10:22.902Z",
+  "reportDate": "2026-10-22T07:05:00.000Z",
+  "sourceFile": "REP_TTTReport_651674043.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 12,
+    "insideTerminal": 9,
     "averageTTT": 28,
-    "aboveTarget": 2,
+    "aboveTarget": 0,
     "oldestTruck": {
-      "truck": "QJF0F91",
-      "trailer": "DCU7H41",
+      "truck": "TPV7E40",
+      "trailer": "TQJ5H34",
       "type": "NORMAL",
-      "enteredYard": "2026-10-22T06:12:41.547Z",
-      "minutes": 42
+      "enteredYard": "2026-10-22T06:43:32.070Z",
+      "minutes": 21
     }
   },
   "typeBreakdown": {
-    "NORMAL": 12
+    "NORMAL": 9
   },
   "flow": {
-    "entriesToday": 141,
-    "exitsToday": 129,
-    "movementsLastHour": 65,
-    "balanceLastHour": -1
+    "entriesToday": 148,
+    "exitsToday": 139,
+    "movementsLastHour": 66,
+    "balanceLastHour": -10
   },
-  "aboveTargetVehicles": [
-    {
-      "truck": "QJF0F91",
-      "trailer": "DCU7H41",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-22T06:12:41.547Z",
-      "minutes": 42
-    },
-    {
-      "truck": "AQS9A27",
-      "trailer": "MCM6G14",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-22T06:21:37.120Z",
-      "minutes": 33
-    }
-  ],
+  "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 12,
+    "eligibleVehicles": 9,
     "buckets": {
-      "upTo15": 8,
+      "upTo15": 7,
       "from16To32": 2,
-      "from33To60": 2,
+      "from33To60": 0,
       "above60": 0
     }
   },
@@ -69,7 +54,7 @@
     },
     {
       "hour": "04",
-      "value": null
+      "value": 22
     },
     {
       "hour": "05",
@@ -163,11 +148,11 @@
     },
     {
       "hour": "03",
-      "value": 27
+      "value": 31
     },
     {
       "hour": "04",
-      "value": 0
+      "value": 3
     },
     {
       "hour": "05",
