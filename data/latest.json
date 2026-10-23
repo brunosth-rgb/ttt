@@ -1,52 +1,52 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T14:18:40.600Z",
-  "reportDate": "2026-10-23T14:10:01.000Z",
-  "sourceFile": "REP_TTTReport_-58547754.xlsx",
+  "updatedAt": "2026-10-23T14:21:22.813Z",
+  "reportDate": "2026-10-23T14:15:01.000Z",
+  "sourceFile": "REP_TTTReport_-15134247.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 23,
+    "insideTerminal": 24,
     "averageTTT": 22,
     "aboveTarget": 2,
     "oldestTruck": {
-      "truck": "ABE1C23",
-      "trailer": "LZA5E33",
+      "truck": "MIF6E70",
+      "trailer": "FEJ6048",
       "type": "NORMAL",
-      "enteredYard": "2026-10-23T13:17:22.867Z",
-      "minutes": 53
+      "enteredYard": "2026-10-23T13:37:20.657Z",
+      "minutes": 38
     }
   },
   "typeBreakdown": {
     "DTA": 3,
     "NORMAL": 16,
-    "DTC": 4
+    "DTC": 5
   },
   "flow": {
-    "entriesToday": 244,
-    "exitsToday": 221,
-    "movementsLastHour": 70,
+    "entriesToday": 246,
+    "exitsToday": 222,
+    "movementsLastHour": 64,
     "balanceLastHour": 4
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "ABE1C23",
-      "trailer": "LZA5E33",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-23T13:17:22.867Z",
-      "minutes": 53
-    },
     {
       "truck": "MIF6E70",
       "trailer": "FEJ6048",
       "type": "NORMAL",
       "enteredYard": "2026-10-23T13:37:20.657Z",
+      "minutes": 38
+    },
+    {
+      "truck": "IYS4J41",
+      "trailer": "BCH7B56",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-23T13:41:46.643Z",
       "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 20,
+    "eligibleVehicles": 21,
     "buckets": {
-      "upTo15": 8,
+      "upTo15": 9,
       "from16To32": 10,
       "from33To60": 2,
       "above60": 0
@@ -99,7 +99,7 @@
     },
     {
       "hour": "11",
-      "value": 33
+      "value": 36
     },
     {
       "hour": "12",
@@ -197,7 +197,7 @@
     },
     {
       "hour": "11",
-      "value": 7
+      "value": 9
     },
     {
       "hour": "12",
