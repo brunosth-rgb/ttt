@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T05:20:16.151Z",
-  "reportDate": "2026-10-24T05:15:00.000Z",
-  "sourceFile": "REP_TTTReport_215650075.xlsx",
+  "updatedAt": "2026-10-24T05:25:10.387Z",
+  "reportDate": "2026-10-24T05:20:01.000Z",
+  "sourceFile": "REP_TTTReport_673353246.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 26,
+    "insideTerminal": 24,
     "averageTTT": 27,
-    "aboveTarget": 3,
+    "aboveTarget": 4,
     "oldestTruck": {
       "truck": "RAF3990",
       "trailer": "QHM8083",
       "type": "NORMAL",
       "enteredYard": "2026-10-24T04:33:14.447Z",
-      "minutes": 42
+      "minutes": 47
     }
   },
   "typeBreakdown": {
-    "NORMAL": 26
+    "NORMAL": 24
   },
   "flow": {
-    "entriesToday": 108,
-    "exitsToday": 82,
-    "movementsLastHour": 111,
+    "entriesToday": 110,
+    "exitsToday": 86,
+    "movementsLastHour": 107,
     "balanceLastHour": -5
   },
   "aboveTargetVehicles": [
@@ -31,29 +31,36 @@
       "trailer": "QHM8083",
       "type": "NORMAL",
       "enteredYard": "2026-10-24T04:33:14.447Z",
-      "minutes": 42
+      "minutes": 47
     },
     {
       "truck": "MJH5G05",
       "trailer": "QJX6584",
       "type": "NORMAL",
       "enteredYard": "2026-10-24T04:35:40.557Z",
-      "minutes": 39
+      "minutes": 44
     },
     {
       "truck": "BCK1C79",
       "trailer": "AUF9C21",
       "type": "NORMAL",
       "enteredYard": "2026-10-24T04:41:37.013Z",
+      "minutes": 38
+    },
+    {
+      "truck": "MDN0J80",
+      "trailer": "LZI0543",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-24T04:47:15.267Z",
       "minutes": 33
     }
   ],
   "dwell": {
-    "eligibleVehicles": 26,
+    "eligibleVehicles": 24,
     "buckets": {
-      "upTo15": 15,
+      "upTo15": 12,
       "from16To32": 8,
-      "from33To60": 3,
+      "from33To60": 4,
       "above60": 0
     }
   },
@@ -166,7 +173,7 @@
     },
     {
       "hour": "02",
-      "value": 15
+      "value": 17
     },
     {
       "hour": "03",
