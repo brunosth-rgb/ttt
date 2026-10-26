@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-26T18:45:49.373Z",
-  "reportDate": "2026-10-26T18:40:03.000Z",
-  "sourceFile": "REP_TTTReport_217590611.xlsx",
+  "updatedAt": "2026-10-26T18:56:07.879Z",
+  "reportDate": "2026-10-26T18:50:02.000Z",
+  "sourceFile": "REP_TTTReport_-44451425.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 21,
+    "insideTerminal": 19,
     "averageTTT": 23,
-    "aboveTarget": 1,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "MKC1C94",
       "trailer": "TQK4G35",
       "type": "DTC",
       "enteredYard": "2026-10-26T18:07:16.870Z",
-      "minutes": 33
+      "minutes": 43
     }
   },
   "typeBreakdown": {
     "DTA": 1,
-    "DTC": 4,
-    "NORMAL": 16
+    "DTC": 3,
+    "NORMAL": 15
   },
   "flow": {
-    "entriesToday": 560,
-    "exitsToday": 539,
-    "movementsLastHour": 74,
-    "balanceLastHour": 6
+    "entriesToday": 564,
+    "exitsToday": 545,
+    "movementsLastHour": 75,
+    "balanceLastHour": 3
   },
   "aboveTargetVehicles": [
     {
@@ -33,15 +33,22 @@
       "trailer": "TQK4G35",
       "type": "DTC",
       "enteredYard": "2026-10-26T18:07:16.870Z",
-      "minutes": 33
+      "minutes": 43
+    },
+    {
+      "truck": "MBI7B60",
+      "trailer": "MCB1166",
+      "type": "DTC",
+      "enteredYard": "2026-10-26T18:15:55.687Z",
+      "minutes": 34
     }
   ],
   "dwell": {
-    "eligibleVehicles": 20,
+    "eligibleVehicles": 18,
     "buckets": {
       "upTo15": 10,
-      "from16To32": 9,
-      "from33To60": 1,
+      "from16To32": 6,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -206,7 +213,7 @@
     },
     {
       "hour": "15",
-      "value": 30
+      "value": 34
     },
     {
       "hour": "16",
