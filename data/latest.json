@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T18:21:06.926Z",
-  "reportDate": "2026-10-27T18:15:00.000Z",
-  "sourceFile": "REP_TTTReport_211051783.xlsx",
+  "updatedAt": "2026-10-27T18:31:02.268Z",
+  "reportDate": "2026-10-27T18:25:00.000Z",
+  "sourceFile": "REP_TTTReport_-83040126.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 14,
     "averageTTT": 25,
-    "aboveTarget": 3,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "EKH3E56",
       "trailer": "MLG0H65",
       "type": "NORMAL",
       "enteredYard": "2026-10-27T14:29:26.873Z",
-      "minutes": 226
+      "minutes": 236
     }
   },
   "typeBreakdown": {
-    "NORMAL": 13,
+    "NORMAL": 11,
     "DTC": 3
   },
   "flow": {
-    "entriesToday": 652,
-    "exitsToday": 633,
+    "entriesToday": 658,
+    "exitsToday": 641,
     "movementsLastHour": 87,
-    "balanceLastHour": -7
+    "balanceLastHour": -3
   },
   "aboveTargetVehicles": [
     {
@@ -32,29 +32,22 @@
       "trailer": "MLG0H65",
       "type": "NORMAL",
       "enteredYard": "2026-10-27T14:29:26.873Z",
-      "minutes": 226
+      "minutes": 236
     },
     {
       "truck": "MHK1H69",
       "trailer": "MLR3003",
       "type": "NORMAL",
       "enteredYard": "2026-10-27T14:59:01.087Z",
-      "minutes": 196
-    },
-    {
-      "truck": "IAX5F49",
-      "trailer": "DBP3E03",
-      "type": "DTC",
-      "enteredYard": "2026-10-27T17:35:19.920Z",
-      "minutes": 40
+      "minutes": 206
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 14,
     "buckets": {
-      "upTo15": 6,
-      "from16To32": 7,
-      "from33To60": 1,
+      "upTo15": 8,
+      "from16To32": 4,
+      "from33To60": 0,
       "above60": 2
     }
   },
@@ -121,7 +114,7 @@
     },
     {
       "hour": "15",
-      "value": 21
+      "value": 24
     },
     {
       "hour": "16",
@@ -219,7 +212,7 @@
     },
     {
       "hour": "15",
-      "value": 7
+      "value": 13
     },
     {
       "hour": "16",
