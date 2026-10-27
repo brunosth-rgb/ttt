@@ -1,66 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T21:36:05.814Z",
-  "reportDate": "2026-10-27T21:30:01.000Z",
-  "sourceFile": "REP_TTTReport_511388112.xlsx",
+  "updatedAt": "2026-10-27T21:46:00.986Z",
+  "reportDate": "2026-10-27T21:40:01.000Z",
+  "sourceFile": "REP_TTTReport_711800606.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 14,
+    "insideTerminal": 16,
     "averageTTT": 27,
-    "aboveTarget": 4,
+    "aboveTarget": 1,
     "oldestTruck": {
-      "truck": "RXZ6I16",
-      "trailer": "UNA0H04",
+      "truck": "MAG3G05",
+      "trailer": "JZU3H38",
       "type": "NORMAL",
-      "enteredYard": "2026-10-27T20:33:10.690Z",
-      "minutes": 57
+      "enteredYard": "2026-10-27T20:52:15.830Z",
+      "minutes": 48
     }
   },
   "typeBreakdown": {
-    "NORMAL": 14
+    "NORMAL": 16
   },
   "flow": {
-    "entriesToday": 785,
-    "exitsToday": 771,
-    "movementsLastHour": 66,
-    "balanceLastHour": -4
+    "entriesToday": 796,
+    "exitsToday": 780,
+    "movementsLastHour": 71,
+    "balanceLastHour": -5
   },
   "aboveTargetVehicles": [
-    {
-      "truck": "RXZ6I16",
-      "trailer": "UNA0H04",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-27T20:33:10.690Z",
-      "minutes": 57
-    },
-    {
-      "truck": "IYW9F24",
-      "trailer": "GGR1B73",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-27T20:35:40.730Z",
-      "minutes": 54
-    },
     {
       "truck": "MAG3G05",
       "trailer": "JZU3H38",
       "type": "NORMAL",
       "enteredYard": "2026-10-27T20:52:15.830Z",
-      "minutes": 38
-    },
-    {
-      "truck": "AOP1C65",
-      "trailer": "KDP2G55",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-27T20:54:58.170Z",
-      "minutes": 35
+      "minutes": 48
     }
   ],
   "dwell": {
-    "eligibleVehicles": 14,
+    "eligibleVehicles": 16,
     "buckets": {
-      "upTo15": 5,
-      "from16To32": 5,
-      "from33To60": 4,
+      "upTo15": 15,
+      "from16To32": 0,
+      "from33To60": 1,
       "above60": 0
     }
   },
@@ -139,7 +118,7 @@
     },
     {
       "hour": "18",
-      "value": 47
+      "value": 43
     },
     {
       "hour": "19",
@@ -233,11 +212,11 @@
     },
     {
       "hour": "17",
-      "value": 45
+      "value": 44
     },
     {
       "hour": "18",
-      "value": 7
+      "value": 19
     },
     {
       "hour": "19",
