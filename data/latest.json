@@ -1,39 +1,54 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T11:21:13.836Z",
-  "reportDate": "2026-10-27T11:15:01.000Z",
-  "sourceFile": "REP_TTTReport_260503575.xlsx",
+  "updatedAt": "2026-10-27T11:48:45.442Z",
+  "reportDate": "2026-10-27T11:40:02.000Z",
+  "sourceFile": "REP_TTTReport_170414261.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 22,
+    "insideTerminal": 18,
     "averageTTT": 23,
-    "aboveTarget": 0,
+    "aboveTarget": 2,
     "oldestTruck": {
-      "truck": "MDE6B60",
-      "trailer": "LZD6J39",
+      "truck": "LZO3782",
+      "trailer": "IXF3I65",
       "type": "NORMAL",
-      "enteredYard": "2026-10-27T10:48:51.053Z",
-      "minutes": 26
+      "enteredYard": "2026-10-27T10:49:00.617Z",
+      "minutes": 51
     }
   },
   "typeBreakdown": {
     "DTA": 2,
-    "NORMAL": 16,
-    "DTC": 4
+    "NORMAL": 14,
+    "DTC": 2
   },
   "flow": {
-    "entriesToday": 354,
-    "exitsToday": 332,
-    "movementsLastHour": 107,
-    "balanceLastHour": -3
+    "entriesToday": 371,
+    "exitsToday": 353,
+    "movementsLastHour": 96,
+    "balanceLastHour": -4
   },
-  "aboveTargetVehicles": [],
+  "aboveTargetVehicles": [
+    {
+      "truck": "LZO3782",
+      "trailer": "IXF3I65",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-27T10:49:00.617Z",
+      "minutes": 51
+    },
+    {
+      "truck": "ICX0J39",
+      "trailer": "MJR6F24",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-27T11:04:41.727Z",
+      "minutes": 35
+    }
+  ],
   "dwell": {
-    "eligibleVehicles": 20,
+    "eligibleVehicles": 16,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 10,
-      "from33To60": 0,
+      "upTo15": 11,
+      "from16To32": 3,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -72,7 +87,7 @@
     },
     {
       "hour": "08",
-      "value": 27
+      "value": 23
     },
     {
       "hour": "09",
@@ -170,7 +185,7 @@
     },
     {
       "hour": "08",
-      "value": 10
+      "value": 27
     },
     {
       "hour": "09",
