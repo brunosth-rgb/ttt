@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T22:54:50.088Z",
-  "reportDate": "2026-10-27T22:45:01.000Z",
-  "sourceFile": "REP_TTTReport_164629399.xlsx",
+  "updatedAt": "2026-10-27T22:56:04.025Z",
+  "reportDate": "2026-10-27T22:50:01.000Z",
+  "sourceFile": "REP_TTTReport_-30115242.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 25,
+    "insideTerminal": 27,
     "averageTTT": 26,
-    "aboveTarget": 2,
+    "aboveTarget": 3,
     "oldestTruck": {
       "truck": "RXX5J79",
       "trailer": "MKK4I37",
       "type": "NORMAL",
       "enteredYard": "2026-10-27T22:06:26.127Z",
-      "minutes": 39
+      "minutes": 44
     }
   },
   "typeBreakdown": {
-    "NORMAL": 13,
+    "NORMAL": 15,
     "DTC": 12
   },
   "flow": {
-    "entriesToday": 847,
-    "exitsToday": 821,
-    "movementsLastHour": 81,
-    "balanceLastHour": 13
+    "entriesToday": 850,
+    "exitsToday": 823,
+    "movementsLastHour": 80,
+    "balanceLastHour": 12
   },
   "aboveTargetVehicles": [
     {
@@ -32,22 +32,29 @@
       "trailer": "MKK4I37",
       "type": "NORMAL",
       "enteredYard": "2026-10-27T22:06:26.127Z",
-      "minutes": 39
+      "minutes": 44
     },
     {
       "truck": "LZL6C82",
       "trailer": "QIE4273",
       "type": "DTC",
       "enteredYard": "2026-10-27T22:11:12.387Z",
-      "minutes": 34
+      "minutes": 39
+    },
+    {
+      "truck": "RXR4H57",
+      "trailer": "SXR1F21",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-27T22:14:15.250Z",
+      "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 25,
+    "eligibleVehicles": 27,
     "buckets": {
-      "upTo15": 16,
-      "from16To32": 7,
-      "from33To60": 2,
+      "upTo15": 13,
+      "from16To32": 11,
+      "from33To60": 3,
       "above60": 0
     }
   },
@@ -130,7 +137,7 @@
     },
     {
       "hour": "19",
-      "value": 18
+      "value": 19
     },
     {
       "hour": "20",
@@ -228,7 +235,7 @@
     },
     {
       "hour": "19",
-      "value": 37
+      "value": 40
     },
     {
       "hour": "20",
