@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T01:18:36.656Z",
-  "reportDate": "2026-10-28T01:10:01.000Z",
-  "sourceFile": "REP_TTTReport_-89504761.xlsx",
+  "updatedAt": "2026-10-28T01:21:18.164Z",
+  "reportDate": "2026-10-28T01:15:00.000Z",
+  "sourceFile": "REP_TTTReport_904675268.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 23,
+    "insideTerminal": 25,
     "averageTTT": 27,
-    "aboveTarget": 3,
+    "aboveTarget": 2,
     "oldestTruck": {
       "truck": "LXR7104",
       "trailer": "MAV2E68",
       "type": "NORMAL",
       "enteredYard": "2026-10-28T00:27:11.690Z",
-      "minutes": 43
+      "minutes": 48
     }
   },
   "typeBreakdown": {
     "NORMAL": 17,
-    "DTC": 6
+    "DTC": 8
   },
   "flow": {
-    "entriesToday": 957,
-    "exitsToday": 934,
-    "movementsLastHour": 100,
-    "balanceLastHour": 0
+    "entriesToday": 963,
+    "exitsToday": 938,
+    "movementsLastHour": 101,
+    "balanceLastHour": -1
   },
   "aboveTargetVehicles": [
     {
@@ -32,29 +32,22 @@
       "trailer": "MAV2E68",
       "type": "NORMAL",
       "enteredYard": "2026-10-28T00:27:11.690Z",
-      "minutes": 43
+      "minutes": 48
     },
     {
-      "truck": "ICP3J10",
-      "trailer": "FEJ6A34",
+      "truck": "AFH8C10",
+      "trailer": "ACY6I09",
       "type": "NORMAL",
-      "enteredYard": "2026-10-28T00:31:55.287Z",
-      "minutes": 38
-    },
-    {
-      "truck": "BWE5B28",
-      "trailer": "AGC7I84",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-28T00:36:10.707Z",
-      "minutes": 34
+      "enteredYard": "2026-10-28T00:40:19.087Z",
+      "minutes": 35
     }
   ],
   "dwell": {
-    "eligibleVehicles": 23,
+    "eligibleVehicles": 25,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 10,
-      "from33To60": 3,
+      "upTo15": 11,
+      "from16To32": 12,
+      "from33To60": 2,
       "above60": 0
     }
   },
@@ -247,7 +240,7 @@
     },
     {
       "hour": "22",
-      "value": 5
+      "value": 11
     },
     {
       "hour": "23",
