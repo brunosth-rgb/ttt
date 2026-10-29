@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T08:41:08.482Z",
-  "reportDate": "2026-10-29T08:35:00.000Z",
-  "sourceFile": "REP_TTTReport_-39404718.xlsx",
+  "updatedAt": "2026-10-29T08:50:19.254Z",
+  "reportDate": "2026-10-29T08:45:00.000Z",
+  "sourceFile": "REP_TTTReport_517690055.xlsx",
   "targetTTT": 32,
   "metrics": {
     "insideTerminal": 13,
     "averageTTT": 25,
-    "aboveTarget": 3,
+    "aboveTarget": 6,
     "oldestTruck": {
       "truck": "AAJ9937",
       "trailer": "LYR5863",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T07:55:41.357Z",
-      "minutes": 39
+      "minutes": 49
     }
   },
   "typeBreakdown": {
@@ -23,8 +23,8 @@
   "flow": {
     "entriesToday": 115,
     "exitsToday": 102,
-    "movementsLastHour": 34,
-    "balanceLastHour": 10
+    "movementsLastHour": 30,
+    "balanceLastHour": 12
   },
   "aboveTargetVehicles": [
     {
@@ -32,29 +32,50 @@
       "trailer": "LYR5863",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T07:55:41.357Z",
-      "minutes": 39
+      "minutes": 49
     },
     {
       "truck": "MVU7H35",
       "trailer": "ADU7E99",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T07:59:01.357Z",
-      "minutes": 36
+      "minutes": 46
     },
     {
       "truck": "LZW2A07",
       "trailer": "JXA3528",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T08:02:52.360Z",
-      "minutes": 32
+      "minutes": 42
+    },
+    {
+      "truck": "MKY2A28",
+      "trailer": "RYI3D27",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-29T08:04:02.137Z",
+      "minutes": 41
+    },
+    {
+      "truck": "LXY7G90",
+      "trailer": "AEN3103",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-29T08:09:39.293Z",
+      "minutes": 35
+    },
+    {
+      "truck": "AAJ7688",
+      "trailer": "LYJ6E34",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-29T08:12:12.277Z",
+      "minutes": 33
     }
   ],
   "dwell": {
     "eligibleVehicles": 11,
     "buckets": {
-      "upTo15": 4,
+      "upTo15": 1,
       "from16To32": 4,
-      "from33To60": 3,
+      "from33To60": 6,
       "above60": 0
     }
   },
