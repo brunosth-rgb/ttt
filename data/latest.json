@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T22:31:05.052Z",
-  "reportDate": "2026-10-29T22:25:01.000Z",
-  "sourceFile": "REP_TTTReport_-40311557.xlsx",
+  "updatedAt": "2026-10-29T22:36:44.183Z",
+  "reportDate": "2026-10-29T22:30:00.000Z",
+  "sourceFile": "REP_TTTReport_806699827.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 21,
+    "insideTerminal": 20,
     "averageTTT": 31,
     "aboveTarget": 3,
     "oldestTruck": {
@@ -13,19 +13,19 @@
       "trailer": "DBP3E03",
       "type": "DTC",
       "enteredYard": "2026-10-29T20:43:05.370Z",
-      "minutes": 102
+      "minutes": 107
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "DTC": 9,
-    "NORMAL": 11
+    "NORMAL": 10
   },
   "flow": {
-    "entriesToday": 597,
-    "exitsToday": 576,
-    "movementsLastHour": 62,
-    "balanceLastHour": 4
+    "entriesToday": 598,
+    "exitsToday": 578,
+    "movementsLastHour": 59,
+    "balanceLastHour": 5
   },
   "aboveTargetVehicles": [
     {
@@ -33,28 +33,28 @@
       "trailer": "DBP3E03",
       "type": "DTC",
       "enteredYard": "2026-10-29T20:43:05.370Z",
-      "minutes": 102
+      "minutes": 107
     },
     {
       "truck": "IHZ5G96",
       "trailer": "MCJ1A34",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T21:14:41.260Z",
-      "minutes": 70
+      "minutes": 75
     },
     {
-      "truck": "BBE7F66",
-      "trailer": "MHN8H04",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-29T21:44:01.093Z",
-      "minutes": 41
+      "truck": "JTC7472",
+      "trailer": "LXD8A47",
+      "type": "DTC",
+      "enteredYard": "2026-10-29T21:54:06.553Z",
+      "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 20,
+    "eligibleVehicles": 19,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 7,
+      "upTo15": 6,
+      "from16To32": 10,
       "from33To60": 1,
       "above60": 2
     }
@@ -236,7 +236,7 @@
     },
     {
       "hour": "19",
-      "value": 17
+      "value": 18
     },
     {
       "hour": "20",
