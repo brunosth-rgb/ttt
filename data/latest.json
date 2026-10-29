@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T04:35:11.893Z",
-  "reportDate": "2026-10-29T04:30:00.000Z",
-  "sourceFile": "REP_TTTReport_473437671.xlsx",
+  "updatedAt": "2026-10-29T04:40:07.599Z",
+  "reportDate": "2026-10-29T04:35:00.000Z",
+  "sourceFile": "REP_TTTReport_833529824.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
-    "averageTTT": 26,
+    "insideTerminal": 10,
+    "averageTTT": 27,
     "aboveTarget": 5,
     "oldestTruck": {
       "truck": "SUP1F99",
       "trailer": "FQJ1J25",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T03:35:46.057Z",
-      "minutes": 54
+      "minutes": 59
     }
   },
   "typeBreakdown": {
-    "NORMAL": 15
+    "NORMAL": 10
   },
   "flow": {
     "entriesToday": 47,
-    "exitsToday": 32,
+    "exitsToday": 37,
     "movementsLastHour": 60,
-    "balanceLastHour": 0
+    "balanceLastHour": -2
   },
   "aboveTargetVehicles": [
     {
@@ -31,42 +31,42 @@
       "trailer": "FQJ1J25",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T03:35:46.057Z",
-      "minutes": 54
+      "minutes": 59
     },
     {
       "truck": "MIW5C31",
       "trailer": "CDP9127",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T03:36:54.560Z",
-      "minutes": 53
-    },
-    {
-      "truck": "MAW0B98",
-      "trailer": "HQN4E40",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-29T03:49:19.433Z",
-      "minutes": 41
-    },
-    {
-      "truck": "MVU7H35",
-      "trailer": "ADU7E99",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-29T03:50:48.333Z",
-      "minutes": 39
+      "minutes": 58
     },
     {
       "truck": "RLF6G85",
       "trailer": "RDT3A97",
       "type": "NORMAL",
       "enteredYard": "2026-10-29T03:55:30.247Z",
-      "minutes": 34
+      "minutes": 39
+    },
+    {
+      "truck": "LZD2G52",
+      "trailer": "IHH0B69",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-29T03:59:45.167Z",
+      "minutes": 35
+    },
+    {
+      "truck": "RXR1H36",
+      "trailer": "QJJ6986",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-29T04:00:27.473Z",
+      "minutes": 35
     }
   ],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 10,
     "buckets": {
       "upTo15": 1,
-      "from16To32": 9,
+      "from16To32": 4,
       "from33To60": 5,
       "above60": 0
     }
