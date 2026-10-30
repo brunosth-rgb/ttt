@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T02:22:11.268Z",
-  "reportDate": "2026-10-30T02:15:00.000Z",
-  "sourceFile": "REP_TTTReport_316290107.xlsx",
+  "updatedAt": "2026-10-30T02:25:42.524Z",
+  "reportDate": "2026-10-30T02:20:01.000Z",
+  "sourceFile": "REP_TTTReport_-18287515.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 32,
+    "insideTerminal": 30,
     "averageTTT": 31,
-    "aboveTarget": 13,
+    "aboveTarget": 11,
     "oldestTruck": {
       "truck": "RDT5J80",
       "trailer": "MKK2383",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:10:41.287Z",
-      "minutes": 64
+      "minutes": 69
     }
   },
   "typeBreakdown": {
     "DTA": 1,
     "NORMAL": 26,
-    "DTC": 5
+    "DTC": 3
   },
   "flow": {
-    "entriesToday": 760,
-    "exitsToday": 728,
-    "movementsLastHour": 79,
-    "balanceLastHour": 5
+    "entriesToday": 761,
+    "exitsToday": 731,
+    "movementsLastHour": 76,
+    "balanceLastHour": 0
   },
   "aboveTargetVehicles": [
     {
@@ -33,100 +33,86 @@
       "trailer": "MKK2383",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:10:41.287Z",
-      "minutes": 64
+      "minutes": 69
     },
     {
       "truck": "GLJ2B25",
       "trailer": "ABF9D85",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:14:35.600Z",
-      "minutes": 60
+      "minutes": 65
     },
     {
       "truck": "FXI0I16",
       "trailer": "RXZ3G60",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:15:39.247Z",
-      "minutes": 59
-    },
-    {
-      "truck": "IUM1J04",
-      "trailer": "IEA3H09",
-      "type": "DTC",
-      "enteredYard": "2026-10-30T01:19:50.467Z",
-      "minutes": 55
+      "minutes": 64
     },
     {
       "truck": "MJT8F88",
       "trailer": "MJV0657",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:22:39.707Z",
-      "minutes": 52
+      "minutes": 57
     },
     {
       "truck": "MMD7E60",
       "trailer": "RYA8I35",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:24:51.360Z",
-      "minutes": 50
+      "minutes": 55
     },
     {
       "truck": "MDP9G29",
       "trailer": "MLS1G24",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:26:24.000Z",
-      "minutes": 49
+      "minutes": 54
     },
     {
       "truck": "MIM3D84",
       "trailer": "FZQ4358",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:28:36.857Z",
-      "minutes": 46
+      "minutes": 51
     },
     {
       "truck": "QJA7266",
       "trailer": "QTM1D84",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:28:56.517Z",
-      "minutes": 46
-    },
-    {
-      "truck": "INH8H13",
-      "trailer": "LYW1I01",
-      "type": "DTC",
-      "enteredYard": "2026-10-30T01:36:57.687Z",
-      "minutes": 38
-    },
-    {
-      "truck": "AFF5D00",
-      "trailer": "DVS1H40",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-30T01:40:46.003Z",
-      "minutes": 34
+      "minutes": 51
     },
     {
       "truck": "UBC9J79",
       "trailer": "GCV5J12",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:42:29.097Z",
-      "minutes": 33
+      "minutes": 38
     },
     {
       "truck": "QJY7651",
       "trailer": "QJO8E99",
       "type": "NORMAL",
       "enteredYard": "2026-10-30T01:42:49.003Z",
-      "minutes": 32
+      "minutes": 37
+    },
+    {
+      "truck": "MIB0G55",
+      "trailer": "MFM6843",
+      "type": "NORMAL",
+      "enteredYard": "2026-10-30T01:44:06.980Z",
+      "minutes": 36
     }
   ],
   "dwell": {
-    "eligibleVehicles": 31,
+    "eligibleVehicles": 29,
     "buckets": {
-      "upTo15": 11,
-      "from16To32": 7,
-      "from33To60": 11,
-      "above60": 2
+      "upTo15": 7,
+      "from16To32": 11,
+      "from33To60": 8,
+      "above60": 3
     }
   },
   "hourlyTTT": [
@@ -224,7 +210,7 @@
     },
     {
       "hour": "23",
-      "value": 37
+      "value": 40
     }
   ],
   "hourlyReceived": [
@@ -322,7 +308,7 @@
     },
     {
       "hour": "23",
-      "value": 12
+      "value": 13
     }
   ]
 }
