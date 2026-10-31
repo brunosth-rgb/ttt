@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T15:30:25.233Z",
-  "reportDate": "2026-10-31T15:25:01.000Z",
-  "sourceFile": "REP_TTTReport_-86272135.xlsx",
+  "updatedAt": "2026-10-31T15:36:11.827Z",
+  "reportDate": "2026-10-31T15:30:01.000Z",
+  "sourceFile": "REP_TTTReport_701627528.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 16,
+    "insideTerminal": 15,
     "averageTTT": 28,
     "aboveTarget": 4,
     "oldestTruck": {
@@ -13,18 +13,18 @@
       "trailer": "CPJ4155",
       "type": "DTC",
       "enteredYard": "2026-10-31T10:58:14.883Z",
-      "minutes": 267
+      "minutes": 272
     }
   },
   "typeBreakdown": {
     "DTC": 4,
-    "NORMAL": 12
+    "NORMAL": 11
   },
   "flow": {
-    "entriesToday": 336,
-    "exitsToday": 320,
-    "movementsLastHour": 44,
-    "balanceLastHour": 12
+    "entriesToday": 339,
+    "exitsToday": 324,
+    "movementsLastHour": 51,
+    "balanceLastHour": 11
   },
   "aboveTargetVehicles": [
     {
@@ -32,35 +32,35 @@
       "trailer": "CPJ4155",
       "type": "DTC",
       "enteredYard": "2026-10-31T10:58:14.883Z",
-      "minutes": 267
+      "minutes": 272
     },
     {
       "truck": "LYE0582",
       "trailer": "KDZ5C29",
       "type": "DTC",
       "enteredYard": "2026-10-31T11:22:10.937Z",
-      "minutes": 243
+      "minutes": 248
     },
     {
       "truck": "DBC2598",
       "trailer": "MKT2424",
       "type": "DTC",
       "enteredYard": "2026-10-31T11:52:47.267Z",
-      "minutes": 212
+      "minutes": 217
     },
     {
       "truck": "LZQ3E63",
       "trailer": "LZB4D25",
       "type": "DTC",
       "enteredYard": "2026-10-31T11:54:19.613Z",
-      "minutes": 211
+      "minutes": 216
     }
   ],
   "dwell": {
-    "eligibleVehicles": 16,
+    "eligibleVehicles": 15,
     "buckets": {
-      "upTo15": 10,
-      "from16To32": 2,
+      "upTo15": 8,
+      "from16To32": 3,
       "from33To60": 0,
       "above60": 4
     }
@@ -214,7 +214,7 @@
     },
     {
       "hour": "12",
-      "value": 20
+      "value": 23
     },
     {
       "hour": "13",
