@@ -1,277 +1,234 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T03:00:50.587Z",
-  "reportDate": "2026-10-31T02:55:01.000Z",
-  "sourceFile": "REP_TTTReport_-88643966.xlsx",
+  "updatedAt": "2026-10-31T03:10:04.628Z",
+  "reportDate": "2026-10-31T03:05:00.000Z",
+  "sourceFile": "REP_TTTReport_-23138415.xlsx",
   "targetTTT": 32,
   "metrics": {
-    "insideTerminal": 15,
-    "averageTTT": 35,
-    "aboveTarget": 6,
+    "insideTerminal": 3,
+    "averageTTT": 0,
+    "aboveTarget": 0,
     "oldestTruck": {
-      "truck": "MIE9B00",
-      "trailer": "BSG1762",
+      "truck": "MEX7600",
+      "trailer": "BWI5021",
       "type": "NORMAL",
-      "enteredYard": "2026-10-31T00:25:05.063Z",
-      "minutes": 150
+      "enteredYard": "2026-10-31T03:00:38.187Z",
+      "minutes": 4
     }
   },
   "typeBreakdown": {
-    "NORMAL": 15
+    "NORMAL": 3
   },
   "flow": {
-    "entriesToday": 957,
-    "exitsToday": 942,
-    "movementsLastHour": 47,
-    "balanceLastHour": 7
+    "entriesToday": 3,
+    "exitsToday": 0,
+    "movementsLastHour": 3,
+    "balanceLastHour": 3
   },
-  "aboveTargetVehicles": [
-    {
-      "truck": "MIE9B00",
-      "trailer": "BSG1762",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-31T00:25:05.063Z",
-      "minutes": 150
-    },
-    {
-      "truck": "KAE6D07",
-      "trailer": "MBJ7E25",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-31T01:59:36.610Z",
-      "minutes": 55
-    },
-    {
-      "truck": "MCG9F20",
-      "trailer": "LXS0C84",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-31T02:04:53.830Z",
-      "minutes": 50
-    },
-    {
-      "truck": "UBC9J79",
-      "trailer": "GDC0F62",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-31T02:06:32.133Z",
-      "minutes": 48
-    },
-    {
-      "truck": "TPT4C39",
-      "trailer": "SXZ3B92",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-31T02:07:35.443Z",
-      "minutes": 47
-    },
-    {
-      "truck": "MLR0880",
-      "trailer": "MFI3F12",
-      "type": "NORMAL",
-      "enteredYard": "2026-10-31T02:11:12.477Z",
-      "minutes": 44
-    }
-  ],
+  "aboveTargetVehicles": [],
   "dwell": {
-    "eligibleVehicles": 15,
+    "eligibleVehicles": 3,
     "buckets": {
-      "upTo15": 8,
-      "from16To32": 1,
-      "from33To60": 5,
-      "above60": 1
+      "upTo15": 3,
+      "from16To32": 0,
+      "from33To60": 0,
+      "above60": 0
     }
   },
   "hourlyTTT": [
     {
       "hour": "00",
-      "value": 22
+      "value": null
     },
     {
       "hour": "01",
-      "value": 31
+      "value": null
     },
     {
       "hour": "02",
-      "value": 28
+      "value": null
     },
     {
       "hour": "03",
-      "value": 39
+      "value": null
     },
     {
       "hour": "04",
-      "value": 42
+      "value": null
     },
     {
       "hour": "05",
-      "value": 37
+      "value": null
     },
     {
       "hour": "06",
-      "value": 32
+      "value": null
     },
     {
       "hour": "07",
-      "value": 43
+      "value": null
     },
     {
       "hour": "08",
-      "value": 47
+      "value": null
     },
     {
       "hour": "09",
-      "value": 33
+      "value": null
     },
     {
       "hour": "10",
-      "value": 33
+      "value": null
     },
     {
       "hour": "11",
-      "value": 39
+      "value": null
     },
     {
       "hour": "12",
-      "value": 40
+      "value": null
     },
     {
       "hour": "13",
-      "value": 57
+      "value": null
     },
     {
       "hour": "14",
-      "value": 28
+      "value": null
     },
     {
       "hour": "15",
-      "value": 40
+      "value": null
     },
     {
       "hour": "16",
-      "value": 32
+      "value": null
     },
     {
       "hour": "17",
-      "value": 24
+      "value": null
     },
     {
       "hour": "18",
-      "value": 24
+      "value": null
     },
     {
       "hour": "19",
-      "value": 24
+      "value": null
     },
     {
       "hour": "20",
-      "value": 43
+      "value": null
     },
     {
       "hour": "21",
-      "value": 31
+      "value": null
     },
     {
       "hour": "22",
-      "value": 20
+      "value": null
     },
     {
       "hour": "23",
-      "value": 20
+      "value": null
     }
   ],
   "hourlyReceived": [
     {
       "hour": "00",
-      "value": 39
+      "value": 3
     },
     {
       "hour": "01",
-      "value": 43
+      "value": 0
     },
     {
       "hour": "02",
-      "value": 45
+      "value": 0
     },
     {
       "hour": "03",
-      "value": 44
+      "value": 0
     },
     {
       "hour": "04",
-      "value": 44
+      "value": 0
     },
     {
       "hour": "05",
-      "value": 37
+      "value": 0
     },
     {
       "hour": "06",
-      "value": 46
+      "value": 0
     },
     {
       "hour": "07",
-      "value": 42
+      "value": 0
     },
     {
       "hour": "08",
-      "value": 44
+      "value": 0
     },
     {
       "hour": "09",
-      "value": 44
+      "value": 0
     },
     {
       "hour": "10",
-      "value": 54
+      "value": 0
     },
     {
       "hour": "11",
-      "value": 43
+      "value": 0
     },
     {
       "hour": "12",
-      "value": 39
+      "value": 0
     },
     {
       "hour": "13",
-      "value": 31
+      "value": 0
     },
     {
       "hour": "14",
-      "value": 49
+      "value": 0
     },
     {
       "hour": "15",
-      "value": 44
+      "value": 0
     },
     {
       "hour": "16",
-      "value": 53
+      "value": 0
     },
     {
       "hour": "17",
-      "value": 25
+      "value": 0
     },
     {
       "hour": "18",
-      "value": 31
+      "value": 0
     },
     {
       "hour": "19",
-      "value": 39
+      "value": 0
     },
     {
       "hour": "20",
-      "value": 38
+      "value": 0
     },
     {
       "hour": "21",
-      "value": 31
+      "value": 0
     },
     {
       "hour": "22",
-      "value": 28
+      "value": 0
     },
     {
       "hour": "23",
-      "value": 24
+      "value": 0
     }
   ]
 }
